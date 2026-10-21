@@ -2,6 +2,91 @@
 We thank all our referees for their constructive feedbackand the raised points,
 and hope that our comments below, and the changes we did to the manuscript answer their criticism.
 
+## Reviewer B:
+
+### B1.
+** Original Manuscript **
+N/A
+
+** Reviewer Comment **
+> Chart is missing axes labels
+
+** Our Response **
+The chart was overhauled, and axis labels were added.
+
+### B2.
+** Original Manuscript **
+> ?? TODO ?? DO NOT SUBMIT WITHOUT FIXING THIS!!!! ??
+
+** Reviewer Comment **
+> Some improvements both to the text and the figure would improve the paper
+
+** Our response **
+
+The figure was split into two: the word cloud, and the chart. The chart itself was overhauled to
+comply with other suggestions. The section was reworded for clarity.
+
+### B3.
+** Original Manuscript **
+> ?? TODO ?? DO NOT SUBMIT WITHOUT FIXING THIS!!!! ??
+
+** Reviewer Comment **
+> font size is very small
+
+** Our response **
+
+We split the figure into two separate figures, and increased the font size in both.
+
+### B4.
+** Original Manuscript **
+> ?? TODO ?? DO NOT SUBMIT WITHOUT FIXING THIS!!!! ??
+
+** Reviewer Comment **
+> It is not clear who the audience of the survey is
+
+** Our response **
+
+We reworded the section to clarify the intended audience of the survey.
+
+### B5.
+** Original Manuscript **
+> ?? TODO ?? DO NOT SUBMIT WITHOUT FIXING THIS!!!! ??
+
+** Reviewer Comment **
+> unclear whether this refers to the INF projects themselves
+
+** Our response **
+
+Clarified in the text, that we always refer to the staff working in the INF projects.
+
+
+## Reviewer H:
+
+### H1.
+** Original Manuscript **
+> ??TODO?? DO NOT SUBMIT WITHOUT FIXING THIS!!!?? I assume this was aimed at the entire section
+
+** Reviewer Comment **
+> The methodology of the survey is not described. Not clear how the survey was designed and
+> administered. Not sure what insights can be gained from this (plot) data
+
+** Our response **
+
+We reworded the section to clarify what audience the survey was aimed at. We also clarified the 
+insight from the survey, viz., that there is a healthy spread of people that identify themselves on
+the RSE v/s RDM spectrum.
+
+### H2.
+** Original Manuscript **
+> ??TODO?? DO NOT SUBMIT WITHOUT FIXING THIS!!!?? 
+
+** Reviewer Comment **
+> The plot in figure 1 is hard to read
+
+** Our response **
+
+We split the figure into two separate figures, and increased the font size in both.
+
 ## Reviewer M:
 
 ### M1.
@@ -185,7 +270,7 @@ Thank you for this opportunity to extend the argument. We incorporated your idea
 ** changed in the manuscript **
 > While the publication of scientific articles is well established, making accompanying research datasets available in a reusable form remains challenging. Without appropriate data management practices established early in the research process, preparing datasets for publication can require substantial additional effort, placing further demands on researchers' often limited time resources.
 
-### M10
+### M13
 ** Original Manuscript **
 > breadth of the INF projects across the scientific domains is very diverse.
 
@@ -199,7 +284,7 @@ Thank you for this clarification. We start the paragraph now with your idea, and
 ** changed in the manuscript **
 > As we have seen, INF projects have become established across most domains of research.
 
-### M11
+### M14
 ** Original Manuscript **
 >  “…not only helpful, but often inevitable.”
 
@@ -211,3 +296,13 @@ Thank you for the suggestion, we have reworded this.
 
 ** changed in the manuscript **
 > A key lesson learned is that PI buy-in is not merely beneficial, but a key ingredient for the successful implementation of RDM and RSE practices.
+
+### M15
+** Original Manuscript **
+> TODO FIGURE IT OUT (OR ASK FLORIAN HE MIGHT NOW)
+
+** Reviewer Comment **
+> Figure 1 should be improved for readability
+
+** Our Response **
+> Split the figure into two separate figures with larger font sizes, and improved readability.
