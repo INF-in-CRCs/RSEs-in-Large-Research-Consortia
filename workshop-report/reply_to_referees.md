@@ -5,67 +5,40 @@ and hope that our comments below, and the changes we did to the manuscript answe
 ## Reviewer B:
 
 ### B1.
-** Original Manuscript **
-N/A
-
 ** Reviewer Comment **
-> Chart is missing axes labels
+> Presentation of the paper is very good. It is well structured and largely
+> well-written. The exception to this is section 3.21 where some improvements, both to the text, and
+> the figure, would improve the paper.
 
-** Our Response **
-The chart was overhauled, and axis labels were added.
+** Our response **
+
+Thank you for the feedback. we have reworked figure 1. The figure was split into
+two: the word cloud, and the chart. The chart itself was overhauled to comply with other
+suggestions. The section referring to the figure was reworded for clarity.
 
 ### B2.
-** Original Manuscript **
-> ?? TODO ?? DO NOT SUBMIT WITHOUT FIXING THIS!!!! ??
-
 ** Reviewer Comment **
-> Some improvements both to the text and the figure would improve the paper
-
-** Our response **
-
-The figure was split into two: the word cloud, and the chart. The chart itself was overhauled to
-comply with other suggestions. The section was reworded for clarity.
-
-### B3.
-** Original Manuscript **
-> ?? TODO ?? DO NOT SUBMIT WITHOUT FIXING THIS!!!! ??
-
-** Reviewer Comment **
-> font size is very small
-
-** Our response **
-
-We split the figure into two separate figures, and increased the font size in both.
-
-### B4.
-** Original Manuscript **
-> ?? TODO ?? DO NOT SUBMIT WITHOUT FIXING THIS!!!! ??
-
-** Reviewer Comment **
-> It is not clear who the audience of the survey is
+> It’s not clear who the audience is who are being asked this question.
 
 ** Our response **
 
 We reworded the section to clarify the intended audience of the survey.
 
-### B5.
-** Original Manuscript **
-> ?? TODO ?? DO NOT SUBMIT WITHOUT FIXING THIS!!!! ??
-
+### B3.
 ** Reviewer Comment **
-> unclear whether this refers to the INF projects themselves
+> The caption on Figure 1 says “…we see that INF projects see themselves on a spectrum between RSEs
+> and data stewards.”. From this, I was unclear whether this refers in some way to the INF projects
+> themselves or the people working in them.
 
 ** Our response **
 
-Clarified in the text, that we always refer to the staff working in the INF projects.
+The reviewer rightfully noticed our unclear wording here and we clarified in the text, that we
+always refer to the staff working in the INF projects.
 
 
 ## Reviewer H:
 
 ### H1.
-** Original Manuscript **
-> ??TODO?? DO NOT SUBMIT WITHOUT FIXING THIS!!!?? I assume this was aimed at the entire section
-
 ** Reviewer Comment **
 > The methodology of the survey is not described. Not clear how the survey was designed and
 > administered. Not sure what insights can be gained from this (plot) data
@@ -77,11 +50,8 @@ insight from the survey, viz., that there is a healthy spread of people that ide
 the RSE v/s RDM spectrum.
 
 ### H2.
-** Original Manuscript **
-> ??TODO?? DO NOT SUBMIT WITHOUT FIXING THIS!!!?? 
-
 ** Reviewer Comment **
-> The plot in figure 1 is hard to read
+> The left plot in figure 1 is hard to read
 
 ** Our response **
 
@@ -298,9 +268,6 @@ Thank you for the suggestion, we have reworded this.
 > A key lesson learned is that PI buy-in is not merely beneficial, but a key ingredient for the successful implementation of RDM and RSE practices.
 
 ### M15
-** Original Manuscript **
-> TODO FIGURE IT OUT (OR ASK FLORIAN HE MIGHT NOW)
-
 ** Reviewer Comment **
 > Figure 1 should be improved for readability
 
