@@ -2,6 +2,62 @@
 We thank all our referees for their constructive feedbackand the raised points,
 and hope that our comments below, and the changes we did to the manuscript answer their criticism.
 
+## Reviewer B:
+
+### B1.
+** Reviewer Comment **
+> Presentation of the paper is very good. It is well structured and largely
+> well-written. The exception to this is section 3.21 where some improvements, both to the text, and
+> the figure, would improve the paper.
+
+** Our response **
+
+Thank you for the feedback. we have reworked figure 1. The figure was split into
+two: the word cloud, and the chart. The chart itself was overhauled to comply with other
+suggestions. The section referring to the figure was reworded for clarity.
+
+### B2.
+** Reviewer Comment **
+> It’s not clear who the audience is who are being asked this question.
+
+** Our response **
+
+We reworded the section to clarify the intended audience of the survey.
+
+### B3.
+** Reviewer Comment **
+> The caption on Figure 1 says “…we see that INF projects see themselves on a spectrum between RSEs
+> and data stewards.”. From this, I was unclear whether this refers in some way to the INF projects
+> themselves or the people working in them.
+
+** Our response **
+
+The reviewer rightfully noticed our unclear wording here and we clarified in the text, that we
+always refer to the staff working in the INF projects.
+
+
+## Reviewer H:
+
+### H1.
+** Reviewer Comment **
+> The methodology of the survey is not described. It is not clear whether the survey was informed by
+> specific hypotheses and how the survey was designed and administered. I am not sure what insights
+> can be gained from this data.
+
+** Our response **
+
+We reworded the section to clarify the motivation of the survey, and what audience the survey was
+aimed at. We also clarified the insight from the survey, viz., that there is a healthy spread of
+people that identify themselves on the RSE v/s RDM spectrum.
+
+### H2.
+** Reviewer Comment **
+> The left plot in figure 1 is hard to read
+
+** Our response **
+
+We split the figure into two separate figures, and increased the font size in both.
+
 ## Reviewer M:
 
 ### M1.
@@ -185,7 +241,7 @@ Thank you for this opportunity to extend the argument. We incorporated your idea
 ** changed in the manuscript **
 > While the publication of scientific articles is well established, making accompanying research datasets available in a reusable form remains challenging. Without appropriate data management practices established early in the research process, preparing datasets for publication can require substantial additional effort, placing further demands on researchers' often limited time resources.
 
-### M10
+### M13
 ** Original Manuscript **
 > breadth of the INF projects across the scientific domains is very diverse.
 
@@ -199,7 +255,7 @@ Thank you for this clarification. We start the paragraph now with your idea, and
 ** changed in the manuscript **
 > As we have seen, INF projects have become established across most domains of research.
 
-### M11
+### M14
 ** Original Manuscript **
 >  “…not only helpful, but often inevitable.”
 
@@ -211,3 +267,10 @@ Thank you for the suggestion, we have reworded this.
 
 ** changed in the manuscript **
 > A key lesson learned is that PI buy-in is not merely beneficial, but a key ingredient for the successful implementation of RDM and RSE practices.
+
+### M15
+** Reviewer Comment **
+> Figure 1 should be improved for readability
+
+** Our Response **
+> Split the figure into two separate figures with larger font sizes, and improved readability.
