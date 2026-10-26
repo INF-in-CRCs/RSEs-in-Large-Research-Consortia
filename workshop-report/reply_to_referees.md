@@ -40,14 +40,15 @@ always refer to the staff working in the INF projects.
 
 ### H1.
 ** Reviewer Comment **
-> The methodology of the survey is not described. Not clear how the survey was designed and
-> administered. Not sure what insights can be gained from this (plot) data
+> The methodology of the survey is not described. It is not clear whether the survey was informed by
+> specific hypotheses and how the survey was designed and administered. I am not sure what insights
+> can be gained from this data.
 
 ** Our response **
 
-We reworded the section to clarify what audience the survey was aimed at. We also clarified the 
-insight from the survey, viz., that there is a healthy spread of people that identify themselves on
-the RSE v/s RDM spectrum.
+We reworded the section to clarify the motivation of the survey, and what audience the survey was
+aimed at. We also clarified the insight from the survey, viz., that there is a healthy spread of
+people that identify themselves on the RSE v/s RDM spectrum.
 
 ### H2.
 ** Reviewer Comment **
