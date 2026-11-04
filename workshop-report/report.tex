@@ -296,18 +296,104 @@ It is embedded in a broad network within the CRC~1451, working closely with expe
 A key task is the continuous assessment of workflows, resource requirements, and data analysis practices to find differences affecting data comparability and reusability.
 \href{https://www.datalad.org/}{DataLad} is the main RDM solution adopted by the CRC to introduce structure and version control, ensure reproducibility, and support collaboration on heterogeneous data and workflows across projects with very different experimental setups and analysis methods.
 
-\subsection{Project INF --- FAIR collection, curation and management of multidimensional research data, \href{https://gepris.dfg.de/gepris/projekt/506711657?language=en}{CRC 1625 – Atomic-scale understanding and design of multifunctional compositionally complex solid solution surfaces}, Ruhr University Bochum}
-The CRC~1625 project started in 2024 and is dedicated to the investigation of compositionally complex solid solutions (CCSS) comprising five or more different elements mixed within a simple single-phase crystal structure.
-Its objective is the design of surface atom arrangements (SAA), which have the potential to overcome the limitations of conventional elemental or binary electrocatalysts, thereby paving the way toward sustainable materials with unprecedented activity and stability.
-As its RDM platform, the INF project uses the \href{https://matinf.pro/}{MatInf} system, extending it with project-specific data types and actively contributing to its further development together with the INF project of TRR 247 (for example, MatInf has recently been migrated to the ASP.NET Core 10 + SQL Server 2025 technology stack).
-The flexible methodology for the incremental evolution of RDM systems implemented in MatInf \cite{Dudarev2026} enables chemical entities to be treated as first-class data citizens while dynamically introducing new types of research data and deeply integrating them into the system.
-This includes API-based integration of external services for validation, extraction, and visualisation of data originating from newly introduced research document types.
-A distinctive feature of CRC~1625 is that, alongside numerous projects dedicated to various aspects of CCSS/SAA research (including computational materials science), there is a group of projects directly dependent on the work of the INF project.
-In this context, INF acts as a direct data provider for projects A05 (Materials Informatics: Data-guided experimentation and machine learning) and A06 (Computer Science: Establishing a knowledge graph for the design of CCSS surfaces).
-All projects are provided with API-based access to the RDMS, including the possibility of executing arbitrary read queries through read-only database views.
-This ensures flexible data selection capabilities for analytical workflows in project A05 and extensive opportunities for project A06 to build a knowledge graph on top of the data contained within the RDMS \cite{Mohamed2026}.
-In addition to traditional workshops and hands-on sessions, the INF project, in collaboration with the Software Engineering Chair at Ruhr University Bochum, also offers a RDM course for students of the Computer Science faculty.
-Within this course, MatInf serves as one of the central use cases, and students gain not only practical experience working with the system through its REST APIs, but are also deeply involved in evaluating the compliance of such systems with the FAIR principles and discussing possible directions for their future development.
+
+\subsection{Project INF --- FAIR Collection, Curation and
+Management of Multidimensional Research Data,
+\href{https://gepris.dfg.de/gepris/projekt/506711657?language=en}
+{CRC~1625 -- Atomic-scale Understanding and Design of
+Multifunctional Compositionally Complex Solid Solution
+Surfaces}, Ruhr University Bochum}
+\label{subsec:crc1625}
+
+\noindent\textbf{Context and connections:}
+Established in 2024, CRC~1625 investigates compositionally
+complex solid solutions (CCSS) and their surface atom
+arrangements (SAA), combining experimental characterisation,
+simulation, and data-driven materials research.
+The INF project provides the shared research data management
+(RDM) infrastructure needed to integrate these heterogeneous
+data across different experimental scales and research groups.
+
+Its central platform is the open-source
+\href{https://matinf.pro/}{MatInf} system, developed jointly
+with the INF project of TRR~247. Within CRC~1625, the INF
+also serves as a direct data provider for A05 (materials
+informatics and machine learning) and A06 (knowledge graphs),
+closely connecting infrastructure development with the
+CRC's scientific objectives.
+
+\medskip
+\noindent\textbf{Main activities:}
+The INF extends MatInf with project-specific data types,
+metadata structures, and interfaces for validation,
+extraction, visualisation, and analysis \cite{Dudarev2026}.
+Its sample-centric data model links measurements from
+different characterisation techniques to physical samples
+and their spatial locations, supporting data provenance
+and cross-project integration.
+
+REST APIs and read-only database views enable controlled
+programmatic access to research data. These interfaces
+support data-driven workflows in A05, while A06 develops
+an ontology-based knowledge graph for integrating and
+querying relationships between research objects
+\cite{Mohamed2026}.
+
+As of April 2026, the system was used by 73 researchers,
+including 50 data contributors, and contained approximately
+50,000 research objects \cite{Mohamed2026}.
+Regular workshops and hands-on sessions complement the
+infrastructure. Together with the Software Engineering
+Chair at Ruhr University Bochum, the INF also contributes
+to an RDM course in which computer science students
+work with MatInf's APIs and assess its FAIR compliance.
+
+\medskip
+\noindent\textbf{Key challenges and adoption:}
+A central challenge is integrating heterogeneous data from
+different experimental and computational methods while
+preserving their relationships to physical samples and
+measurement locations. The extensible data model allows
+new data types to be introduced incrementally without
+requiring a complete redesign of the infrastructure.
+
+Beyond these technical challenges, successful adoption
+depends on usability, training, and researchers' willingness
+to contribute data. In particular, recognizing data creators
+and controlling access to unpublished results are important
+considerations for cross-project data sharing.
+User feedback and usability testing inform the ongoing
+development of MatInf.
+
+Although core RDM services are operational, further
+integration of the knowledge graph, metadata harmonisation,
+and automated data ingestion remain ongoing activities.
+
+\medskip
+\noindent\textbf{Lessons learnt:}
+The experience of CRC~1625 demonstrates the value of
+organising heterogeneous research data around shared
+scientific objects rather than imposing rigid data formats.
+The sample-centric approach facilitates the integration
+of measurements across experimental scales, while flexible
+APIs enable their reuse in computational and data-driven
+research.
+
+The project also highlights that effective data sharing
+requires attention to social and organisational factors.
+Explicit attribution of data creators, controlled access,
+and researcher-oriented interfaces complement technical
+interoperability and help establish trust in shared
+infrastructure.
+
+Finally, the joint development of MatInf across CRCs
+illustrates the opportunities of reusing and extending
+common research software. However, maintaining such
+infrastructure requires continuous technical expertise,
+user support, and adaptation to evolving scientific needs.
+Its long-term sustainability therefore depends on stable
+maintenance responsibilities and personnel arrangements
+that extend beyond individual funding periods.
 
 \subsection{Project INF --- Scientific services and data management - \href{https://gepris.dfg.de/gepris/projekt/537324246?language=en}{CRC 1629 Negation in Language and Beyond} - Frankfurt am Main, Tübingen, Göttingen}
 CRC 1629 \textit{Negation in Language and Beyond} (NegLaB) investigates negation as a grammatical and cognitive phenomenon from different empirical and theoretical perspectives. 
