@@ -430,27 +430,104 @@ This begins with the recruitment of participants, their screening and pseudonymi
 The project fostered the synergy between the Center for Information Services \& High Performance Computing (ZIH) of the TU Dresden, Dresden's University Clinic and the Faculty of Psychology, especially its Neuroimaging Center (NIC).
 It also demonstrated the need for a clear documentation and communication of the agreed procedures and the importance of strong quality assurance procedures at every step of the workflows involving human interaction.
 
-\subsection{Project Q02 --- Data Management and Training Platform for AMD Research, \href{https://gepris.dfg.de/gepris/projekt/512007073?language=en}{TRR~379 - Neuropsychobiology of Aggression: A Transdiagnostic Approach in Mental Disorders}, RWTH Aachen University, Goethe University Frankfurt, Central Institute of Mental Health, \begin{de}Forschungszentrum Jülich\end{de}, University Hospital Aachen}
+\subsection{Project Q02 --- Data Management and Training Platform
+for AMD Research,
+\href{https://gepris.dfg.de/gepris/projekt/512007073?language=en}
+{TRR~379 -- Neuropsychobiology of Aggression:
+A Transdiagnostic Approach in Mental Disorders},
+RWTH Aachen University, Goethe University Frankfurt,
+Central Institute of Mental Health, Forschungszentrum Jülich,
+University Hospital Aachen}
+\label{subsec:trr379}
 
-This project develops a decentralised FAIR-compliant data platform to support integration, harmonisation, and analysis of longitudinal, transdiagnostic datasets across participating sites in the consortium.
-Within this framework, the Q02 INF project serves as the central data management and, through software engineering, enabling solutions for data-driven research on transdiagnostic biosignatures of aggressive behaviour.
-A particular focus is placed on the use of
-\href{https://jtrack.readthedocs.io/en/latest/index.html}{JTrack}
-and
-\href{https://www.datalad.org/}{DataLad}
-for mobile data collection and distributed data management, respectively.
-In addition, the project supports the development of training materials and workflows for data handling, pre-processing, and analysis, thereby supporting early-career researchers within the consortium.
-As the technical and organisational backbone for data sharing and integration within the TRR~379, the Q02 project fosters strong collaborations between domain scientists, data stewards, and infrastructure providers.
-Beyond the consortium, the project is connected to broader RSE and RDM initiatives.
-For example, its components are in production use within the
-\href{https://www.crc1451.uni-koeln.de/}{CRC~1451}
-and
-\href{https://abcd-j.de/}{ABCD-J (Accessing Behavior for Clinical Data and Joint Usage)}
-networks.
-One particularly useful but challenging aspect has been the adoption of fully decentralised and secured data submission and management systems.
-While this approach significantly enhances data integrity and compliance with data protection regulations, it requires careful coordination and onboarding of all participating partners.
-Tools such as standardised data workflows and a shared metadata system, including a web-based metadata editor, back-end API, and dedicated metadata schema, have been more readily adopted and are now widely used across the consortium.
-A key lesson learnt is that successful implementation of such infrastructures requires not only robust technical solutions, but also continuous training, close collaboration across consortium contributors, and strong community engagement to ensure long-term adoption and impact.
+\noindent\textbf{Context and connections:}
+Established in 2024, TRR~379 investigates the neurobiological
+and psychological mechanisms underlying aggression in mental
+disorders (AMD). Its multi-institutional research generates
+heterogeneous longitudinal data requiring secure sharing,
+harmonisation, and reproducible analysis across participating
+sites.
+
+The Q02 service project provides the research data management
+(RDM) and research software engineering (RSE) infrastructure
+supporting these activities. Organised as a distributed team,
+it connects domain researchers, data stewards, and
+infrastructure providers. Its software and methodological
+approaches also draw on experiences from CRC~1451 and
+the ABCD-J research network.
+
+\medskip
+\noindent\textbf{Main activities:}
+The project develops a decentralised RDM infrastructure
+based on \href{https://www.datalad.org/}{DataLad},
+enabling version-controlled data management while
+accommodating local storage and access restrictions.
+A shared collaboration platform supports reproducible
+workflows across participating institutions.
+The \href{https://jtrack.readthedocs.io/en/latest/}
+{JTrack} platform contributes capabilities for mobile
+and longitudinal data collection.
+
+Complementing these services, Q02 develops and operates
+a shared metadata system with a web-based editor,
+programmatic interfaces, and common metadata schemas.
+This infrastructure facilitates the description and
+discovery of research data and other consortium resources.
+In 2025, the metadata system was also used to support
+the DFG's annual reporting process, reducing the need
+for separate manual information collection.
+
+Workshops, documentation, and individual consultations
+support researchers in data handling, preprocessing,
+and reproducible analysis.
+
+\medskip
+\noindent\textbf{Key challenges and adoption:}
+A central challenge is establishing secure, decentralised
+data management across institutions with differing
+technical infrastructures, research workflows, and
+data protection requirements.
+While this approach allows individual sites to retain
+control over their data, coordinating access, metadata,
+and reproducible workflows requires considerable
+technical and organisational effort.
+
+The adoption of decentralised data submission and
+management has therefore required careful coordination
+and onboarding of participating researchers.
+In contrast, shared metadata workflows, supported by
+a browser-based editor, common schemas, and programmatic
+interfaces, have been more readily adopted across the
+consortium. These contrasting experiences highlight
+the importance of adapting infrastructure to researchers'
+practical requirements and technical expertise.
+
+\medskip
+\noindent\textbf{Lessons learnt:}
+The experience of TRR~379 highlights the potential of
+decentralised RDM to support collaboration without
+requiring all participating institutions to adopt
+identical storage arrangements.
+However, technical interoperability alone does not
+ensure successful adoption; common procedures,
+clear responsibilities, and sustained support remain
+essential.
+
+The contrasting adoption experiences suggest that
+accessible interfaces and standardised metadata workflows
+can lower barriers to participation.
+The reuse of shared metadata for administrative reporting
+further illustrates how consistent information models
+can benefit both scientific collaboration and consortium
+management.
+
+Finally, the distributed organisation of Q02 demonstrates
+the importance of coordination between scientific,
+software engineering, and infrastructure expertise.
+Sustaining such services requires ongoing training,
+maintenance, and clearly assigned responsibilities
+across participating institutions.
+
 
 \subsection{Project INF --- Infrastructure, \href{https://trr391.tu-dortmund.de/}{TRR~391 - Spatio-temporal Statistics for the Transition of Energy and Transport}
 , TU Dortmund University, RU Bochum}
