@@ -288,13 +288,89 @@ In contrast, open-access paper publishing has been widely implemented and open-a
 directly supporting the scientific outreach.
 The experience in CRC~1415 underscores that technical infrastructure alone is insufficient; sustained training, community engagement, and the early embedding of RDM and RSE expertise within the CRC’s data life cycle are essential for the successful and sustainable adoption of open science practices and FAIR research activities.
 
-\subsection{Project INF --- Data Management for Reproducible Data-Driven Computational Modeling Cross-Species and Cross-Labs, \href{https://gepris.dfg.de/gepris/projekt/458705875?language=en}{CRC~1451 - Key Mechanisms of Motor Control in Health and Disease}, University of Cologne, European Neuroscience Institute Göttingen, Goethe University Frankfurt, Hebrew University of Jerusalem, University of Münster, German Center for Neurodegenerative Diseases, \begin{de}Forschungszentrum\end{de} Jülich, Max Planck Institute for Biology of Ageing, Max Planck Institute for Metabolism Research}
-This INF project operates at the interface of computational neuroscience, data management, and scientific computing, supporting the overarching goal of CRC~1451 to understand motor control across biological scales and species.
-It provides expertise, tools, services, and training for reproducibly accessing, describing, and modelling data generated across all projects,
-including the central service projects Z02(Animal Motor Circuits Core Facility) and Z03(Humanes Motor-Assesment Center).
-It is embedded in a broad network within the CRC~1451, working closely with experimental and computational projects across all domains and acting as a central hub for data handling and exchange.
-A key task is the continuous assessment of workflows, resource requirements, and data analysis practices to find differences affecting data comparability and reusability.
-\href{https://www.datalad.org/}{DataLad} is the main RDM solution adopted by the CRC to introduce structure and version control, ensure reproducibility, and support collaboration on heterogeneous data and workflows across projects with very different experimental setups and analysis methods.
+
+\subsection{Project INF --- Data Management for Reproducible
+Data-Driven Computational Modeling Cross-Species and Cross-Labs,
+\href{https://gepris.dfg.de/gepris/projekt/458705875?language=en}
+{CRC~1451 -- Key Mechanisms of Motor Control in Health and Disease},
+University of Cologne, European Neuroscience Institute Göttingen,
+Goethe University Frankfurt, Hebrew University of Jerusalem,
+University of Münster, German Center for Neurodegenerative Diseases,
+Forschungszentrum Jülich, Max Planck Institute for Biology of Ageing,
+Max Planck Institute for Metabolism Research}
+
+\noindent\textbf{Context and connections:}
+CRC~1451 investigates the mechanisms of motor control in health
+and disease across different biological scales and species.
+The INF project operates at the intersection of computational
+neuroscience, research data management (RDM), and scientific
+computing, supporting reproducible data analysis and modelling
+across the participating institutions.
+
+It collaborates with experimental and computational research
+projects, including the central facilities Z02 (Animal Motor
+Circuits Core Facility) and Z03 (Human Motor Assessment Centre).
+The diversity of experimental methods, data modalities, and
+species creates substantial requirements for data integration,
+comparability, and reuse.
+
+\medskip
+\noindent\textbf{Main activities:}
+The INF provides RDM expertise, software tools, consulting,
+and training. Its central technical approach uses
+\href{https://www.datalad.org/}{DataLad} to manage and
+version heterogeneous datasets while preserving the autonomy
+of individual research projects regarding data storage and
+sharing.
+
+DataLad Catalog and MetaLad provide mechanisms for metadata
+extraction and the discovery of distributed datasets.
+The project maintains a shared data catalogue and provides
+documentation, workshops, and individual support for
+reproducible research workflows.
+Training activities cover version control, data management,
+and computational methods relevant to neuroscience.
+
+\medskip
+\noindent\textbf{Key challenges and adoption:}
+A central challenge was accommodating the heterogeneous
+requirements of more than 20 research projects without
+imposing uniform data management workflows.
+The INF therefore adopted a decentralized approach in which
+DataLad provides a common management layer over distributed
+datasets.
+
+However, a 2023 INF report identified limited DataLad adoption
+outside the central projects. To lower the technical barriers,
+the team began developing DataLad Gooey, a graphical interface,
+and DataLad Tabby, which enables dataset descriptions through
+spreadsheet-based metadata entry.
+
+An evaluation of DataLad training activities further revealed
+differences in participants' perceived applicability of the
+material, highlighting the difficulty of transferring general
+RDM skills into heterogeneous research workflows.
+
+\medskip
+\noindent\textbf{Lessons learnt:}
+The experience of CRC~1451 suggests that decentralized RDM
+can provide a common framework for data discovery and
+reproducibility while accommodating project-specific
+requirements for storage, sharing, and analysis.
+
+However, selecting a technically suitable solution does
+not guarantee its adoption. The limited uptake of DataLad
+outside central projects highlights the importance of
+accessible interfaces and support adapted to researchers'
+existing technical skills and workflows.
+
+The experiences with training also emphasize that general
+instruction must be complemented by practical examples
+relevant to individual research contexts.
+Together, these observations suggest that sustainable
+cross-project data management requires both interoperable
+technical infrastructure and continued investment in
+researcher-oriented tools, documentation, and support.
 
 \subsection{Project INF --- FAIR collection, curation and management of multidimensional research data, \href{https://gepris.dfg.de/gepris/projekt/506711657?language=en}{CRC 1625 – Atomic-scale understanding and design of multifunctional compositionally complex solid solution surfaces}, Ruhr University Bochum}
 The CRC~1625 project started in 2024 and is dedicated to the investigation of compositionally complex solid solutions (CCSS) comprising five or more different elements mixed within a simple single-phase crystal structure.
