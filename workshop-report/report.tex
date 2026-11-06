@@ -488,24 +488,75 @@ Cognitive-Emotional Mechanisms of Symptom Change},
 TUD Dresden University of Technology}
 \label{subsec:trr393}
 
-TRR~393 is a Collaborative Research Centre focused on Affective Disorders (AD), comprising major depressive disorder and bipolar disorder. Its goal is to identify trajectories of recurrences and remissions in AD, determine cognitive-emotional mechanisms and neurobiological correlates of acute symptom changes, and probe mechanism-based interventions.
+\noindent\textbf{Context and connections:} 
+TRR~393 is a Collaborative Research Centre focused on Affective Disorders (AD),
+comprising major depressive disorder and bipolar disorder.
+Its goal is to identify trajectories of recurrences and remissions in AD,
+determine cognitive-emotional mechanisms and neurobiological correlates of
+acute symptom changes, and probe mechanism-based interventions.
 
-The INF project establishes a unified information infrastructure for TRR~393, designed to support the research of individual projects, foster cross-project collaboration, and ensure adherence to FAIR data management principles. The project pursues three key objectives:
+The INF project establishes a unified information infrastructure for TRR~393,
+designed to support the research of individual projects, foster cross-project collaboration,
+and ensure adherence to FAIR data management principles.
+The project pursues three key objectives:
 (i) providing a professional system for research data capture, storage, access, and information management;
 (ii) implementing comprehensive data quality control procedures; and
 (iii) delivering training for standardised clinical assessments across all participating sites.
 
-The infrastructure comprises centralised study management in \href{https://project-redcap.org/}{REDCap}; GDPR-compliant handling and pseudonymisation of personal data in the Participant Management System (PAMS); centralised quality control and archiving of MRI data; seamless integration of the MRI devices at UMR and UMS into the archiving system; and the import of existing datasets from BipoLife and FOR~2107. The system is developed and operated in close cooperation with all TRR~393 researchers. It evolves continuously to meet emerging project requirements, including new data types and their metadata, and is complemented by ongoing user support and training in the IT environment.
+INF builds on methods and tools established in CRC~940 and TRR~265
+to provide a centralised infrastructure while accelerating researchers' data collection workflows.
+The modules shared across CRC~940 and TRR~265, namely patient data transfer and email dispatch,
+were reused and extended in TRR~393.
 
-INF builds on methods and tools established in CRC~940 and TRR~265 to provide a centralised infrastructure while accelerating researchers' data collection workflows. The modules shared across CRC~940 and TRR~265, namely patient data transfer and email dispatch, were reused and extended in TRR~393. The appointment booking and cancellation module required the most significant adaptation. It now supports free slots, pre-determined slots, and slots shared among multiple study centres at different time points, and it is integrated with the Nextcloud calendar.
+\medskip
+\noindent\textbf{Main activities:}
+The infrastructure comprises centralised study management in \href{https://project-redcap.org/}{REDCap};
+GDPR-compliant handling and pseudonymisation of personal data in the Participant Management System (PAMS);
+centralised quality control and archiving of MRI data;
+seamless integration of the MRI devices at UMR and UMS into the archiving system;
+and the import of existing datasets from BipoLife and FOR~2107.
+The system is developed and operated in close cooperation with all TRR~393 researchers.
+It evolves continuously to meet emerging project requirements, including new data types and their metadata,
+and is complemented by ongoing user support and training in the IT environment.
 
-The main challenge in integrating FOR~2107 and BipoLife data was adapting the existing automated workflow, which was originally designed to register new participants. Because some patients may already be pre-registered, such cases require clear communication with the relevant study centre and are handled individually. Two lessons learned may benefit other consortia reusing infrastructure or data from earlier projects. First, the infrastructure should be kept simple, functional, and flexible, so that it can be reused with minimal modification; starting simple and adding complexity only when needed supports clean, extensible, and maintainable code. Second, hardware capabilities evolve over time, just as data does. Computational capacity, storage, and network performance have increased significantly, which reduces the need for elaborate system designs. This does not mean that vertical scaling is always the answer; rather, understanding where the real limits lie helps avoid premature optimisation and over-engineering, and allows simpler systems to grow with evolving needs.
+The appointment booking and cancellation module required the most significant adaptation.
+It now supports free slots, pre-determined slots, and slots shared among multiple study
+centres at different time points, and it is integrated with the Nextcloud calendar.
 
-Successful adoption of the infrastructure depends on continuous communication with users and on proper training, which gives users the confidence to operate the system. This is especially important because multiple factors can trigger automated processes. Users are therefore shown how to correct a trigger caused by incorrect input, which occurs most often in the early stages of use.
+\medskip
+\noindent\textbf{Key challenges and adoption:}
+The main challenge in integrating FOR~2107 and BipoLife data was adapting the existing automated workflow,
+which was originally designed to register new participants. Because some patients may already be pre-registered,
+such cases require clear communication with the relevant study centre and are handled individually.
 
-INF is responsible for the infrastructure that supports the projects. Once a project workflow or automation module has been established, responsibility is gradually transferred to the users, who take a leading role in training others within their own subprojects. The simplicity of the system is a prerequisite for this transition, as it enables proper understanding. Provided that the SOPs are followed, the system, particularly its automation and email template components, operates without significant problems. Maintenance consists mainly of keeping the infrastructure up to date with the latest features and system updates.
+Successful adoption of the infrastructure depends on continuous communication with users and on proper training,
+which gives users the confidence to operate the system. This is especially important because multiple
+factors can trigger automated processes. Users are therefore shown how to correct a trigger caused by incorrect input,
+which occurs most often in the early stages of use.
 
-Long-term maintenance is secured through the funding of the parent project to which the infrastructure belongs. Together with ZIH's commitment to sustainable long-term data archiving, this ensures that the scientific output of TRR~393 remains accessible, secure, and reusable for years to come. Securing funding nevertheless remains a general challenge for projects involving data management.
+INF is responsible for the infrastructure that supports the projects.
+Once a project workflow or automation module has been established, responsibility is gradually transferred to the users,
+who take a leading role in training others within their own subprojects. The simplicity of the system is a prerequisite for this transition,
+as it enables proper understanding. Provided that the SOPs are followed, the system,
+particularly its automation and email template components, operates without significant problems.
+Maintenance consists mainly of keeping the infrastructure up to date with the latest features and system updates.
+
+Long-term maintenance is secured through the funding of the parent project to which the infrastructure belongs.
+Together with ZIH's commitment to sustainable long-term data archiving, this ensures that the scientific output
+of TRR~393 remains accessible, secure, and reusable for years to come.
+Securing funding nevertheless remains a general challenge for projects involving data management.
+
+\medskip
+\noindent\textbf{Lessons learnt:}
+Two lessons may benefit other consortia reusing infrastructure or data from earlier projects.
+First, the infrastructure should be kept simple, functional, and flexible, so that it can be reused with minimal modification;
+starting simple and adding complexity only when needed supports clean, extensible, and maintainable code.
+Second, hardware capabilities evolve over time, just as data does.
+Computational capacity, storage, and network performance have increased significantly,
+which reduces the need for elaborate system designs. This does not mean that vertical scaling is always the answer;
+rather, understanding where the real limits lie helps avoid premature optimisation and over-engineering,
+and allows simpler systems to grow with evolving needs.
+
 
 \subsection{Project INF --- Information infrastructure project, \href{https://gepris.dfg.de/gepris/projekt/531327426?language=en}{TRR~408 - AgiMo: Data-driven agile planning for responsible mobility}, TUD Dresden University of Technology}
 \label{subsec:trr408}
