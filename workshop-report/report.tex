@@ -515,7 +515,7 @@ The INF project develops the shared virtual research
 environment (VRE) supporting interdisciplinary
 collaboration, research data management (RDM), and
 computational workflows. It works closely with the
-scientific projects, particularly C03, which jointly
+scientific projects, particularly C3, which jointly
 develops the Digital Twin with INF.
 
 \medskip
@@ -532,7 +532,7 @@ management, workflow automation, and access to
 high-performance computing resources.
 It will also provide the environment for the
 AgiMo Digital Twin, which is being developed
-together with C03 to integrate mobility data
+together with C3 to integrate mobility data
 and simulation models, including those based
 on the MATSim framework.
 
@@ -551,10 +551,20 @@ behavioural data, geospatial information, and
 transport simulations requires interoperable
 interfaces and coordinated data management.
 
-The initial requirements assessment provides a
+The initial requirements assessment provided a
 basis for identifying common needs while
 preserving the flexibility required by individual
-projects. A further challenge is coordinating
+projects.
+A common requirement is a central place
+to discover data, which does not necessarily store
+all data itself but may also keep references to datasets
+held elsewhere. It is also important to identify
+which projects provide and which consume individual
+datasets, so that dependencies between projects
+and data-sharing requirements (public vs. internal)
+become visible.
+
+A further challenge is coordinating
 the technical development of the VRE with the
 scientific development of the Digital Twin.
 As the infrastructure remains under development,
@@ -566,11 +576,21 @@ evaluated.
 \noindent\textbf{Lessons learnt:}
 The initial experience of TRR~408 highlights
 the importance of systematically identifying
-researchers' requirements before establishing
+researchers' requirements, including data types,
+sizes, workflows, tools, methodology, as well as,
+established data and knowledge management, before establishing
 shared infrastructure. In interdisciplinary
 projects, common technical solutions must
 accommodate different scientific methods and
 computational requirements.
+
+A further key insight was the importance of
+providing information about central services and
+organisational procedures, and of helping
+researchers identify experienced colleagues for
+a given challenge. Consequently, the VRE first
+focused on creating a wiki-style documentation
+system and a competency map.
 
 The close collaboration between INF and the
 scientific projects also illustrates the
