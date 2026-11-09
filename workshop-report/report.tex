@@ -10,6 +10,17 @@
 \usepackage{accsupp}
 \usepackage{todonotes}
 \usepackage{lineno}
+
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+
+% Left-aligned columns with automatic line wrapping
+\newcolumntype{P}[1]{%
+  >{\raggedright\arraybackslash}p{#1}}
+
+
 \linenumbers
 
 \usepackage[ngerman,british]{babel}
@@ -216,6 +227,181 @@ and we try to find out which answers the current generation of INF projects obta
 \label{sec:inf-in-germany}
 In this section, we describe the various INF projects, how they see themselves and which duties they perform.
 In this manuscript, we exclusively refer to these projects as INF projects, but within the respective CRCs, also other acronyms are used.
+
+\pagebreak
+
+\begingroup
+\small
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.12}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+
+\begin{longtable}{@{}
+  P{.12\linewidth}
+  P{.19\linewidth}
+  P{.24\linewidth}
+  P{.40\linewidth}
+  @{}}
+
+\caption{Overview of the participating research
+infrastructure projects, their scientific contexts,
+organisational arrangements, and principal activities.}
+\label{tab:inf-overview}\\
+
+\toprule
+\textbf{Project} &
+\textbf{Scientific domain} &
+\textbf{Organisation} &
+\textbf{Principal activities} \\
+\midrule
+\endfirsthead
+
+\multicolumn{4}{@{}l}{%
+  \tablename~\thetable\ (continued)}\\
+\toprule
+\textbf{Project} &
+\textbf{Scientific domain} &
+\textbf{Organisation} &
+\textbf{Principal activities} \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{4}{r@{}}{Continued on next page}\\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+CRC~1170 &
+Theoretical physics &
+Single-person INF &
+Scientific RSE, HPC support, GitLab, training
+\\
+
+TRR~195 &
+Mathematics, computer algebra &
+Distributed RSE; no dedicated INF &
+OSCAR development, testing, interoperability,
+training
+\\
+
+CRC~1313 &
+Porous media &
+INF from second funding period &
+Repositories, ELNs, reproducible software,
+training
+\\
+
+CRC~1340 &
+Medical imaging &
+INF from second funding period &
+Clinical data integration, collaboration
+platform, hybrid RDM
+\\
+
+CRC~1415 &
+Materials chemistry &
+INF from second funding period &
+NOMAD Oasis, ELNs, data pipelines,
+publication
+\\
+
+CRC~1451 &
+Neuroscience &
+Central research data hub &
+DataLad, metadata catalogue, data management
+training
+\\
+
+CRC~1625 &
+Materials science &
+Shared MatInf development &
+Materials data integration, APIs,
+knowledge graphs
+\\
+
+CRC~1629 &
+Linguistics &
+Interdisciplinary INF &
+Experimental infrastructure, metadata,
+RDM support
+\\
+
+CRC~1638 &
+Cell biology &
+INF and data-steward network &
+ELN templates, data migration,
+researcher support
+\\
+
+CRC~1646 &
+Linguistics, psychology &
+Interdisciplinary INF &
+Consent-form software, RDM,
+methodological consulting
+\\
+
+TRR~247 &
+Catalysis &
+Dedicated INF &
+MatInf, infrastructure recovery,
+data publication, training
+\\
+
+TRR~265 &
+Addiction research &
+Cross-unit clinical infrastructure &
+Participant management, pseudonymisation,
+study and MRI data
+\\
+
+TRR~379 &
+Clinical neuroscience &
+Distributed Q02 service project &
+DataLad, JTrack, shared metadata,
+training
+\\
+
+TRR~391 &
+Spatio-temporal statistics &
+Cross-institutional INF &
+Needs assessment, repositories,
+reproducible software
+\\
+
+TRR~393 &
+Affective disorders &
+Clinical research INF &
+Multi-site quality control, cohort
+integration, MRI data
+\\
+
+TRR~408 &
+Transport and mobility &
+INF collaborating with Digital Twin project &
+Virtual research environment,
+workflow integration
+\\
+
+TRR~410 &
+Peatland ecology &
+Distributed Z3 service project &
+Sensor acquisition, time-series data,
+metadata, CKAN
+\\
+
+TRR~418 &
+Circadian medicine &
+Interdisciplinary INF &
+Longitudinal data integration,
+privacy, collaboration platform
+\\
+
+\end{longtable}
+\endgroup
+
 
 \subsection{Project Z03 --- Sustainable code development and optimisation on modern supercomputing architectures, \href{https://gepris.dfg.de/gepris/projekt/258499086?language=en}{CRC~1170 - Topological and Correlated Electronics at Surfaces and Interfaces, ``ToCoTronics''}, University of Würzburg}
 Established in 2015 as a support unit for projects of the CRC specialising in theoretical physics the focus was on numerical methods for Quantum Monte Carlo methods, functional renormalisation group techniques and non-equilibrium Green's function techniques.
