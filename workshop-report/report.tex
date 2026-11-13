@@ -625,6 +625,209 @@ CIDS integrates expertise across fields such as High-Performance Computing, data
 Through its innovative approach and strong interdisciplinary connections, CIDS, and particularly the ZIH-VDR, contribute significantly
 to TU Dresden’s reputation in research excellence and digital transformation by addressing the challenges of the data-driven era of science.
 
+\subsection{Cross-cutting Synthesis of the Experiences of the INF Projects}
+\label{sec:cross-project-synthesis}
+
+The contributions illustrate the diversity of RDM and RSE  activities within CRCs.
+Despite substantial differences in scientific domains,
+technical requirements, and organisational structures,
+several recurring challenges emerge. These concern the
+adoption of common research practices, the integration
+of heterogeneous data and software, the sustainability
+of infrastructure and expertise, and the increasingly
+close relationship between infrastructure development
+and scientific research.
+
+The projects also differ in maturity. While established
+INF projects can report operational experiences and
+changes in their approaches, recently initiated projects
+primarily contribute requirements analyses and early
+design decisions. The following synthesis therefore
+distinguishes reported experiences from anticipated
+challenges and does not attempt to rank individual
+projects or infrastructure solutions.
+
+\subsubsection{Researcher engagement and adoption}
+
+A recurring observation is that providing technical
+infrastructure does not automatically lead to its
+adoption by researchers. Introducing common data
+management practices frequently requires changes to
+established scientific workflows, which may be regarded
+as additional effort without immediately apparent
+benefits.
+
+Experiences with electronic laboratory notebooks (ELNs)
+illustrate this challenge. CRC~1313 and CRC~1415 report
+difficulties integrating ELNs into existing experimental
+workflows, despite progress in other areas of RDM.
+CRC~1638, in contrast, reports increasing uptake in
+connection with discipline-specific templates, migration
+tools, and an embedded data-steward network. Although
+these observations do not establish a causal relationship,
+they suggest that reducing the effort required to adopt
+new tools and providing support close to researchers'
+daily work may be particularly important.
+Similar experiences arise in decentralised data
+management. CRC~1451 reported difficulties extending
+DataLad adoption beyond central projects, motivating
+the development of more accessible user interfaces.
+TRR~379 likewise reports that shared metadata tools,
+including a web-based editor, were more readily adopted
+than decentralised data submission workflows.
+
+Together, these cases suggest that adoption depends
+not only on technical functionality, but also on
+usability, compatibility with established practices,
+researcher participation, and continuous support.
+Training can facilitate adoption, but its effectiveness
+ultimately depends on whether the proposed practices
+become part of everyday research.
+
+\subsubsection{Heterogeneity and interoperability}
+
+The integration of heterogeneous research data is
+another challenge shared by many contributions.
+However, the sources of heterogeneity differ
+substantially between scientific disciplines and
+cannot always be addressed through uniform technical
+solutions.
+
+CRC~1340 provides a particularly instructive example.
+The initial objective of establishing a unified
+research data management platform proved difficult
+to reconcile with the diverse requirements of its
+projects, leading to a more flexible, hybrid approach.
+CRC~1451 and TRR~379 pursue decentralised architectures
+that preserve local control over research data while
+providing shared mechanisms for metadata management,
+discovery, and reproducible workflows.
+Other projects demonstrate that interoperability also
+depends on the scientific meaning of data and metadata.
+CRC~1625 develops sample-centric representations for
+heterogeneous materials research, while TRR~410
+integrates continuous environmental measurements with
+sensor metadata and quality-controlled data products.
+CRC~1646 addresses the relationship between participant
+consent and permissible data use. TRR~418 highlights
+the additional requirements imposed by the temporal
+structure of circadian measurements.
+
+These approaches illustrate that interoperability
+does not necessarily require centralised storage,
+identical software, or uniform research workflows.
+Instead, common interfaces, metadata conventions,
+and flexible domain-specific representations can
+provide a foundation for collaboration while
+accommodating disciplinary differences.
+
+\subsubsection{Organisation, staffing, and sustainability}
+
+The contributions reveal substantial differences in
+how infrastructure responsibilities are organised.
+These range from dedicated INF projects with very
+limited staffing to distributed software development,
+embedded data-steward networks, and services jointly
+developed across research consortia.
+
+Several projects demonstrate opportunities for
+preserving infrastructure investments beyond their
+original context. TRR~265 and TRR~393 build on
+systems and experience established in earlier CRCs.
+TRR~247 and CRC~1625 jointly develop and use MatInf,
+illustrating the potential of shared software
+infrastructure across related research programmes.
+TRR~195 represents a different arrangement, with
+RSE responsibilities embedded in scientific software
+projects rather than concentrated in a dedicated INF.
+At the same time, sustainable operation requires more
+than reusable software. The recovery of research data
+following the 2022 cyberattack affecting TRR~247
+demonstrates the importance of independent backups,
+recoverability, and clearly assigned operational
+responsibilities. The subsequent development of
+resilient infrastructure illustrates how an actual
+failure can lead to lasting changes in infrastructure
+design and operation.
+
+Personnel sustainability presents a related but
+distinct challenge. CRC~1170 demonstrates how
+specialised RSE expertise can support a research
+centre over multiple funding periods without
+necessarily offering a corresponding long-term
+academic career perspective. Other projects depend
+on close cooperation between INF personnel,
+institutional IT services, and scientific groups,
+raising questions about responsibility for maintenance
+and continuity after project funding ends.
+
+Taken together, these experiences indicate that
+technical sustainability and personnel sustainability
+must be considered jointly. Long-lived services
+depend on both reliable infrastructure and the
+continued availability, recognition, and retention
+of the specialists who develop and maintain it.
+
+\subsubsection{RSE and RDM as integral scientific activities}
+
+Finally, several contributions demonstrate that the
+role of INF projects extends beyond conventional
+data storage, administration, and support.
+
+CRC~1170 combines expertise in numerical methods,
+scientific software development, and high-performance
+computing to support research in theoretical physics.
+TRR~195 embeds software engineering and infrastructure
+development directly in the creation of the OSCAR
+computer algebra system. CRC~1625 develops data
+models and interfaces that enable scientific
+investigations involving machine learning and
+knowledge graphs.
+Other projects are developing similarly close
+connections between research infrastructure and
+scientific applications. For example, TRR~408
+coordinates the development of a virtual research
+environment with work on a mobility Digital Twin,
+while TRR~391 addresses the joint reproducibility
+of scientific data and statistical software.
+
+These examples illustrate a spectrum of RSE and
+RDM responsibilities, ranging from the provision of
+generic services to the development of domain-specific
+research tools and direct participation in scientific
+workflows. The latter requires close collaboration
+between infrastructure specialists and domain
+scientists, together with recognition of software
+and infrastructure development as substantive
+research-enabling contributions.
+
+\subsubsection{Conclusions and emerging challenges}
+
+Across the projects, three interconnected conditions
+emerge as important for sustainable research
+infrastructure: alignment with scientific requirements,
+integration into researchers' everyday workflows, and
+continuity of technical and organisational expertise.
+
+No single infrastructure architecture or support model
+appears suitable for all research environments.
+Instead, the contributions demonstrate the importance
+of adapting shared services to disciplinary needs
+while maintaining interoperability and opportunities
+for reuse.
+
+The increasing integration of RSE and RDM into
+scientific research also raises questions concerning
+the allocation of responsibilities, recognition of
+specialist contributions, and viable long-term
+employment structures.
+% These observations provide a basis for future
+% comparative investigation. More systematic evidence
+% of researcher adoption, staffing arrangements,
+% maintenance effort, and long-term outcomes would be
+% necessary to determine which organisational and
+% technical approaches are most effective under
+% different research conditions.
 \subsection{Surveying the INF projects}
 To corroborate this overview of INF projects we conducted an informal survey during the workshop and in the weeks after.
 In total, we received around 35 individual answers to the questions that we summarise here.
