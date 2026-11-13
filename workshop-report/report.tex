@@ -348,21 +348,112 @@ Having a research background can be an asset here, helping to frame RDM in terms
 Investing in networks --- local data stewards, a university-wide ELN community, international practitioner groups --- substantially extends what a small project team can achieve.
 Finally, this publication itself points to a broader opportunity: INF projects across CRCs have much to learn from one another, and a more structured exchange between them would benefit the whole community.
 
-\subsection{Project INF – User-Oriented Research Infrastructure Assisting Linguistic Data Collection and (Re-)Use, \href{https://purl.org/crc1646}{SFB1646 – Linguistic Creativity in Communication}, Universität Bielefeld}
+\subsection{Project INF --- User-Oriented Research
+Infrastructure Assisting Linguistic Data Collection and
+(Re-)Use,
+\href{https://purl.org/crc1646}
+{CRC~1646 -- Linguistic Creativity in Communication},
+Bielefeld University}
+\label{subsec:crc1646}
 
-CRC~1646 is an interdisciplinary collaboration between linguistics, psychology, philosophy and computational science. It investigates the core properties of linguistic creativity, develops empirical measures, and analyses underlying linguistic, cognitive, and social mechanisms. %The research is structured in three phases: the first formulates initial hypotheses, the second examines principles and their interactions in creative language use, and the third integrates the findings into a comprehensive theory of linguistic creativity.
-The CRC-projects not only require handling large and diverse datasets (\eg, video, audio, picture, text, fMRI) but also involve the collection of personal data, introducing an additional layer of sensitivity to data management. Some projects include experimental studies that gather demographic information, video recordings, or medical history data of their participants, necessitating carefully designed consent procedures. Researchers must ensure the legal \cite{GDPR2016} validity of consent forms and secure management of sensitive data, while enabling FAIR sharing \cite{WilkinsonDumontier2016}.
+\noindent\textbf{Context and connections:}
+Established in 2024, CRC~1646 investigates linguistic
+creativity through interdisciplinary research combining
+linguistics, psychology, philosophy, and computational
+science. Its projects generate heterogeneous data,
+including text, audio, video, images, and fMRI recordings.
+Since many studies involve human participants, the
+collection, management, and reuse of potentially sensitive
+personal data require particular attention to legal and
+ethical requirements \cite{GDPR2016}.
 
-To address these challenges, the INF project aims to establish a dedicated infrastructure comprising two main components \cite{JorschickSchrader2024}.
-First, a \textit{wizard} platform that supports researchers during the data collection phase by automatically generating customised, legally compliant consent forms tailored to specific project requirements.
-Second, a d\emph{ata management} platform that enables the integration and handling of collected (meta)data. In the platform, data will be systematically linked to each participant's consent, allowing researchers to clearly determine the scope and limitations of data use. In the first phase, INF focuses on three main tasks: RSE for the development of the wizard, providing RDM support, and offering methods and statistics support.
+The INF project combines expertise in linguistics,
+computer science, and law to support research data
+management (RDM), scientific software development, and
+methodological consulting. It aims to facilitate the
+responsible reuse of linguistic data while accommodating
+the diverse requirements of the CRC's research projects
+\cite{JorschickSchrader2024}.
 
-\textbf{I.} The wizard is being developed as a dynamic, modular system, grounded in a careful analysis of domain-specific requirements and designed for future adoption by other disciplines \cite{StrathmannJoppek2026}.
-The infrastructure is based on ontological data models, enabling different layers and components of the platform to automatically adapt to new values while maintaining consistency and integration.
-The considered model enhances the next phase by improving project collaboration efficiency, and aligning with strategies that tailor data management to the specific needs of consented data \cite{Mohammadietal2026}. %, thereby facilitating effective collaboration and reducing the time required for data management tasks.
-\textbf{II.} Given the large volume and heterogeneity of data within the CRC, we provide a range of RDM-related workshops, including training on GitLab, tidy and FAIR data practices. These activities are particularly aimed at preparing early-career researchers for data management responsibilities. In addition, we offer comprehensive \href{https://purl.org/crc1646/INF/guidelines}{guidelines} and a \href{https://purl.org/crc1646/INF/FAQ}{FAQ section}, enabling members to access relevant information as needed. 
-%In accordance with university policies, INF maintains close collaboration with the \href{https://www.uni-bielefeld.de/ub/digital/forschungsdaten/kompetenzzentrum/}{Competence Center of Research Data} and \href{https://www.uni-bielefeld.de/einrichtungen/bits/ueber-uns/index.xml}{Bielefeld IT Service (BITS)}. 
-\textbf{III.} Finally, INF provides training through workshops, hands-on sessions and consulting in statistics, programming and annotation tools to support researchers in their technical work, in addition guidance on the legal aspects of consent forms are provided, highlighting key requirements and best practices.
+\medskip
+\noindent\textbf{Main activities:}
+The central software development effort is RUDI
+(Research-centered User-oriented Data Infrastructure),
+a modular framework comprising two principal components.
+The first is a consent-form wizard that generates
+study-specific participant information and consent
+documents from structured research requirements.
+A first implementation uses ontology-based models to
+represent legal, linguistic, and technical constraints
+and support dynamically adaptable consent forms
+\cite{StrathmannJoppek2026}.
+
+The second, longer-term component is a data management
+platform intended to associate collected data and
+metadata with participant-specific consent information.
+This will support researchers in determining permissible
+data access, sharing, and reuse \cite{Mohammadietal2026}.
+
+Alongside infrastructure development, the INF provides
+RDM guidance, workshops, and individual consulting on
+statistics, programming, experimental methods, and
+annotation tools. Publicly available guidelines and
+FAQs cover practical topics such as data organisation,
+version control, pseudonymisation, and experimental
+research workflows.
+
+\medskip
+\noindent\textbf{Key challenges and adoption:}
+A central challenge is translating heterogeneous
+research procedures and complex legal requirements
+into a common, machine-readable representation.
+Consent requirements depend on the collected data,
+participant populations, experimental procedures,
+and intended forms of data reuse. The infrastructure
+must therefore balance standardisation with sufficient
+flexibility to accommodate individual studies.
+
+Addressing these requirements calls for close
+coordination between legal, linguistic, and software
+engineering expertise. The modular, ontology-based
+approach provides a basis for representing these
+dependencies while allowing the infrastructure to
+evolve with changing research requirements.
+
+A further challenge is integrating these tools into
+researchers' existing workflows without introducing
+unnecessary administrative burdens. The first wizard
+implementation provides a basis for evaluating this
+approach, while broader adoption and integration with
+the planned data management platform remain to be
+established.
+
+\medskip
+\noindent\textbf{Lessons learnt:}
+The development of RUDI illustrates the importance
+of considering legal and ethical requirements from
+the beginning of the research data lifecycle rather
+than treating them as separate administrative tasks.
+Representing these requirements explicitly within
+software infrastructure offers opportunities to
+support consistent documentation and responsible
+data reuse.
+
+The interdisciplinary approach also highlights the
+value of integrating domain-specific, legal, and
+technical expertise when developing research software
+for sensitive and heterogeneous data. Modular
+representations can accommodate differences between
+studies while providing common foundations for
+infrastructure development.
+
+Finally, the project suggests that reusable technical
+solutions must be complemented by researcher-oriented
+guidance and methodological support. Their long-term
+value will depend on practical adoption, continued
+maintenance, and the ability to accommodate evolving
+scientific and legal requirements.
+
 
 \subsection{Project INF --- Research Data Management and Research Software Engineering, \href{https://gepris.dfg.de/gepris/projekt/516238647?language=en}{CRC 1667 ATLAS -- Advancing Technologies of Very Low-Altitude Satellites}, Stuttgart}
 The interdisciplinary research of the CRC 1667 ATLAS spans the fields of engineering, chemistry, and physics, addressing fundamental scientific and engineering challenges associated with accessing and operating in Very Low Earth Orbit.
