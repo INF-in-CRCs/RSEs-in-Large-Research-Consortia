@@ -296,104 +296,94 @@ It is embedded in a broad network within the CRC~1451, working closely with expe
 A key task is the continuous assessment of workflows, resource requirements, and data analysis practices to find differences affecting data comparability and reusability.
 \href{https://www.datalad.org/}{DataLad} is the main RDM solution adopted by the CRC to introduce structure and version control, ensure reproducibility, and support collaboration on heterogeneous data and workflows across projects with very different experimental setups and analysis methods.
 
+\pagebreak
 
-\subsection{Project INF --- FAIR Collection, Curation and
-Management of Multidimensional Research Data,
-\href{https://gepris.dfg.de/gepris/projekt/506711657?language=en}
-{CRC~1625 -- Atomic-scale Understanding and Design of
-Multifunctional Compositionally Complex Solid Solution
-Surfaces}, Ruhr University Bochum}
+\subsection{Project INF --- FAIR Collection, Curation and Management of Multidimensional Research Data,
+\href{https://www.ruhr-uni-bochum.de/crc1625/}
+{CRC~1625 -- Atomic-scale Understanding and Design of Multifunctional Compositionally Complex Solid Solution Surfaces}, Ruhr University Bochum}
 \label{subsec:crc1625}
-
 \noindent\textbf{Context and connections:}
-Established in 2024, CRC~1625 investigates compositionally
-complex solid solutions (CCSS) and their surface atom
-arrangements (SAA), combining experimental characterisation,
-simulation, and data-driven materials research.
-The INF project provides the shared research data management
-(RDM) infrastructure needed to integrate these heterogeneous
-data across different experimental scales and research groups.
-
-Its central platform is the open-source
-\href{https://matinf.pro/}{MatInf} system, developed jointly
-with the INF project of TRR~247. Within CRC~1625, the INF
-also serves as a direct data provider for A05 (materials
-informatics and machine learning) and A06 (knowledge graphs),
-closely connecting infrastructure development with the
-CRC's scientific objectives.
+Established in 2024, CRC~1625 investigates the
+atomic-scale properties of compositionally complex
+solid solution surfaces, combining materials synthesis,
+characterisation, electrochemistry, simulation, and
+data-driven research.
+The INF project has been part of the CRC from its
+beginning and is staffed with one full-time equivalent position.
+It develops and operates a central research data management system (RDMS) based on
+\href{https://matinf.pro/}{MatInf}, sharing software and hardware infrastructure with \hyperref[subsec:trr247]{TRR~247}.
+Its primary objective is to integrate heterogeneous
+research data across projects and enable their
+joint analysis and subsequent publication.
 
 \medskip
 \noindent\textbf{Main activities:}
-The INF extends MatInf with project-specific data types,
-metadata structures, and interfaces for validation,
-extraction, visualisation, and analysis \cite{Dudarev2026}.
-Its sample-centric data model links measurements from
-different characterisation techniques to physical samples
-and their spatial locations, supporting data provenance
-and cross-project integration.
-
-REST APIs and read-only database views enable controlled
-programmatic access to research data. These interfaces
-support data-driven workflows in A05, while A06 develops
-an ontology-based knowledge graph for integrating and
-querying relationships between research objects
-\cite{Mohamed2026}.
-
-As of April 2026, the system was used by 73 researchers,
-including 50 data contributors, and contained approximately
-50,000 research objects \cite{Mohamed2026}.
-Regular workshops and hands-on sessions complement the
-infrastructure. Together with the Software Engineering
-Chair at Ruhr University Bochum, the INF also contributes
-to an RDM course in which computer science students
-work with MatInf's APIs and assess its FAIR compliance.
+The INF provides an information space for
+research data from all CRC projects. Its sample-centric
+data model connects materials libraries, individual
+samples, their transfer between research groups,
+and the measurements performed on them.
+Hence, the surface composition of a thin film
+measured in one project can be linked to its catalytic
+activity for the hydrogen evolution reaction
+measured in another. This enables the creation of
+integrated composition--property datasets for
+subsequent analysis and publication.
+The system supports the development of additional
+data types and services for importing experimental
+data. Archival snapshots allow integrated datasets
+to be prepared for publication. At the time of
+reporting, MatInf contained approximately 77,000
+research objects from 90 users, representing
+160~GB of data.
 
 \medskip
 \noindent\textbf{Key challenges and adoption:}
-A central challenge is integrating heterogeneous data from
-different experimental and computational methods while
-preserving their relationships to physical samples and
-measurement locations. The extensible data model allows
-new data types to be introduced incrementally without
-requiring a complete redesign of the infrastructure.
-
-Beyond these technical challenges, successful adoption
-depends on usability, training, and researchers' willingness
-to contribute data. In particular, recognizing data creators
-and controlling access to unpublished results are important
-considerations for cross-project data sharing.
-User feedback and usability testing inform the ongoing
-development of MatInf.
-
-Although core RDM services are operational, further
-integration of the knowledge graph, metadata harmonisation,
-and automated data ingestion remain ongoing activities.
+A major challenge is the heterogeneity of experimental
+data and existing data management practices. Even
+linear sweep voltammetry measurements produce six
+different file formats across the potentiostats
+used within the CRC. Integrating these measurements
+requires understanding and processing the
+instrument-specific data representations.
+Research groups also differ considerably in their
+RDM practices, ranging from network-drive storage
+to locally operated data management systems.
+To establish a common information space, the CRC
+requires its research data to be managed in the
+central RDMS.
+Introducing these workflows requires project-specific
+support. While general workshops cover common RDM
+practices, individual meetings with project
+representatives are used to develop concise data
+management plans describing data types, sample
+relationships, and research workflows. These plans
+form the basis for jointly defining implementation
+tasks, such as extending the data model or developing
+new data import services.
 
 \medskip
 \noindent\textbf{Lessons learnt:}
-The experience of CRC~1625 demonstrates the value of
-organising heterogeneous research data around shared
-scientific objects rather than imposing rigid data formats.
-The sample-centric approach facilitates the integration
-of measurements across experimental scales, while flexible
-APIs enable their reuse in computational and data-driven
-research.
+The experience of CRC~1625 demonstrates that
+publishing individual datasets is insufficient
+when scientific questions require measurements
+from different groups to be combined. Sample
+tracking and consistent data integration must
+be established during research to enable
+meaningful cross-project analysis.
+The diversity of experimental methods further
+shows that general RDM training must be
+complemented by individual engagement with
+research groups. Project-specific data management
+plans provide a practical means of translating
+scientific requirements into concrete software
+development and integration tasks.
+Finally, sharing infrastructure with \hyperref[subsec:trr247]{TRR~247}.
+illustrates opportunities for reusing established
+RDM systems across research consortia, while
+requiring continued coordination of operations,
+development, and maintenance.
 
-The project also highlights that effective data sharing
-requires attention to social and organisational factors.
-Explicit attribution of data creators, controlled access,
-and researcher-oriented interfaces complement technical
-interoperability and help establish trust in shared
-infrastructure.
-
-Finally, the joint development of MatInf across CRCs
-illustrates the opportunities of reusing and extending
-common research software. However, maintaining such
-infrastructure requires continuous technical expertise,
-user support, and adaptation to evolving scientific needs.
-Its long-term sustainability therefore depends on stable
-maintenance responsibilities and personnel arrangements
-that extend beyond individual funding periods.
 
 \subsection{Project INF --- Scientific services and data management - \href{https://gepris.dfg.de/gepris/projekt/537324246?language=en}{CRC 1629 Negation in Language and Beyond} - Frankfurt am Main, Tübingen, Göttingen}
 CRC 1629 \textit{Negation in Language and Beyond} (NegLaB) investigates negation as a grammatical and cognitive phenomenon from different empirical and theoretical perspectives. 
@@ -494,6 +484,7 @@ specific programming workflows), and combining theoretical mathematics with prac
 extension of products within the OSCAR universe.
 
 \subsection{Project INF --- Research Data Management and AI-Driven Knowledge Discovery, \href {https://gepris.dfg.de/gepris/projekt/388390466?language=en}{TRR 247 – Heterogeneous Oxidation Catalysis in the Liquid Phase}, Ruhr University Bochum, University of Duisburg-Essen}
+\label{subsec:trr247}
 Started in mid-2018, TRR~247 enables the rational design of new, abundant, and superior mixed metal oxide catalysts  for liquid phase selective oxidation, contributing to sustainable chemical production in a post-fossil era.
 The INF project joined in Funding Period 2 (late 2022), a delayed start given the challenges of handling heterogeneous data in modern materials science.
 However, in autumn 2022, a successful cyber attack on the University of Duisburg-Essen rendered most systems – including the RDMS used within the TRR – irrecoverably lost.
@@ -533,8 +524,7 @@ disorders (AMD). Its multi-institutional research generates
 heterogeneous longitudinal data requiring secure sharing,
 harmonisation, and reproducible analysis across participating
 sites.
-The Q02 service project provides the research data management
-(RDM) and research software engineering (RSE) infrastructure
+The Q02 service project provides the RDM and RSE infrastructure
 supporting these activities. Organised as a distributed team,
 it connects domain researchers, data stewards, and
 infrastructure providers. Its software and methodological
