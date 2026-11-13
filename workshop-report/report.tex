@@ -218,21 +218,94 @@ In this section, we describe the various INF projects, how they see themselves a
 In this manuscript, we exclusively refer to these projects as INF projects, but within the respective CRCs, also other acronyms are used.
 
 \subsection{Project Z03 --- Sustainable code development and optimisation on modern supercomputing architectures, \href{https://gepris.dfg.de/gepris/projekt/258499086?language=en}{CRC~1170 - Topological and Correlated Electronics at Surfaces and Interfaces, ``ToCoTronics''}, University of Würzburg}
-Established in 2015 as a support unit for projects of the CRC specialising in theoretical physics the focus was on numerical methods for Quantum Monte Carlo methods, functional renormalisation group techniques and non-equilibrium Green's function techniques.
-These methods are usually used on Germany's High Performance Computing (HPC) systems. Therefore the tight integration between software development, deep knowledge about the methods used in the CRCs science and knowledge about the targeted platforms became paramount to this INF project staffed by one person.
-To facilitate the spread of knowledge, regular teaching opportunities were organised based on the materials of \href{https://carpentries.org/}{the Carpentries} in collaboration with the local biology department.
-In addition to its primary responsibilities, the project was tasked from the outset with maintaining the physics department's local IT infrastructure, including storage systems, desktop computers, and an HPC system.
-This integration of maintaining the IT infrastructure while at the same time focusing on sustainable development
-facilitated the roll-out of a local gitlab instance for the entire department which has grown by 2026 to $\approx 1000$ users from all
-over the world. Networking opportunities were used by participating in the RSE movement, which included the formation of the \href{https://de-rse.org/de/index.html}{de-RSE} society in 2018.
-This broad network enabled the project to write the data management strategy of the \href{https://www.ctdqmat.de/}{EXC~2147} which was successfully reviewed in 2019. This strategy was aligned with the FAIR (Findable, Accessible, Interoperable, and Reusable data) principles \cite{WilkinsonDumontier2016}.
-The continued usefulness of this project was acknowledged by the DFG by granting a second funding round of the CRC~1170 in 2019.
-2020 was used for the formation of a local chapter \href{https://de-rse.org/chapter/wue/}{``Wü-RSE''} to provide a place
-locally for like-minded people. The project was extended in 2023 for the last funding period. A highlight for this project's visibility included the hosting of de-RSE24, bringing the community of RSEs to Würzburg. Embedded into the community of RSEs, this project contributed
-to numerous position papers\cite{Anzt:2020,Goth:2025,gi2025,Kempf2026} over the years.
-Over the long lifespan of the project, its activities covered a broad range of scientific computing needs, from individual workstations to HPC clusters, and included data generation, analysis, and storage. The project collaborated with both individual researchers and larger research groups, adapting its tools and approaches to their respective requirements. Software development relied on Git for version control and employed languages including C++, Python, Mathematica, Fortran, and Julia.
-The CRC~1170 and EXC~2147 are supporters of the \href{https://www.fairmat-nfdi.eu/fairmat/}{FAIRmat} “\begin{de}Nationale Forschungsdateninfrastruktur\end{de}” (NFDI) consortium, so the \href{https://nomad-lab.eu/nomad-lab/nomad.html}{NOMAD} oasis is being rolled out to
-the users in the department.
+\noindent\textbf{Context and connections:}
+Established in 2015 as a support unit for CRC~1170, the INF project
+specialised in numerical methods for theoretical physics, particularly
+Quantum Monte Carlo methods, functional renormalisation group techniques,
+and non-equilibrium Green's function methods.
+Since these methods typically rely on Germany's High Performance Computing
+(HPC) systems, the project required a close integration of scientific
+software development, expertise in the underlying numerical methods, and
+knowledge of the targeted computing platforms.
+The INF project was staffed by a single person throughout the period covered and
+continued through the successful renewals of CRC~1170 in 2019 and 2023.
+Connections to the wider Research Software Engineering (RSE) community
+developed through participation in the founding of
+\href{https://de-rse.org/de/index.html}{de-RSE} in 2018 and the
+establishment of the local
+\href{https://de-rse.org/chapter/wue/}{Wü-RSE} chapter in 2020.
+\\
+\noindent\textbf{Main activities:}
+Over its lifetime, the project addressed a broad range of scientific
+computing needs, from individual workstations to HPC clusters, including
+data generation, analysis, and storage.
+Collaborating with individual researchers and larger research groups,
+it developed and maintained software using Git for version control and languages such as
+C++, Python, Mathematica, Fortran, and Julia.
+In parallel, the project maintained the department's storage systems,
+desktop computers, and local HPC infrastructure.
+This combination of responsibilities facilitated the deployment of a
+departmental GitLab instance, which had grown to approximately 1,000
+users worldwide by 2026.
+To promote knowledge transfer and the adoption of collaborative software development practices, regular training events based on
+\href{https://carpentries.org/}{the Carpentries} were organised in
+collaboration with the local biology department.
+The project's wider network also enabled the development of the
+FAIR-oriented (Findable, Accessible, Interoperable, and Reusable)
+\cite{WilkinsonDumontier2016} data management strategy for
+\href{https://www.ctdqmat.de/}{EXC~2147}, successfully reviewed in 2019.
+With CRC~1170 and EXC~2147 supporting the
+\href{https://www.fairmat-nfdi.eu/fairmat/}{FAIRmat} consortium of the
+\emph{Nationale Forschungsdateninfrastruktur} (NFDI), a local
+\href{https://nomad-lab.eu/nomad-lab/nomad.html}{NOMAD Oasis}
+is being rolled out to researchers in the department.
+Further community contributions included several position papers
+\cite{Anzt:2020,Goth:2025,gi2025,Kempf2026} and the hosting of
+\href{https://events.hifis.net/event/994/overview}{de-RSE24} in Würzburg.
+\\
+\noindent\textbf{Key challenges and adoption:}
+A central challenge was reconciling the diverse computational
+requirements of theoretical physics with sustainable software
+development. With only one staff member responsible
+for scientific software development, HPC support, and local IT
+infrastructure, immediate operational needs had to be balanced
+against longer-term development activities.
+This breadth of responsibilities concentrated critical expertise in this person
+and constrained the project's capacity.
+At the same time, close involvement in researchers' daily
+workflows helped identify recurring requirements that could
+be addressed through shared infrastructure rather than
+individual solutions. Direct collaboration and regular
+training facilitated the adoption of common tools and
+software engineering practices. The growing demand for RDM
+services introduced additional requirements that had to be
+accommodated alongside existing responsibilities.
+\\
+\noindent\textbf{Lessons learnt:}
+The experience of the INF project demonstrates the value of embedding
+research software engineering expertise directly within a scientific
+research environment. Combining knowledge of scientific methods with
+software engineering and HPC expertise enabled support closely aligned
+with the actual requirements of researchers.
+The integration of software development and local IT infrastructure
+management proved particularly useful.
+Although this broadened the project's responsibilities, it also created opportunities to transform research-specific requirements into shared infrastructure serving a wider scientific community.
+Professional networks and sustained community engagement proved important for accessing expertise beyond the local institution, exchanging practical experiences,
+and extending the impact of a small INF project far beyond the CRC.
+However, these benefits also expose a structural challenge: despite the continuity of personnel across multiple CRC funding periods and the sustained value of the position to the academic environment, this did not translate into an established long-term career perspective for the employee.
+This discrepancy between institutional benefits and individual
+career prospects risks the loss of specialised expertise and
+undermines the long-term sustainability of research software
+and infrastructure.
+
+Taken together, these experiences suggest that sustainable research
+software development depends not only on technical expertise,
+accessible shared infrastructure, and active professional networks,
+but also on institutional recognition and viable long-term career
+perspectives for the personnel providing these services.
+
+
+
 
 \subsection{Project INF --- Research Data Management and Research Software Engineering, \href{https://gepris.dfg.de/gepris/projekt/327154368}{CRC~1313 - Interface-Driven Multi-Field Processes in Porous Media – Flow, Transport and Deformation}, University of Stuttgart}
 \label{subsec:crc1313}
