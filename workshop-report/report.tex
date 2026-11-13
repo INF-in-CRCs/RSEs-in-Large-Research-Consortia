@@ -366,21 +366,53 @@ to support their respective groups.
 
 The project's main technical focus is the introduction
 of the ELN \elabftw.
-A collection of reusable templates for common laboratory
-resources, including plasmids, antibodies, and cell lines,
-provides structured metadata fields, controlled vocabularies,
-and links between related entries.
-These templates have also been made publicly available.
-
-To facilitate the migration of existing laboratory databases,
-the INF developed
-\href{https://github.com/sfb1638/elAPI_Plugins}
-{elAPI Plugins}, building on the
-\href{https://github.com/uhd-urz/elAPI}{elAPI}
-framework developed at Heidelberg's Computing Centre.
-The software supports batch importing and updating of
-ELN entries, reducing the effort required to transfer
-existing laboratory records.
+Alongside training and individual support, we developed an
+\elabftw{} template package to lower the barrier to getting
+started, particularly for groups without the resources to
+develop their own templates.
+The templates are designed to be educational: field
+descriptions and prompts explain what information should be
+recorded and why.
+The package covers reagents and biological materials,
+including plasmids, antibodies and model organisms, as well as
+helper entries that support navigation and make records easier
+to find.
+Controlled vocabularies improve consistency and
+searchability, while identifier fields prompt users to include
+Research Resource Identifiers (RRIDs).
+Different levels of detail allow groups to use templates in a
+way that matches their recording needs and capacity.
+ 
+The template package and its
+\href{https://doi.org/10.5281/zenodo.20605340}{user guide}
+are openly available through
+\href{https://github.com/sfb1638/elabftw-templates}{GitHub}
+and \href{https://doi.org/10.5281/zenodo.21103853}{Zenodo}.
+A workflow also supports adaptation by other labs and
+contributions to the package.
+Wider uptake beyond the CRC cannot yet be assessed.
+However, Deltablot, the developers of \elabftw, reference the
+templates and guide in the \elabftw{} user documentation.
+The team also presented the work in an invited talk at the
+\href{https://www.deltablot.com/posts/community-meetings/community-meeting-20261001/}
+{\elabftw{} community meeting} in October 2026.
+ 
+To complement the template package, we also developed
+\href{https://github.com/sfb1638/elAPI_Plugins}{elAPI Plugins},
+a desktop application built on
+\href{https://github.com/uhd-urz/elAPI}{elAPI},
+a framework developed at Heidelberg University's Computing
+Centre.
+It enables researchers without programming experience to
+create and update \elabftw{} entries in batches using
+spreadsheets, for example when importing reagent databases or
+updating information across entire collections.
+It can also transfer tabular experimental data into the
+corresponding extra fields.
+Deltablot also references the software in the \elabftw{} user
+documentation.
+The software is archived on
+\href{https://doi.org/10.5281/zenodo.23661894}{Zenodo}.
 
 \medskip
 \noindent\textbf{Key challenges and adoption:}
