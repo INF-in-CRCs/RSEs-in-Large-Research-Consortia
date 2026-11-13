@@ -10,6 +10,17 @@
 \usepackage{accsupp}
 \usepackage{todonotes}
 \usepackage{lineno}
+
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+
+% Left-aligned columns with automatic line wrapping
+\newcolumntype{P}[1]{%
+  >{\raggedright\arraybackslash}p{#1}}
+
+
 \linenumbers
 
 \usepackage[ngerman,british]{babel}
@@ -216,6 +227,186 @@ and we try to find out which answers the current generation of INF projects obta
 \label{sec:inf-in-germany}
 In this section, we describe the various INF projects, how they see themselves and which duties they perform.
 In this manuscript, we exclusively refer to these projects as INF projects, but within the respective CRCs, also other acronyms are used.
+
+\pagebreak
+
+\begingroup
+\small
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.12}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+
+\begin{longtable}{@{}
+  P{.12\linewidth}
+  P{.19\linewidth}
+  P{.24\linewidth}
+  P{.40\linewidth}
+  @{}}
+
+\caption{Overview of the participating research
+infrastructure projects, their scientific contexts,
+organisational arrangements, and principal activities.}
+\label{tab:inf-overview}\\
+
+\toprule
+\textbf{Project (since)} &
+\textbf{Research topic CRC/TRR} &
+\textbf{Organisation (funded since)} &
+\textbf{Principal activities INF} \\
+\midrule
+\endfirsthead
+
+\multicolumn{4}{@{}l}{%
+  \tablename~\thetable\ (continued)}\\
+\toprule
+\textbf{Project (since)} &
+\textbf{Research topic CRC/TRR} &
+\textbf{Organisation (funded since)} &
+\textbf{Principal activities INF} \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{4}{r@{}}{Continued on next page}\\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+CRC~1170 (2015) &
+Topological electronics &
+Single-person INF (2015) &
+Scientific RSE, HPC support, NOMAD Oasis, GitLab, training
+\\
+
+CRC~1313 (2018) &
+Porous media &
+INF from second funding period (2022) &
+Repositories, ELNs, eLabFTW, reproducible software,
+training
+\\
+
+CRC~1340 (2018) &
+Medical imaging &
+INF from second funding period (2022) &
+Clinical data integration, collaboration
+platform, hybrid RDM
+\\
+
+CRC~1415 (2020) &
+Materials chemistry &
+INF from second funding period (2024) &
+NOMAD Oasis, ELNs, eLabFTW, data pipelines,
+publication, training
+\\
+
+CRC~1451 (2021) &
+Neuroscience &
+Central research data hub (2021) &
+DataLad, metadata catalogue, data management
+training
+\\
+
+CRC~1625 (2024) &
+Materials science &
+Dedicated INF (2024) &
+Materials data integration, APIs,
+knowledge graphs, training
+\\
+
+CRC~1629 (2024) &
+Linguistics &
+Interdisciplinary INF (2024) &
+Experimental infrastructure, metadata,
+RDM support, GitLab, JupyterHub
+\\
+
+CRC~1638 (2024)&
+Cell biology &
+Dedicated INF (2024) &
+eLabFTW, ELN templates, data migration,
+researcher support
+\\
+
+CRC~1646 (2024)&
+Linguistics, psychology &
+Interdisciplinary INF (2024) &
+Consent-form software, RDM,
+methodological consulting
+\\
+
+CRC~1667 (2024) &
+Aerospace engineering &
+Dedicated INF; RDM and RSE (2024) &
+DaRUS, ELNs, data publication, reproducible software, training
+\\
+
+TRR~195 (2017) &
+Mathematics, computer algebra &
+Distributed RSE; no dedicated INF (2017) &
+OSCAR development, testing, interoperability,
+training
+\\
+
+TRR~247 (2018) &
+Catalysis &
+INF from second funding period (2022) &
+MatInf, Coscine, infrastructure recovery,
+data publication, training
+\\
+
+TRR~265 (2019) &
+Addiction research &
+Cross-unit clinical infrastructure (2019) &
+Participant management, pseudonymisation,
+MRI data
+\\
+
+TRR~379 (2024) &
+Clinical neuroscience &
+Distributed Q02 service project (2024)&
+DataLad, JTrack, shared metadata,
+training
+\\
+
+TRR~391 (2024)&
+Spatio-temporal statistics &
+Cross-institutional INF (2024) &
+TUDOdata, Git, repositories,
+reproducible software
+\\
+
+TRR~393 (2024) &
+Affective disorders &
+Clinical research INF (2024)&
+REDCap, Multi-site quality control, participant management, MRI data
+\\
+
+TRR~408 (2025) &
+Transport and mobility &
+Dedicated INF (2025) &
+Virtual research environment,
+workflow integration
+\\
+
+TRR~410 (2025)&
+Peatland ecology &
+Distributed Z3 service project (2025)&
+Sensor acquisition, time-series data,
+metadata, eLabFTW, InfluxDB, CKAN
+\\
+
+TRR~418 (2025)&
+Circadian medicine &
+Interdisciplinary INF (2025)&
+Longitudinal data integration,
+privacy, collaboration platform
+\\
+
+\end{longtable}
+\endgroup
+
 
 \subsection{Project Z03 --- Sustainable code development and optimisation on modern supercomputing architectures, \href{https://gepris.dfg.de/gepris/projekt/258499086?language=en}{CRC~1170 - Topological and Correlated Electronics at Surfaces and Interfaces, ``ToCoTronics''}, University of Würzburg}
 Established in 2015 as a support unit for projects of the CRC specialising in theoretical physics the focus was on numerical methods for Quantum Monte Carlo methods, functional renormalisation group techniques and non-equilibrium Green's function techniques.
