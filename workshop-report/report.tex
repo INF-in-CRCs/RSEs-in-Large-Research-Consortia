@@ -407,18 +407,94 @@ participants to both RSE principles (code writing practices, version control too
 specific programming workflows), and combining theoretical mathematics with practical usage and
 extension of products within the OSCAR universe.
 
-\subsection{Project INF --- Research Data Management and AI-Driven Knowledge Discovery, \href {https://gepris.dfg.de/gepris/projekt/388390466?language=en}{TRR 247 – Heterogeneous Oxidation Catalysis in the Liquid Phase}, Ruhr University Bochum, University of Duisburg-Essen}
-Started in mid-2018, TRR~247 enables the rational design of new, abundant, and superior mixed metal oxide catalysts  for liquid phase selective oxidation, contributing to sustainable chemical production in a post-fossil era.
-The INF project joined in Funding Period 2 (late 2022), a delayed start given the challenges of handling heterogeneous data in modern materials science.
-However, in autumn 2022, a successful cyber attack on the University of Duisburg-Essen rendered most systems – including the RDMS used within the TRR – irrecoverably lost.
-To meet the demand for multimodal data, a Minimum Viable Product (MVP) of an extensible RDMS system (ASP.NET Core 7 + SQL Server 2022) was rapidely developed.
-By March 2023, it had been presented to the consortium and put into operation on dedicated hardware acquired through TRR~247 funding allocated to the INF project.
-Data from the first Funding Period was later recovered from a damaged virtual machine backup that was provided almost a year after the incident.
-This required recovering a non-functional PostgreSQL instance to reverse-engineering the database structure and migrating all data into the new extensible data model of the current RDMS MatInf.
-The main lesson learnt was that our data are ultimately our own responsibility – above all, the responsibility of the INF project – which consequently established a geographically distributed, disaster-resilient infrastructure providing uninterrupted service for the TRR, involving researchers from Bochum, Duisburg, Essen, Kiel, Mülheim an der Ruhr, and Kaiserslautern.
-In less than four years, the INF project has achieved several notable milestones: (i) recovering all data from the first Funding Period from near-total loss; (ii) evolving the open-source RDMS MatInf, \href{https://eln-finder.ulb.tu-darmstadt.de/items/8aefad94-9f2d-4b40-b94f-21c9419eb3be}{registered in the ELN Finder},  and integrating it into researchers’ workflows \cite{Dudarev2025}; (iii) the main TRR repository has been \href{https://doi.org/10.17616/R31NJNUG}{registered in re3data.org} as the primary repository for TRR~247; (iv) integrating with the NFDI Infrastructure Proxy service provided by \href{https://doc.nfdi-aai.de/}{IAM4NFDI} (\href{https://base4nfdi.de/}{Base4NFDI}), and collaborations with \href{https://nfdi-matwerk.de/}{NFDI-MatWerk} and \href{https://www.fairmat-nfdi.eu/}{FAIRmat} are ongoing; and (v) regular workshops and hands-on sessions are conducted to train users, including long-term dataset publication with DOI assignment via Zenodo in support of scientific publications.
-Integration with \href{https://about.coscine.de/}{Coscine} / \href{https://about.coscine.de/news/post-30/}{DataStorage.nrw} for long-term data archiving is planned.
-In February 2026, TRR~247 successfully passed the DFG evaluation and will be extended into a third Funding Period, while the INF project itself received highly positive recognition and will continue its mission.
+
+\pagebreak
+\subsection{Project INF --- Research Data Management and AI-Driven Knowledge Discovery,
+\href{https://gepris.dfg.de/gepris/projekt/388390466?language=en}
+{TRR~247 -- Heterogeneous Oxidation Catalysis in the Liquid Phase}, Ruhr University Bochum, University of Duisburg-Essen}
+\label{subsec:trr247}
+\noindent\textbf{Context and connections:}
+Established in 2018, TRR~247 investigates mixed metal
+oxide catalysts for selective liquid-phase oxidation.
+Its heterogeneous experimental and computational data
+require flexible RDM
+infrastructure. The INF project was established in
+the second funding period in late 2022 and develops
+the open-source research data management system
+\href{https://matinf.pro/}{MatInf}, whose infrastructure
+is shared with \hyperref[subsec:crc1625]{CRC~1625}.
+The MatInf core is maintained by the MDI Data Science
+team, comprising one permanent position and two student
+assistants. In addition, TRR~247 funds a dedicated
+temporary position for project-specific development
+and researcher support.
+
+\medskip
+\noindent\textbf{Main activities:}
+MatInf provides a central platform for collecting,
+integrating, analysing, and publishing heterogeneous
+materials research data \cite{Dudarev2025}.
+Its extensible data model supports project-specific
+data types, validation, extraction, and visualisation
+services. These capabilities enable measurements
+of material composition and catalytic properties,
+obtained by different groups and at different sites,
+to be integrated into common datasets.
+Beyond software development, the INF operates the
+infrastructure, provides training and individual
+consulting, and supports research data publication.
+Interactive reports document data accumulation and
+individual contributions. Across the first and second
+funding periods, respectively, 36 of 77 and 63 of
+115 users contributed data, with reported data
+volumes of 45 and 158~GB.
+
+\medskip
+\noindent\textbf{Key challenges and adoption:}
+A major challenge arose immediately after the INF's
+establishment when a cyberattack on the University
+of Duisburg-Essen in November 2022 rendered the previous RDM infrastructure unavailable.
+The INF developed a replacement system, deployed in March 2023.
+Almost one year after the incident,
+data from the first funding period were recovered
+from a damaged virtual machine backup and migrated into MatInf.
+To reduce exposure to compromised central credentials, MatInf administration was separated from the university's Active Directory.
+Institutional IT provides server colocation and network management, while the MatInf team manages the servers, applications, and backups.
+An independent backup server retrieves data daily
+without exposing backup copies to the production
+server. Every six months, the team restores a virtual machine from backup and verifies that the MatInf application functions correctly.
+Another challenge was convincing researchers that
+a common system could accommodate their heterogeneous
+data. Configuring project-specific data types and
+demonstrating concrete use cases, particularly the
+integration of measurements across research groups, helped establish its practical value.
+Data publication provided an additional incentive for adoption.
+
+\medskip
+\noindent\textbf{Lessons learnt:}
+The cyberattack demonstrated that reliable backup
+procedures must include regular restoration tests
+verifying the functionality of the complete system.
+Reducing dependencies on central authentication and
+maintaining independently accessible backups further
+strengthens operational resilience, although it
+increases local administrative responsibilities.
+Researcher adoption benefited from demonstrating
+scientifically relevant workflows rather than relying
+on generic RDM arguments. The flexibility to introduce
+new data types and services was essential for addressing
+the different needs of participating groups.
+Finally, long-term sustainability requires explicit
+institutional commitments. MDI Data Science has
+committed to operating MatInf for at least ten years
+after project funding ends, supported by permanent
+staffing, although further feature development is
+not guaranteed.
+Long-term data archiving through
+\href{https://about.coscine.de/}{Coscine}/
+\href{https://www.datastorage.nrw/}{DataStorage.NRW}
+and dataset publication
+through Zenodo complement this commitment.
 
 \subsection{Project INF --- Infrastructure, \href{https://gepris.dfg.de/gepris/projekt/402170461?language=en}{TRR~265 - Loss and regaining control in addictions}, TUD Dresden University of Technology}
 \label{subsec:trr265}
