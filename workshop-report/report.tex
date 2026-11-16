@@ -502,31 +502,115 @@ It aims to develop a set of consistent mobility and transportation planning meth
 The goal of the INF project of TRR~408 is to provide a virtual research environment (VRE).
 The VRE acts as a centralised system that comprises different software components and services that foster RDM and collaboration, \eg, by providing data storage systems, workflow automation, as well as the integration of the digital twin to allow modelling of transportation and mobility systems, their parametrisation and subsequent simulation of city-wide traffic flow scenarios based on real-world data. To collect requirements for the VRE, the INF team together with the \href{https://tu-dresden.de/forschung-transfer/services-fuer-forschende/kontaktstelle-forschungsdaten}{Service Center Research Data} conducted interviews with all other AgiMo projects.
 
+\pagebreak
 
 \subsection{Project Z3 --- Research Data Management,
- \href{https://wetscapes2.uni-greifswald.de/}
- {TRR~410 -- WETSCAPES2.0},
- Universität Greifswald, Universität Rostock}
- \label{subsec:trr410}
+\href{https://wetscapes2.uni-greifswald.de/}{TRR~410 -- WETSCAPES2.0},
+Universities of Greifswald and Rostock}
+\label{subsec:trr410}
 
-Established in 2025, TRR~410 investigates the ecological, hydrological, and biogeochemical processes of rewetted peatland landscapes, called "wetscapes", in north-eastern Germany, and how their restoration affects climate, water systems, biodiversity, and other ecosystems. Its interdisciplinary research generates heterogeneous data from field measurements, laboratory experiments, and continuous sensor networks across multiple spatial scales.
+\noindent\textbf{Context and connections:}
+Established in 2025, TRR~410 investigates the
+ecological, hydrological, and biogeochemical
+processes of rewetted peatland landscapes
+(``wetscapes'') in north-eastern Germany.
+Its interdisciplinary research generates
+heterogeneous data from field measurements,
+laboratory experiments, and continuous sensor
+networks across multiple spatial scales.
+The central service project Z3 provides the
+TRR's RDM infrastructure, covering data acquisition,
+harmonisation, validation, and preservation.
+It collaborates with institutional IT services
+at Greifswald and Rostock and the
+\href{https://sensors.gfz.de/}{GFZ Sensor Management System}.
 
-The central service project Z3 provides the TRR's RDM infrastructure --- the functional equivalent of an "INF" project --- covering data acquisition, harmonisation, validation, and long-term preservation, in collaboration with institutional IT services at Greifswald and Rostock and the externally hosted \href{https://sensors.gfz.de/}{GFZ Sensor Management System} at the Helmholtz Centre for Geosciences (GFZ).
+\medskip
+\noindent\textbf{Main activities:}
+The project operates a distributed infrastructure
+for collecting, managing, analysing, and sharing
+environmental data. Sensor measurements are
+transmitted via
+\href{https://eu1.cloud.thethings.network/}
+{The Things Network} to
+\href{https://www.influxdata.com/}{InfluxDB},
+with metadata maintained at GFZ.
+The \href{https://retrieval.wetscapes.uni-rostock.de/}
+{Sensor Data Retrieval application}
+combines measurements and metadata, while the
+\href{https://explorer.wetscapes.uni-rostock.de/}
+{Dataset Explorer} integrates QFieldCloud
+geodata with datasets registered in
+\href{https://ckan.fdm.uni-greifswald.de/}{CKAN}.
+Additional services include \elabftw{}
+for field documentation and
+\href{https://apphub.wolke.uni-greifswald.de/}
+{AppHub} for data analysis.
+Development is primarily located at Rostock, quality assurance at Greifswald, and researcher support is shared between both institutions.
+The Z3 team comprises four key contributors, with two full-time equivalents (FTEs) funded by the project.
 
-The project operates infrastructure across Rostock and Greifswald universities for collecting, managing, analysing, and sharing heterogeneous environmental data: sensor measurements reach \href{https://www.influxdata.com/}{InfluxDB} via
- \href{https://eu1.cloud.thethings.network/}{The Things Network}, with metadata from the GFZ Sensor Management System; the \href{https://retrieval.wetscapes.uni-rostock.de/}{Sensor Data Retrieval application} combines both, while the
- \href{https://explorer.wetscapes.uni-rostock.de/}{Dataset Explorer} links QFieldCloud geodata with \href{https://ckan.fdm.uni-greifswald.de/}{CKAN} datasets. \elabftw supports field documentation, CKAN handles publishing and reuse, and \href{https://apphub.wolke.uni-greifswald.de/}{AppHub} hosts analysis tools.
 
-Harmonising heterogeneous, distributed sensor measurements has been the central challenge so far: self-built LoRaWAN coverage and a scan of 283 field nodes finding only 87\,\% delivering valid data (400 deployments across 86 of 100 envisaged sites) show the scale of the problem. One concrete case: soil moisture, groundwater level and redox potential sensors deliver unreliable readings once soil temperature drops below 0\,\textdegree{}C. Such cases are caught by a data-quality pipeline, published on GitLab, that classifies readings against metadata, signals from other devices, field observations, and exploratory analysis such as outlier and drift detection, with scientists consulted directly where automated classification cannot distinguish noise from signal. Each measurement is flagged accordingly, so quality control removed 4.7\,\% of 6.0 million hourly readings --- mainly frozen soil or out-of-window measurements --- without discarding the rest.
+\medskip
+\noindent\textbf{Key challenges and adoption:}
+Harmonising continuous measurements from distributed
+sensor networks has been a major challenge.
+Establishing LoRaWAN coverage and monitoring sensor
+reliability require substantial effort.
+A survey of 283 field nodes found that only
+87\,\% delivered valid data.
+One recurring problem concerns unreliable readings
+from soil moisture, groundwater level, and redox
+potential sensors at soil temperatures below
+$0\,^\circ\mathrm{C}$. To address such problems,
+the INF developed a quality-control pipeline
+combining sensor metadata, measurements from other
+devices, field observations, and automated outlier
+and drift detection. Ambiguous cases require consultation with domain scientists.
+Of approximately six million hourly measurements,
+4.7\,\% were identified as unsuitable for analysis,
+primarily due to frozen soil or measurements outside valid observation windows.
+Researcher adoption is still developing.
+The Sensor Data Retrieval application is used by
+research groups and doctoral researchers.
+Following dedicated onboarding, CKAN/Explorer
+registrations increased from a handful to more
+than 1,000 entries, although CKAN uploads required
+additional training.
+A collaboration with Paludi-PROGRESS and the
+Greifswald Mire Centre provides real-time Grafana
+monitoring and automatic alerts for six water-level
+sensors, reducing the need for independent monitoring
+and field visits.
 
-Adoption is still emerging: the Sensor Data Retrieval application is used by research groups and the PhD students; CKAN/Explorer registrations grew from a handful to over 1,000 entries after dedicated onboarding, though CKAN upload needed extra training. A collaboration with Paludi-PROGRESS and the Greifswald Mire Centre gave real-time Grafana access to six water-level sensors with automatic alerts, sparing the partners their own monitoring effort and reducing field visits.
-
-Operating across institutions combines, rather than merely shares, access to RDM tools and external systems, though it demands constant coordination over institutional policy; relying on existing infrastructure has favoured continuity and extensibility. Development sits at Rostock, quality assurance at Greifswald, and support is shared, backed by four full-time staff (two professors, a postdoc, a PhD candidate) and one student assistant.
-
-InfluxDB, the sensor database, follows a 3-2-1 backup strategy, with both Rostock and Greifswald used for storage alongside monthly snapshots pushed to CKAN. CKAN's own underlying database restore was separately verified during setup and, as a standard computing-centre service, its continuity is decoupled from TRR~410's funding. Post-funding, Greifswald's services stay with that computing centre, while Rostock's application source code can be archived to GitLab or stored as CKAN datasets for a successor to take over.
-
-The pipeline's complexity confirmed that the RDM team must understand not only the sensors and their deployment, but the whole electronic infrastructure and the underlying research questions, with monitoring needed at several points, and a focus on representativeness over completeness.
-
+\medskip
+\noindent\textbf{Lessons learnt:}
+The development of the quality-control pipeline
+demonstrated that reliable environmental RDM
+requires detailed understanding of sensor technology,
+communication infrastructure, and the underlying
+scientific questions. Monitoring must address
+multiple stages of data acquisition and processing,
+with particular attention to the representativeness
+and quality of measurements rather than completeness
+alone.
+Operating infrastructure across institutions
+provides access to complementary expertise and
+established services, but requires continuous
+coordination of responsibilities and institutional
+policies.
+Operational sustainability is supported by a
+3-2-1 backup strategy for InfluxDB, including
+storage at both universities and monthly snapshots
+in CKAN. Restoration of CKAN's underlying database
+was successfully tested. Its operation as an
+institutional computing-centre service is independent
+of TRR funding, while source code developed at
+Rostock can be archived for future maintenance
+or reuse.
+These experiences highlight the importance of
+combining scientific expertise, automated quality
+assurance, and explicit operational responsibilities
+when establishing distributed research infrastructure.
 
 
 \subsection{Project INF --- Research data management and collaboration platform, \href{https://gepris.dfg.de/gepris/projekt/541063275?language=en}{TRR~418 -- Foundations of Circadian Medicine}, Berlin/Lübeck/Munich}
