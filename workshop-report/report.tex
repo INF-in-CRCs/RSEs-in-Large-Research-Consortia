@@ -309,26 +309,33 @@ This ensures flexible data selection capabilities for analytical workflows in pr
 In addition to traditional workshops and hands-on sessions, the INF project, in collaboration with the Software Engineering Chair at Ruhr University Bochum, also offers a RDM course for students of the Computer Science faculty.
 Within this course, MatInf serves as one of the central use cases, and students gain not only practical experience working with the system through its REST APIs, but are also deeply involved in evaluating the compliance of such systems with the FAIR principles and discussing possible directions for their future development.
 
+\pagebreak
 \subsection{Project INF --- Scientific services and data management - \href{https://gepris.dfg.de/gepris/projekt/537324246?language=en}{CRC 1629 Negation in Language and Beyond} - Frankfurt am Main, Tübingen, Göttingen}
-CRC 1629 \textit{Negation in Language and Beyond} (NegLaB) investigates negation as a grammatical and cognitive phenomenon from different empirical and theoretical perspectives. 
-Its projects span a variety of disciplines, such as theoretical linguistics, corpus-based research as well as experimental work, resulting in a heterogeneous range of methodologies and workflows.
-% Alexander Mehler (computer science), Manfred Sailer, and Sol Lago (linguistics), alongside fellow researchers from these disciplines, including Giuseppe Abrami, Nasimeh Bahmanian, Leon Hammerla, Andy Lücking, and Mercedes Martinez Bruera.
-As a central infrastructure project, it provides research data management, consulting, teaching, and software development support to the CRC's research groups.
-Since the research questions require the integration of various cross-linguistic and cross-methodological models and concepts, it is crucial to ensure comparability and the ability to reuse data across different projects.
-To ensure sustainability and portability, platforms are provided as container-based solutions using Docker and Kubernetes.
-Our \href{https://about.gitlab.com/}{\textit{GitLab}} instance facilitates collaborative software development, while the web-based \href{https://nextcloud.com}{\textit{Nextcloud}} platform enables the storage of research results and provides centralised data backup.
-Concurrently, a container-based server solution was developed for data acquisition, allowing experiments to be configured, shared, and executed online using open-source software such as PCIbex~\cite{Zehr:Schwarz:2018}.
-Furthermore, localised large language models (LLMs) and visual language models (VLMs) can be accessed via an \href{https://openwebui.com/}{\textit{OpenWebUI}} instance utilising a dedicated Nvidia H200 GPU.
-In addition, a \href{https://jupyter.org/hub}{\textit{Jupyter Hub}} (with Single Sign-On) is available for implementing web-based scripts and performing analyses using different models.
-These advancements contribute to the instantiation of reusable software components within the distributed big data infrastructure \textit{DUUI}, which enables container-based NLP methods, within cluster solutions~\cite{Abrami:et:al:2025:a}.
-Through DUUI, heterogeneous implementations of methods, data formats~\cite{Hammerla:et:al:2025a}, and modalities~\cite{Bundan:Abrami:Mehler:2025} can be effectively processed, whereby a web- and API-based solution is also available through \textit{DUUIgateway}~\cite{Borkowski:et:al:2026}.
-
-For versioning and repurposing of research results, a web-based metadata platform was developed that allows the flexible documentation of various types of information, including theoretical, experimental, and fieldwork-based materials.
-In collaboration with the library at Goethe University Frankfurt, a CRC-wide data management protocol was developed and data management plans were established for each project using the Research Data Management Organiser (\href{https://rdmo.uni-frankfurt.de/}{RDMO})~\cite{Bahmanian:et:al:2025}.
-This collaboration has also increased the visibility of INF’s RDM initiatives through presentations and discussions at library-organised events.
-
-Our main takeaway is that an INF project is crucial in a humanities CRC: it helps ensure that sensitive and valuable data are handled appropriately, while at the same time giving researchers access to forms of training they would otherwise rarely receive. 
-We have also learned how productive collaboration between computer scientists and linguists can be, as linguists provide fine-grained and theoretically grounded insights into language, while computer scientists contribute more efficient implementations and novel methodological approaches.
+\textbf{Context and connections:} Established in 2024, CRC~1629 \textit{Negation in Language and Beyond} (NegLaB) investigates negation through theoretical, corpus-based, experimental, and cross-linguistic research. Its diverse methodologies and data types require coordinated RDM and computational support.
+The INF project is funded with two full-time equivalent
+(2.0~FTE) and combines linguistic and computational
+expertise under the leadership of Sol Lago,
+Alexander Mehler, and Manfred Sailer.
+It collaborates with
+\href{https://www.ub.uni-frankfurt.de/home_en.html}
+{Goethe University Frankfurt's library services},
+the Hessian research data infrastructure network
+\href{https://www.uni-marburg.de/en/hefdi}{HeFDI},
+\href{https://www.hessian.ai/}{hessian.AI},
+and other CRCs.
+\\
+\textbf{Main activities:} \\
+INF provides assistance with RDM, methodological consulting, statistical training, computational modelling, machine learning and computational services, including Docker, Kubernetes, GitLab, Nextcloud, OpenWebUI, and JupyterHub (\url{https://neglab.github.io/NegLab-INF-Docs/}). Its computational developments include DUUI and DUUIgateway, supporting reusable NLP workflows and heterogeneous data processing~\cite{Leonhardt:et:al:2023,Abrami:et:al:2025:a,Hammerla:et:al:2025a,Bundan:Abrami:Mehler:2025,Borkowski:et:al:2026}.
+A shared server supports web-based experiments using open-source tools and has been successfully used for data collection by 10 of the 15 CRC research projects.
+We also developed a metadata platform accommodating theoretical, experimental, corpus-based, and fieldwork data and collaborated with the DFG Priority Programme \href{https://vicom.info/}{ViCom} on multimodal data science.
+We have established a CRC-wide data management policy and supported project-specific data management plans using the web-based Research Data Management Organiser, resulting in a documented protocol in 2025~\cite{Bahmanian:et:al:2025}. A key factor in its implementation was assigning one data steward per project, which facilitated communication, coordination, and adoption of shared practices.
+Workshops and consultations provided additional support in data management, statistics, and experimental design.
+\\
+\textbf{Key challenges and adoption:} A central challenge was accommodating the heterogeneous data types and metadata requirements of experimental, corpus-based, and theoretical research. Researchers from different fields had distinct expectations regarding which information should be documented and how it should be organized. To address this, we developed and piloted different versions of the metadata forms with researchers from different methodological groups. Their feedback allowed us to identify relevant metadata categories, ensure that different research needs were represented, and make the forms intuitive and easy to use.
+\\
+\textbf{Lessons learnt:} Our experience highlights the importance of developing shared infrastructure collaboratively with its target users. Sustainable RDM and RSE support required not only technical infrastructure, but also researcher involvement, clear responsibilities, and collaboration between linguistic and computational experts.
+Involving researchers in designing metadata forms and RDM practices helped tailor solutions to their needs and facilitate integration into existing workflows.
+We also recognised the growing importance of AI in scientific research, making it a central focus of our planned second phase.
 
 \subsection{Project INF --- Information Infrastructure, \href{https://www.sfb1638.de/}{CRC~1638 --- Cellular Membrane Remodelling -- How Changing Form Creates Function}, Heidelberg, Mannheim}
 CRC~1638 investigates cellular membrane remodelling across five institutions, with projects generating data spanning imaging, structural biology, lipidomics, proteomics, and simulations.
@@ -429,28 +436,99 @@ This begins with the recruitment of participants, their screening and pseudonymi
 
 The project fostered the synergy between the Center for Information Services \& High Performance Computing (ZIH) of the TU Dresden, Dresden's University Clinic and the Faculty of Psychology, especially its Neuroimaging Center (NIC).
 It also demonstrated the need for a clear documentation and communication of the agreed procedures and the importance of strong quality assurance procedures at every step of the workflows involving human interaction.
+\pagebreak
+\subsection{Project Q02 --- Data Management and Training Platform
+for AMD Research,
+\href{https://gepris.dfg.de/gepris/projekt/512007073?language=en}
+{TRR~379 -- Neuropsychobiology of Aggression:
+A Transdiagnostic Approach in Mental Disorders},
+RWTH Aachen University, Goethe University Frankfurt,
+Central Institute of Mental Health, Forschungszentrum Jülich,
+University Hospital Aachen}
+\label{subsec:trr379}
 
-\subsection{Project Q02 --- Data Management and Training Platform for AMD Research, \href{https://gepris.dfg.de/gepris/projekt/512007073?language=en}{TRR~379 - Neuropsychobiology of Aggression: A Transdiagnostic Approach in Mental Disorders}, RWTH Aachen University, Goethe University Frankfurt, Central Institute of Mental Health, \begin{de}Forschungszentrum Jülich\end{de}, University Hospital Aachen}
+\noindent\textbf{Context and connections:}
+Established in 2024, TRR~379 investigates the neurobiological
+and psychological mechanisms underlying aggression in mental
+disorders (AMD). Its multi-institutional research generates
+heterogeneous longitudinal data requiring secure sharing,
+harmonisation, and reproducible analysis across participating
+sites.
+The Q02 service project provides the research data management
+(RDM) and research software engineering (RSE) infrastructure
+supporting these activities. Organised as a distributed team,
+it connects domain researchers, data stewards, and
+infrastructure providers. Its software and methodological
+approaches also draw on experiences from CRC~1451 and
+the ABCD-J research network.
 
-This project develops a decentralised FAIR-compliant data platform to support integration, harmonisation, and analysis of longitudinal, transdiagnostic datasets across participating sites in the consortium.
-Within this framework, the Q02 INF project serves as the central data management and, through software engineering, enabling solutions for data-driven research on transdiagnostic biosignatures of aggressive behaviour.
-A particular focus is placed on the use of
-\href{https://jtrack.readthedocs.io/en/latest/index.html}{JTrack}
-and
-\href{https://www.datalad.org/}{DataLad}
-for mobile data collection and distributed data management, respectively.
-In addition, the project supports the development of training materials and workflows for data handling, pre-processing, and analysis, thereby supporting early-career researchers within the consortium.
-As the technical and organisational backbone for data sharing and integration within the TRR~379, the Q02 project fosters strong collaborations between domain scientists, data stewards, and infrastructure providers.
-Beyond the consortium, the project is connected to broader RSE and RDM initiatives.
-For example, its components are in production use within the
-\href{https://www.crc1451.uni-koeln.de/}{CRC~1451}
-and
-\href{https://abcd-j.de/}{ABCD-J (Accessing Behavior for Clinical Data and Joint Usage)}
-networks.
-One particularly useful but challenging aspect has been the adoption of fully decentralised and secured data submission and management systems.
-While this approach significantly enhances data integrity and compliance with data protection regulations, it requires careful coordination and onboarding of all participating partners.
-Tools such as standardised data workflows and a shared metadata system, including a web-based metadata editor, back-end API, and dedicated metadata schema, have been more readily adopted and are now widely used across the consortium.
-A key lesson learnt is that successful implementation of such infrastructures requires not only robust technical solutions, but also continuous training, close collaboration across consortium contributors, and strong community engagement to ensure long-term adoption and impact.
+\medskip
+\noindent\textbf{Main activities:}
+The project develops a decentralised RDM infrastructure
+based on \href{https://www.datalad.org/}{DataLad},
+enabling version-controlled data management while
+accommodating local storage and access restrictions.
+A collaboration platform supports reproducible
+workflows across participating institutions.
+The \href{https://jtrack.readthedocs.io/en/latest/}
+{JTrack} platform contributes capabilities for mobile
+and longitudinal data collection.
+Complementing these services, Q02 develops and operates
+a shared metadata system with a web-based editor,
+programmatic interfaces, and common metadata schemas.
+This infrastructure facilitates the description and
+discovery of research data and other consortium resources.
+In 2025 and 2026, the metadata system was also used to support
+the DFG's annual reporting process, reducing the need
+for separate manual information collection.
+Workshops, documentation, and consultations
+support researchers in data handling, preprocessing,
+and reproducible analysis.
+
+\medskip
+\noindent\textbf{Key challenges and adoption:}
+A central challenge is establishing secure, decentralised
+data management across institutions with differing
+technical infrastructures, research workflows, and
+data protection requirements.
+While this approach allows individual sites to retain
+control over their data, coordinating access, metadata,
+and reproducible workflows requires considerable
+technical and organisational effort.
+The adoption of decentralised data submission and
+management has therefore required careful coordination
+and onboarding of participating researchers.
+In contrast, shared metadata workflows, supported by
+a browser-based editor, common schemas, and programmatic
+interfaces, have been more readily adopted across the
+consortium. These contrasting experiences highlight
+the importance of adapting infrastructure to researchers'
+practical requirements and technical expertise.
+
+\medskip
+\noindent\textbf{Lessons learnt:}
+The experience of TRR~379 highlights the potential of
+decentralised RDM to support collaboration without
+requiring all participating institutions to adopt
+identical storage arrangements.
+However, technical interoperability alone does not
+ensure successful adoption; common procedures,
+clear responsibilities, and sustained support remain
+essential.
+The contrasting adoption experiences suggest that
+accessible interfaces and standardised metadata workflows
+can lower barriers to participation.
+The reuse of shared metadata for administrative reporting
+further illustrates how consistent information models
+can benefit both scientific collaboration and consortium
+management.
+Finally, the distributed organisation of Q02 demonstrates
+the importance of coordination between scientific,
+software engineering, and infrastructure expertise.
+Sustaining such services requires ongoing training,
+maintenance, and clearly assigned responsibilities
+across participating institutions.
+
 
 \subsection{Project INF --- Infrastructure, \href{https://trr391.tu-dortmund.de/}{TRR~391 - Spatio-temporal Statistics for the Transition of Energy and Transport}
 , TU Dortmund University, RU Bochum}
