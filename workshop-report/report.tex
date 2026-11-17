@@ -389,59 +389,68 @@ Furthermore, the introduction of ELNs was comparatively well received, \eg~due t
 One of the central lessons learnt in the project is that successful RDM requires both sustainable infrastructure and active engagement.
 The FAIR principles, which are essential to ensure the long-term reusability of research data and software, can only be effectively implemented when researchers receive practical training and clear workflow recommendations.
 
+\pagebreak
 \subsection{\href{https://www.computeralgebra.de/sfb/}{TRR 195 --- Symbolic Tools in Mathematics and their Application}, Kaiserslautern, Aachen, Saarbrücken, Berlin, Darmstadt, Siegen, Stuttgart, Tübingen}
 
 \noindent\textbf{Context and connections:}
-
 Computing examples has always been a key component of mathematical research. Modern computers paired
 with sophisticated mathematical software tools have taken the possibilities of such calculations to
 a new level. In the realm of algebra and its applications, where exact calculations are inevitable,
 the necessary software tools are provided by computer algebra systems. Established in 2017, TRR~195
 develops a next-generation computer algebra system, named \href{https://www.oscar-system.org}{OSCAR
 (Open Source Computer Algebra Research)}.
-
 Unlike other CRCs, TRR~195 has no dedicated INF project. Instead, INF-related responsibilities are
 distributed across the ``B''-Projects, that is, projects within the CRC that focus more on the
 computational aspects, specifically in the B1 project, the central software project. Research
 software development is thus closely integrated in the day-to-day activities of the staff employed
 in the TRR.
-
+\\
 \noindent\textbf{Main activities:}
-
 The B-projects develop and maintain mathematical software, new algorithms, and support computational
 research. Activities include software development, testing and debugging, release management, and
 the generation of mathematical data.
-
-In addition to providing features directly, OSCAR integrates other more specialised tools like GAP,
-Singular, Polymake into a common interface. This so called "OSCAR Universe" also employs shared
+In addition to providing features directly, OSCAR
+integrates specialised tools such as
+\href{https://www.gap-system.org/}{GAP},
+\href{https://www.singular.uni-kl.de/}{Singular},
+and \href{https://polymake.org/}{polymake}
+through a common interface.
+This so called "OSCAR Universe" also employs shared
 development tools, including continuous integration across its component packages.
-
-In collaboration with MaRDI, the TRR works towards FAIR research output, inlcuding reusable software
-and mathematical objects. Data is regularly published through Zenodo. In addition, a new database,
-simply called the OSCAR DB, is being developed as a dedicated service for easy search, retrieval,
-and reuse of mathematical objects. The TRR supports development of domain-specific serialization
-through the mrdi file format, with the aim of being able to exchange data between different
+In collaboration with
+\href{https://www.mardi4nfdi.de/}{MaRDI},
+the TRR develops approaches for making mathematical
+software and research data findable and reusable.
+These include publication through
+\href{https://zenodo.org/}{Zenodo},
+the experimental
+\href{https://docs.oscar-system.org/stable/Experimental/OscarDB/introduction/}
+{OSCAR DB} for discovering and reusing mathematical
+objects, and support for the
+\href{https://portal.mardi4nfdi.de/wiki/Mrdi_File_Format}
+{mrdi file format}, designed to facilitate the
+exchange of mathematical objects between different
 computer algebra systems.
-
 Regular summer and winter schools, tutorials, and developer activities promote software engineering
 practices, version control, and the use and extension of OSCAR.
-
+\\
 \noindent\textbf{Key challenges and adoption:}
-
-A central technical challenge is integrating standalone systems with different architectures,
-development practices, and mathematical specializations; all while maintaining high performance
-code. Coordinating development across multiple software packages requires common interfaces, shared
-tooling, and systematic cross-package testing.
-
+A central challenge is integrating independently
+developed computer algebra systems with different
+architectures, mathematical specialisations, and
+development practices. The OSCAR ecosystem addresses
+this through common interfaces, coordinated development,
+and continuous integration across its components.
+Maintaining interoperability while preserving the
+performance of specialised algorithms remains an
+ongoing software engineering task.
 The distributed organization of RSE responsibilities also gives rise to challenges with respect to
 balancing scientific development against software maintenance, documentation, and user support.
-
+\\
 \noindent\textbf{Lessons learnt:}
-
 TRR~195 illustrates an alternative to dedicated INF projects, in which software engineering
 activities are embedded directly within scientific projects. This approach can closely align
 software development with research needs and streamline progress towards concrete results.
-
 The integration of existing software systems also demonstrates the importance of interoperability,
 coordinated development, and automated testing for maintaining a shared research software ecosystem.
 Similarly, the collaboration with MaRDI highlights the need for domain-specific solutions to make
