@@ -35,6 +35,16 @@ We reworded the section to clarify the intended audience of the survey.
 The reviewer rightfully noticed our unclear wording here and we clarified in the text, that we
 always refer to the staff working in the INF projects.
 
+### B4.
+** Reviewer Comment **
+> There are a number of lessons learnt highlighted in the summaries in section 3 but this information is not provided for all CRCs and, where it is provided, it’s not always easy to identify those key elements of the information.
+>
+> For example where key lessons or specific challenges are highlighted, perhaps these parts of the text could start on a new line with a bold “Lessons learnt:” or “Key challenges:”? It probably doesn’t make sense to put these small sections of text in separate subsections but some sort of pointer could help to make key takeaways easier to identify.
+
+** Our response **
+
+Thank you for this suggestion. We have adopted this approach across the revised INF project descriptions in Section 3 by introducing four bold paragraph-level labels—**Context and connections:**, **Main activities:**, **Key challenges and adoption:**, and **Lessons learnt:**—each starting a new paragraph without adding further numbered subsections, so that key challenges and takeaways are easy to locate and compare across CRCs.
+
 
 ## Reviewer H:
 
@@ -274,3 +284,25 @@ Thank you for the suggestion, we have reworded this.
 
 ** Our Response **
 > Split the figure into two separate figures with larger font sizes, and improved readability.
+
+### M16
+** Reviewer Comment **
+> The individual INF summaries vary considerably in structure, level of detail, and emphasis.
+> I would suggest revising the individual INF summaries towards a more consistent structure and placing greater emphasis on the specific challenges encountered, what worked, what did not, and what was learned.
+> Common background information, recurring acronyms, and baseline requirements such as FAIR compliance could be grouped together rather than repeated across the case studies.
+
+** Our Response **
+Thank you for this suggestion. We have revised the INF project descriptions in Section 3 towards a common four-part structure (**Context and connections:**, **Main activities:**, **Key challenges and adoption:**, and **Lessons learnt:**), replacing generic statements such as baseline FAIR compliance with concrete RDM and RSE activities, specific adoption experiences (both what worked well and what proved difficult), and practical lessons learnt across the participating CRCs.
+
+** changed in the manuscript **
+> Reworked the project descriptions in Section 3 to use four consistent bold paragraph labels (`Context and connections:`, `Main activities:`, `Key challenges and adoption:`, and `Lessons learnt:`) and expanded their discussion of concrete challenges, adoption experiences, and lessons learnt.
+
+### M17
+** Reviewer Comment **
+> Staffing, for example, is addressed in only one summary, I believe. This is a missed opportunity, as such information would give considerably more weight to the outlined challenges related to staffing and employment.
+
+** Our Response **
+Thank you for pointing this out. We have added staffing information (such as funded positions, FTEs, and role distribution) across the revised INF project descriptions in Section 3 where available.
+
+** changed in the manuscript **
+> Added staffing details to the `Context and connections:` paragraphs of the revised project descriptions in Section 3.
