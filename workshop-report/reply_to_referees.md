@@ -35,6 +35,16 @@ We reworded the section to clarify the intended audience of the survey.
 The reviewer rightfully noticed our unclear wording here and we clarified in the text, that we
 always refer to the staff working in the INF projects.
 
+### B4.
+** Reviewer Comment **
+> There are a number of lessons learnt highlighted in the summaries in section 3 but this information is not provided for all CRCs and, where it is provided, it’s not always easy to identify those key elements of the information.
+>
+> For example where key lessons or specific challenges are highlighted, perhaps these parts of the text could start on a new line with a bold “Lessons learnt:” or “Key challenges:”? It probably doesn’t make sense to put these small sections of text in separate subsections but some sort of pointer could help to make key takeaways easier to identify.
+
+** Our response **
+
+Thank you for this suggestion. We have adopted this approach across the revised INF project descriptions in Section 3 by introducing four bold paragraph-level labels—**Context and connections:**, **Main activities:**, **Key challenges and adoption:**, and **Lessons learnt:**—each starting a new paragraph without adding further numbered subsections, so that key challenges and takeaways are easy to locate and compare across CRCs.
+
 
 ## Reviewer H:
 
@@ -275,62 +285,24 @@ Thank you for the suggestion, we have reworded this.
 ** Our Response **
 > Split the figure into two separate figures with larger font sizes, and improved readability.
 
-### Consistency of the project summaries — CRC 1313 example
-
-**Reviewer Comment**
+### M16
+** Reviewer Comment **
 > The individual INF summaries vary considerably in structure, level of detail, and emphasis.
 > I would suggest revising the individual INF summaries towards a more consistent structure and placing greater emphasis on the specific challenges encountered, what worked, what did not, and what was learned.
 > Common background information, recurring acronyms, and baseline requirements such as FAIR compliance could be grouped together rather than repeated across the case studies.
 
-**Our Response**
+** Our Response **
+Thank you for this suggestion. We have revised the INF project descriptions in Section 3 towards a common four-part structure (**Context and connections:**, **Main activities:**, **Key challenges and adoption:**, and **Lessons learnt:**), replacing generic statements such as baseline FAIR compliance with concrete RDM and RSE activities, specific adoption experiences (both what worked well and what proved difficult), and practical lessons learnt across the participating CRCs.
 
-We have restructured the CRC 1313 description as an example for the contributor-led revision of the project summaries. Four bold paragraph labels distinguish the project's context and connections, main activities, adoption experiences, and lessons learnt. This retains the information requested in our original contributor guidance, including national networks and local institutional connections, while making the practical experience easier to identify and compare.
+** changed in the manuscript **
+> Reworked the project descriptions in Section 3 to use four consistent bold paragraph labels (`Context and connections:`, `Main activities:`, `Key challenges and adoption:`, and `Lessons learnt:`) and expanded their discussion of concrete challenges, adoption experiences, and lessons learnt.
 
-The adoption paragraph keeps the existing contrast between quickly adopted practices (quality badges and dataset publication in DaRUS) and the difficulty of introducing ELNs. The lesson now explicitly connects this experience to researchers' daily routines, tight deadlines, and the need to demonstrate immediate benefits. We have also removed the generic FAIR statement from this account and described the actual RDM and RSE activities instead. These are qualitative project observations; the revision does not introduce a new intervention or claim that the ELN adoption barrier has been resolved.
+### M17
+** Reviewer Comment **
+> Staffing, for example, is addressed in only one summary, I believe. This is a missed opportunity, as such information would give considerably more weight to the outlined challenges related to staffing and employment.
 
-This change is limited to CRC 1313. Harmonisation of the other project descriptions, consolidation of common background across the manuscript, and additional project-specific evidence remain for subsequent contributor revisions.
+** Our Response **
+Thank you for pointing this out. We have added staffing information (such as funded positions, FTEs, and role distribution) across the revised INF project descriptions in Section 3 where available.
 
-**Changed in the manuscript**
-
-In the CRC 1313 subsection (`\label{subsec:crc1313}`), the existing text is organised under:
-
-- **Context and connections:** CRC/INF origins, national networks, and local institutional connections.
-- **Main activities:** dataset review, software-development support, training, and outreach.
-- **Key challenges and adoption:** the contrasting uptake of dataset publication and quality badges versus ELNs.
-- **Lessons learnt:** attention to daily routines and immediate benefits, supported by communication and collaboration.
-
-The opening of the lesson paragraph now reads:
-
-> A major lesson learnt is that adopting new infrastructure requires attention to researchers' daily routines and immediate needs.
-
-### Pending integration of this example
-
-The following replies describe the CRC 1313 change only. They should be updated after the other contributors have revised their accounts; they do not yet claim that the common structure has been applied throughout Section 3.
-
-## General presentation comment
-
-**Reviewer Comment**
-> There are a number of lessons learnt highlighted in the summaries in section 3 but this information is not provided for all CRCs and, where it is provided, it’s not always easy to identify those key elements of the information.
-
-**Our Response**
-
-We have made the existing lesson in the CRC 1313 account explicitly identifiable through a separate paragraph headed **Lessons learnt:**. The adoption experience that motivates it is presented immediately before it under **Key challenges and adoption:**. This provides an example for revising the remaining accounts so that readers can locate the experience and its lesson consistently. It addresses the visibility of CRC 1313's existing lesson; missing lessons in other accounts still need input from their respective contributors.
-
-**Changed in the manuscript**
-
-CRC 1313 subsection (`\label{subsec:crc1313}`): separate bold paragraph labels for the adoption experience and the lesson, with the lesson tied more directly to the difficulty of changing daily research routines.
-
-## Reviewer B
-
-### B1. Presentation of the INF project descriptions
-
-**Reviewer Comment**
-> For example where key lessons or specific challenges are highlighted, perhaps these parts of the text could start on a new line with a bold “Lessons learnt:” or “Key challenges:”? It probably doesn’t make sense to put these small sections of text in separate subsections but some sort of pointer could help to make key takeaways easier to identify.
-
-**Our Response**
-
-We have adopted this suggestion in the CRC 1313 description by introducing bold paragraph labels, including **Key challenges and adoption:** and **Lessons learnt:**. Each begins a new paragraph, without adding numbered subsections. The project heading, cross-reference label, and existing links are retained. The revised description is intended as the example for the other contributors; the corresponding changes to their descriptions are not part of this revision.
-
-**Changed in the manuscript**
-
-CRC 1313 subsection (`\label{subsec:crc1313}`): four paragraph-level signposts implemented with `\noindent\textbf{...}`, separating context and connections, activities, adoption experiences, and lessons.
+** changed in the manuscript **
+> Added staffing details to the `Context and connections:` paragraphs of the revised project descriptions in Section 3.
