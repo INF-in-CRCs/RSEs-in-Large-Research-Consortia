@@ -68,6 +68,14 @@ people that identify themselves on the RSE v/s RDM spectrum.
 
 We split the figure into two separate figures, and increased the font size in both.
 
+### H3.
+** Reviewer Comment **
+> The overview of the INF projects could be more valuable, if the information can be distilled into a list/table. For example, one could list the subject discipline of the CRC, the "home department" of the INF, lifetime of the INF/CRC, staffing, along with the core functions (infrastructure, RDM, RSE, training, support). Such a table would enable a more differentiated categorization of INF projects than the plain text descriptions.
+
+** Our response **
+
+Thank you for this suggestion. We have added a comparative overview table (`\autoref{tab:inf-overview}`) at the beginning of Section 3 summarising all participating CRCs/TRRs by their start year, research topic, INF organisational setup and start of funding, and principal INF activities (covering infrastructure, RDM, RSE, training, and researcher support). Additional institutional context and staffing details are reported in the harmonised `Context and connections:` paragraphs of the individual project descriptions where available.
+
 ## Reviewer M:
 
 ### M1.
