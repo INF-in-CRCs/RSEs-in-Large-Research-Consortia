@@ -224,7 +224,7 @@ and the task of INF was to provide data management related tasks.
 
 ** changed in the manuscript **
 modified to: 
-> including the central service projects Z02(Animal Motor Circuits Core Facility) and Z03(Humanes Motor-Assesment Center).
+> including the central service projects Z02 (Animal Motor Circuits Core Facility) and Z03 (Human Motor Assessment Center).
 
 ### M10
 ** Original Manuscript **
