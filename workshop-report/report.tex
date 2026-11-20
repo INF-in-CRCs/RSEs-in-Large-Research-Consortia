@@ -134,9 +134,9 @@ Jens~Dierkes\authorOrcid{0000-0002-0121-9261}\authorRef{20}
 \abstract{% Abstract of the article
 In the German research funding landscape, so-called Collaborative Research Centres (CRCs, or SFBs in German) play a crucial role in the competitive funding steered by the German Research Foundation.
 Digital tools have become integral to academic research, shaping an increasing number of activities throughout the research cycle.
-This is not different for CRCs, where it has become commonplace to pool tasks related to digital tools in dedicated units, the so-called INF projects.
+This is not different for CRCs, where it has become commonplace to pool tasks related to digital tools and research infrastructure in dedicated units, the so-called INF projects.
 This report surveys contributed INF projects and comparable structures across Germany's research landscape, complemented by an informal staff survey.
-Building on that and on a workshop held at the deRSE26 conference, we collect lessons learnt across INF projects and distil the discussion into guides that other INF projects (or similar structures) can follow.
+Building on that and on the workshop ``RSEs in Large Research Consortia: Sharing Tools, Practices, and Lessons Learned'' held at the deRSE26 conference, we collect lessons learnt across INF projects and distil the discussion into guides that other INF projects (or similar structures) can follow.
 }
 \keywords{INF, CRCs, DFG, RDM, RSE, SFB}
 
@@ -169,7 +169,7 @@ As digital tools have become central to the research process---from data collect
 These units provide research data management (RDM) and research software engineering (RSE) services to all projects within a CRC, while contending with the particular demands of interdisciplinary, long-running collaborations.
 Despite their growing numbers, INF projects are rarely documented as a collective: their structures, practical approaches, and accumulated experience tend to remain within individual CRCs.
 In order to counteract this, we first start with a historical overview of the development of INF projects to provide an introduction to the existing literature and policy context.
-We then survey contributed current and recent INF projects (and comparable structures) across Germany's research landscape, complemented by an informal staff survey, before drawing on a workshop held at deRSE26 to collect the lessons learnt and distil them into practical guidance for INF projects and comparable structures.
+We then survey contributed current and recent INF projects (and comparable structures) across Germany's research landscape, complemented by an informal staff survey, before drawing on the workshop ``RSEs in Large Research Consortia: Sharing Tools, Practices, and Lessons Learned'' held at the deRSE26 conference in Stuttgart to collect the lessons learnt and distil them into practical guidance for INF projects and comparable structures.
 We also highlight that this overview forms the foundational activity of
 a network of INF projects\footnote{%
 \url{https://www.listserv.dfn.de/sympa/info/inf-projects-in-crcs}%
@@ -2087,7 +2087,7 @@ to TU Dresden’s reputation in research excellence and digital transformation b
 
 \subsection{Surveying the INF projects}
 Some of the authors of this paper were connected via deRSE conferences, while some others found
-their way to the group via DsgG venues. The local anecdotal evidence suggested that INF projects
+their way to the group via Data Stewardship goes Germany (DSgG) community meetings. The local anecdotal evidence suggested that INF projects
 were not staffed homogeneously with only Research Software Engineers. To corroborate this with the
 overview of INF projects, we conducted an informal survey during the workshop and in the weeks
 after. The question, then, to answer: who is actually employed in the INF projects?
@@ -2114,12 +2114,12 @@ asked how INF project staff see themselves between being RSEs and Data Stewards.
  \label{fig:figure_plot}
 \end{figure}
 We also asked about the tools that people are using in their daily work. We see that there is a plethora of tools that are very domain specific.
-However, as the word cloud in \autoref{fig:figure_wordcloud} shows, there is a common core of tooling that is shared across INF projects.\\
+However, as the word cloud in \autoref{fig:figure_wordcloud} shows, there is a common core of tooling that is shared across INF projects.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.6\linewidth]{fig3.pdf}
   \caption{While there is a broad spectrum of very specialised tools that come from each
- domain, there is also a core of common tooling that is used by everyone.}
+ domain, there is also a core of common tooling that is shared across many INF projects.}
  \label{fig:figure_wordcloud}
 \end{figure}
 We closed the survey with a question about what people would like to see at a follow-up workshop.
@@ -2132,12 +2132,15 @@ We observe, that some INF projects lean towards a service-providing idea, where 
 can even be bundled across SFBs such as in \autoref{subsec:vdr}
 while others lean towards a project based output.
 Irrespective of this, there are still common core questions that each INF project tries to find answers to.
-In the in-person workshop, we led discussions in four separate groups.
-We summarise each discussion in the following paragraphs.
+At the in-person workshop ``RSEs in Large Research Consortia: Sharing Tools, Practices, and Lessons Learned'', held as part of the deRSE26 conference in Stuttgart, we led discussions on these questions in four breakout groups.
+We summarise each discussion in the following subsections.
 \vspace{-1em}
-\subsection{Outreach, Collaboration and Networking}
-INF projects are often one of the cross-cutting components within a CRC,
-and therefore they play an important part in the collaboration and networking within the project.
+\subsection{Collaboration, Communication, and Internal Networking}
+\noindent\textbf{Key takeaway:} Regular, work-proximate exchange formats (\eg quarterly meetings, doctoral courses, and project pairings) conducted via researchers' existing communication channels---and explicitly backed by project PIs---foster stronger engagement than infrequent high-level status meetings.
+
+\medskip
+\noindent INF projects are often one of the cross-cutting components within a CRC,
+and therefore they play an important part in collaboration and networking within the consortium.
 Since partners in INF projects necessarily need a higher-level overview of the work across the entire CRC, 
 they can also be valuable partners or even facilitators of project outreach. 
 This section discusses experiences in this important social and cross-disciplinary component of an INF project.
@@ -2156,8 +2159,8 @@ three months is not too often to interfere with “regular work”,
 but frequent enough to provide early feedback and incentivise timely implementation of agreed-upon targets.
 Importantly, this frequency is not only seen as more effective by the INF teams,
 but also by the researchers, increasing their engagement with the INF projects.
-Relatedly, open development, as opposed to a closed one, eased outreach for multiple INF projects,
-as researchers felt more connected to the work within the INF project. 
+Relatedly, taking an open approach to development---through open-source software and open data practices, as opposed to closed internal development---eased outreach and collaboration for multiple INF projects,
+as researchers felt more connected to the work within the INF project.
 
 Another topic besides meeting frequency is the choice of contact channels.
 Workshop participants agreed that there is no single preferred channel; rather
@@ -2170,20 +2173,23 @@ The closer those are to what researchers perceive as “the actual work”, the 
 One of the prerequisites for success, also more generally,
 of these efforts seems to be an explicit backing of such low-level offerings and pairings by the project PIs.
 One result is that new topics within digital research, \eg, tools or methods, can sometimes be relatively easy to introduce on a low-level, but may require substantial persuasion on the level of research-PIs.
-A key lesson learned is that PI buy-in is not merely beneficial, but a key ingredient for the successful implementation of RDM and RSE practices.
+A key lesson learnt is that PI buy-in is not merely beneficial, but a key ingredient for the successful implementation of RDM and RSE practices.
 
 Not surprisingly, general ideas that are close to the Open Science community, and thus to the RDM and RSE communities as well, like the FAIR principles,
 can be hard to convey within some CRCs, especially when the served communities do not put a high value on those.
 Then, an INF project not only has the role as RDM/RSE-enabling unit, but also as an Open Science evangelist.
 \vspace{-2.5em}
 \subsection{How do we educate scientists and ourselves?}
-Education and training for scientists and research data managers is a multifaceted challenge that goes beyond simply providing access to courses.
+\noindent\textbf{Key takeaway:} Effective training requires curating and tailoring courses to domain-specific tools and real research workflows, complementing courses with direct consulting, and recognising the ongoing professional development and training work of INF staff.
+
+\medskip
+\noindent Education and training for scientists and research data managers is a multifaceted challenge that goes beyond simply providing access to courses.
 We acknowledge that an important task of INF projects is the provision of teaching materials, but the training of the INF project itself is equally important.
 While many researchers are capable of identifying and enrolling in online training opportunities independently, a recurring difficulty lies in finding relevant and high-quality training that aligns with their specific needs and contexts.
 This highlights the importance of not only curating suitable offerings but also guiding researchers toward them.
 A key factor in effective training is the careful tailoring of content to the target audience.
 Generic training formats often fall short, particularly when domain-specific tools and practices are involved.
-Integrating such specialised tools into training programs remains a significant challenge,
+Integrating such specialised tools into training programmes remains a significant challenge,
 yet it is essential for ensuring applicability in real-world research settings.
 Without this alignment, there is a risk of participants losing interest and adopting sub-optimal or ``wrong'' solutions early on. This leads to a kind of ``Good-Enough'' problem,
 where initial, partial success obscures underlying issues and may even have long-term negative consequences.
@@ -2203,10 +2209,13 @@ audience-specific design, integration of domain tools, and closer alignment with
 Equally important are structural improvements, such as fostering cross-community exchange and recognising training-related work as a valuable professional contribution.
 \vspace{-1em}
 \subsection{Reproducibility, Quality and Validation of created Artefacts}
-The workshop discussions established that while automated tools are rapidly advancing, human expertise remains central to artefact validation.
-In fields dealing with sensitive clinical or animal data, researchers are increasingly adopting a "human-in-the-loop" approach.
-Within this framework, machine learning models and locally-hosted or privacy preserving LLMs are utilised to suggest metadata or classify complex datasets, which are then verified through expert visualisation and manual checks.
-This method ensures that data privacy is maintained while leveraging AI to handle the increasing volume of research outputs.
+\noindent\textbf{Key takeaway:} Reliable artefact validation combines reproducible runtime and testing practices (containers, CI/CD, and repository-linked ELNs) with expert human review, particularly when locally hosted LLMs assist with metadata or sensitive data.
+
+\medskip
+\noindent The workshop discussions established that while automated tools are rapidly advancing, human expertise remains central to artefact validation.
+In fields dealing with sensitive clinical or animal data, researchers are increasingly adopting a ``human-in-the-loop'' approach.
+Within this framework, machine learning models and locally hosted or privacy-preserving LLMs are utilised to suggest metadata or classify complex datasets, which are then verified through expert visualisation and manual checks.
+This approach helps protect sensitive data during review while leveraging AI assistance to handle the increasing volume of research outputs, although generated suggestions still require careful domain verification.
 Technical validation becomes more complex as software grows in scale, requiring sophisticated containerisation and environment management.
 Participants identified tools such as Pixi and the MaRDI packaging system as essential for managing dependencies and namespaces in large-scale projects.
 For dynamic datasets that change over time, static identifiers alone are often insufficient to guarantee reproducibility.
@@ -2217,29 +2226,26 @@ Integrating ELNs with established repositories like \href{https://dataverse.org/
 Despite these tools, the workshop highlighted a persistent gap in the quality of researcher-provided metadata, pointing to the need for better training and workflow integration to ensure artefacts remain long term verifiable and reusable.
 % \vspace{-1em}
 \subsection{Workflows and Pipelines}
-A common topic occurring in INF projects is helping researchers form pipelines of the software they use.
-In this endeavour, especially workflow platforms are particularly beneficial.
-Established examples from various domains are \href{https://galaxyproject.github.io/}{Galaxy}, \href{https://esciencelab.org.uk/products/taverna/}{Taverna}, and \href{https://workflowhub.eu/}{workflowhub}.
-The use of standardised languages like \href{https://www.commonwl.org/}{CWL} would be beneficial, but so far we see a number of languages
-like Mardiflow, \href{https://snakemake.readthedocs.io/en/stable/}{snakemake} and nextflow in use.\\
-Another useful mechanism for automated workflows is pipelines,
-as offered by platforms such as github and gitlab in their CI/CD environments.
-While it would be great to use standardised languages, there are a couple of stumbling blocks that make adoption difficult:\\
-Workflow languages require training.
-Since you have to lay out your steps in a standardised language, you also have to learn it.
-This process is similar to programming, and thus requires coding practice.
-Codified pipelines will have version changes, and that can bring the well-known problem of long-term maintenance.
-For some, an issue can be that workflows have to be permitted in the respective domain,
-so it can be that the use of a workflow requires approvals, \eg~by an ethics board or similar.
-While certainly appealing to INF projects, the participants noted that
-workflow languages currently definitely have a low reach into the user base.\\
-Other topics that hinder adoption are the availability of the inputs to the workflows.
-Findability of the respective responsible users can be a problem, or
-it can be difficult to get the permission to use input data.
+\noindent\textbf{Key takeaway:} Workflow platforms and CI/CD pipelines improve repeatability, but broader researcher adoption depends on lowering coding and maintenance barriers, clarifying data-access permissions, and providing accessible documentation.
+
+\medskip
+\noindent A common topic occurring in INF projects is helping researchers form pipelines of the software they use.
+In this endeavour, workflow platforms are particularly beneficial.
+Established examples from various domains include \href{https://galaxyproject.github.io/}{Galaxy}, \href{https://esciencelab.org.uk/products/taverna/}{Taverna}, and \href{https://workflowhub.eu/}{WorkflowHub}.
+The use of standardised languages such as \href{https://www.commonwl.org/}{CWL} can improve portability, alongside workflow frameworks and engines such as \href{https://www.mardi4nfdi.de/portal/services}{MaRDIFlow}, \href{https://snakemake.readthedocs.io/en/stable/}{Snakemake}, and \href{https://www.nextflow.io/}{Nextflow}.
+Another widely used mechanism for automated workflows is CI/CD pipelines,
+as offered by platforms such as \href{https://github.com/}{GitHub} and \href{https://about.gitlab.com/}{GitLab}.
+
+While standardised workflow languages are attractive, several practical stumbling blocks complicate adoption.
+Workflow languages require training: since steps must be expressed in a formal specification, using them resembles programming and requires coding practice.
+Codified pipelines also undergo version changes, raising the familiar challenge of long-term maintenance.
+In some domains, executing automated workflows may additionally require formal approvals, \eg~from an ethics board or data protection office.
+Consequently, although appealing to INF teams, participants noted that dedicated workflow languages currently have limited reach among domain researchers.
+
+Other barriers concern the availability of workflow inputs: identifying the responsible data owners can be difficult, or obtaining permission to reuse input datasets may take time.
 % Re-Use and Maintenence are an issue.
-Limited awareness of automation benefits often prevents people from getting started.
-Possible solutions that the participants discussed are the use of an RAG (Retrieval-Augmented Generation) supported Chat-Agent for scientists,
-or easy/good documentation.
+Limited awareness of the benefits of automation often prevents researchers from getting started.
+Possible remedies discussed at the workshop include clear, example-driven documentation and Retrieval-Augmented Generation (RAG)-supported chat assistants to help researchers navigate documentation and workflow setup.
 \vspace{-1em}
 \section{Summary}
 Comparing the initial problems of the INF projects in \autoref{sec:history}
