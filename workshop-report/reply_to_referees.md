@@ -1,5 +1,5 @@
 # Reply to the referees
-We thank all our referees for their constructive feedbackand the raised points,
+We thank all our referees for their constructive feedback and the raised points,
 and hope that our comments below, and the changes we did to the manuscript answer their criticism.
 
 ## Reviewer B:
@@ -45,6 +45,57 @@ always refer to the staff working in the INF projects.
 
 Thank you for this suggestion. We have adopted this approach across the revised INF project descriptions in Section 3 by introducing four bold paragraph-level labels—**Context and connections:**, **Main activities:**, **Key challenges and adoption:**, and **Lessons learnt:**—each starting a new paragraph without adding further numbered subsections, so that key challenges and takeaways are easy to locate and compare across CRCs.
 
+### B5.
+** Reviewer Comment **
+> The workshop is mentioned briefly in the introduction but I think it would be good to specifically state the workshop title and then to highlight the workshop again when talking about it in the later sections - after reading 10-15 pages about the CRCs, readers may not be aware of what “workshop” is being referred to in the later sections so it might make sense to highlight that the discussions were held at the [workshop name] workshop as part of the deRSE26 conference, for example.
+
+** Our response **
+
+Thank you for this helpful suggestion. We now explicitly state the full workshop title (``RSEs in Large Research Consortia: Sharing Tools, Practices, and Lessons Learned'') in both the Abstract and Section 1 (`Introduction`), and reiterate at the opening of Section 4 (`Lessons Learnt`) that the four breakout group summaries stem from this in-person workshop at the deRSE26 conference in Stuttgart.
+
+### B6.
+** Reviewer Comment **
+> A brief comment on the abstract - it refers to “digital tools” should infrastructure be included here too - “digital tools and infrastructure”?
+
+** Our response **
+
+Agreed. We expanded the phrase in the Abstract to ``tasks related to digital tools and research infrastructure''.
+
+### B7.
+** Reviewer Comment **
+> The sentence beginning “Relatedly”, lines 679-681: I think this could be improved to be a little clearer to read - I’m not sure about “open development, as opposed to a closed one”. Is this referring to open source software development? Or general open outputs?
+
+** Our response **
+
+Thank you for pointing this out. We have clarified the sentence in Section 4.1 (`Collaboration, Communication, and Internal Networking`) following your suggestion:
+> Relatedly, taking an open approach to development---through open-source software and open data practices, as opposed to closed internal development---eased outreach and collaboration for multiple INF projects, as researchers felt more connected to the work within the INF project.
+
+### B8.
+** Reviewer Comment **
+> Line 696: I’m not sure if PI buy-in is inevitable but I think it’s definitely needed - not sure if inevitable is the right word - perhaps “of critical importance” or just “necessary” are clearer?
+
+** Our response **
+
+We agree and replaced ``inevitable'' in Section 4.1 with ``a key ingredient for the successful implementation of RDM and RSE practices'' (see also `M14`).
+
+### B9.
+** Reviewer Comment **
+> There are some inconsistencies in capitalisation when referring to tools and services, e.g. github vs. GitHub. I’d recommend resolving these. There is also some inconsistency in the use of web links for tools. For example in line 766, Mardiflow, snakemake and nextflow are mentioned (question re capitalisation here again), but I’m not clear why only snakemake is a link.
+> Line 763: I think the comma should be after rather than before “especially”?
+
+** Our response **
+
+Thank you for catching these editorial issues in Section 4.4 (`Workflows and Pipelines`). We removed the redundant ``especially ... particularly'' phrasing (`In this endeavour, workflow platforms are particularly beneficial.`) and standardised both the capitalisation and web links across all referenced platforms and workflow tools (`Galaxy`, `Taverna`, `WorkflowHub`, `CWL`, `MaRDIFlow`, `Snakemake`, `Nextflow`, `GitHub`, and `GitLab`).
+
+### B10.
+** Reviewer Comment **
+> Line 795: The sentence beginning “Also, numerous” doesn’t read quite right - “RDM specific networks” is repeated twice.
+> Line 812: Should “career perspectives” read “career opportunities”?
+
+** Our response **
+
+Thank you—we fixed both formulations in Section 5 (`Summary`), removing the duplicate ``RDM specific networks'' phrasing (`regional initiatives such as SaxFDM provide local RDM exchange`) and replacing ``career perspectives'' with ``career opportunities''.
+
 
 ## Reviewer H:
 
@@ -84,6 +135,22 @@ Thank you for this suggestion. We have added a comparative overview table (`\aut
 
 Thank you for this suggestion. We have expanded Section 2 (`\label{sec:history}`) to situate the history of INF projects within the broader research policy, infrastructure, and professional community landscape. In particular, the section now connects INF developments to evolving DFG guidelines and review criteria, the FAIR and FAIR4RS principles, regional state initiatives (such as bwFDM, HeFDI, fdm.nrw, and SaxFDM), DataCite and re3data, the RfII recommendations and the establishment of NFDI consortia (such as FAIRmat/NOMAD), European developments (EOSC and EOSC Node Germany), and the growth of independent communities including Software/Data Carpentry (The Carpentries), de-RSE, and data stewardship.
 
+### H5.
+** Reviewer Comment **
+> At times, the use of acronyms referencing certain projects/initiatives are not explained, which makes those parts less accessible.
+
+** Our response **
+
+Thank you for pointing this out. We reviewed the manuscript for unexplained project and community acronyms and expanded them on first use—including `Data Stewardship goes Germany (DSgG)` in the survey section, `Universities of Marburg (UMR) and Münster (UMS)` and precursor cohort context (`BipoLife`, `FOR~2107`) in `TRR~393`, and central facility titles (`Z02`, `Z03`) in `CRC~1451`—while consolidating recurring baseline terms (`RDM`, `RSE`, `FAIR`, `NFDI`) in Sections 1–3.
+
+### H6.
+** Reviewer Comment **
+> Lessons learnt: Section 4.1 primarily discusses collaboration and not so much outreach or networking, so I'd suggest to change the section heading accordingly. One thing that could strengthen this part of the paper is if impacts on project timelines, budgets, and other performance metrics could be quantified. Sec. 4 could also be made more tangible if each subsection could crystallise in a concise, specific and actionable takeaway (possibly as the first sentence, i.e., bottom line up front).
+
+** Our response **
+
+Thank you for these constructive suggestions. First, we renamed Section 4.1 from `Outreach, Collaboration and Networking` to `Collaboration, Communication, and Internal Networking` to reflect its primary focus accurately. Second, we added a bold **Key takeaway:** summary at the very beginning of each of the four subsections in Section 4 (`4.1`–`4.4`) so readers get a concise, actionable bottom-line recommendation up front. While systematic quantification of timeline or budget impacts across independent CRCs was beyond what our workshop discussions collected, concrete project-level indicators (such as dataset publication counts, user uptake figures, and quality-control statistics) have been incorporated into the revised case studies in Section 3 where available.
+
 ## Reviewer M:
 
 ### M1.
@@ -107,7 +174,7 @@ Digital tools have become integral to academic research, shaping an increasing n
 > Are these really services to be provided, or should they instead be understood as project outputs? I think this distinction is worth addressing.
 
 ** Our Response **
-Thank you for this observation. We decided against clarifying this in the - on purpose - short introduction of the paper, but have instead opted to add that point(some are heavily service, others have CRC-related project output) to the Lessons learnt section, after the overview of the CRCs.
+Thank you for this observation. We decided against clarifying this in the - on purpose - short introduction of the paper, but have instead opted to add that point (some are heavily service-oriented, others produce CRC-related scientific outputs) to the `Lessons Learnt` section and to take an explicit position on research software and data infrastructure as durable scientific outputs in Section 5 (`Summary`; see also `M3` and `M20`).
 
 
 ** changed in the manuscript **
@@ -124,13 +191,13 @@ to "Lessons learnt"
 > This points to a broader issue with such schemes. When work is scoped within a finite project, its outputs do not necessarily have a lasting impact. Why should a research software output not be regarded as a long-lasting contribution in the same way as, for example, a useful equation? I would have liked the authors to address this point more directly and express a concrete position on it. In any case, the statement that this report “attempts to change that” feels somewhat too ambitious and could be made more specific.
 
 ** Our Response **
-THank You for this comment we rephrased the introduction better to showcase what the contributions of this report are. We also state the introduction of the inf-projects-in-crcs network already at the beginning.
+Thank you for raising both points. First, we toned down the Introduction by removing ``This report attempts to change that.'' and stating the concrete contributions of the report and the newly founded `inf-projects-in-crcs` network. Second, in Section 5 (`Summary`), we now directly address the structural tension of finite project funding and state an explicit position that reusable research software and data infrastructure constitute durable scientific outputs in their own right—comparable in scholarly standing to new experimental methods or theoretical formulations—and should be recognised accordingly in academic assessment (`\cite{Anzt:2020,Goth:2025}`).
 
 ** changed in the manuscript **
 removed "This report attempts to change that."
-Added/reworded for context:
+Added/reworded in `Introduction`:
 In order to counteract this, we first start with a historical overview of the development of INF projects to provide an introduction to the existing literature and policy context.
-We then survey contributed current and recent INF projects (and comparable structures) across Germany's research landscape, complemented by an informal staff survey, before drawing on a workshop held at deRSE26 to collect the lessons learnt and distil them into practical guidance for INF projects and comparable structures.
+We then survey contributed current and recent INF projects (and comparable structures) across Germany's research landscape, complemented by an informal staff survey, before drawing on the workshop ``RSEs in Large Research Consortia: Sharing Tools, Practices, and Lessons Learned'' held at the deRSE26 conference in Stuttgart to collect the lessons learnt and distil them into practical guidance for INF projects and comparable structures.
 We also highlight that this overview forms the foundational activity of
 a network of INF projects\footnote{%
 \url{https://www.listserv.dfn.de/sympa/info/inf-projects-in-crcs}%
@@ -204,10 +271,10 @@ Title of section 3.5
 
 
 ** Our Response **
-FIXME:
+Thank you for catching this inconsistency. Section 3.5 (`CRC~1451`) previously listed all nine participating institutions inside its `\subsection` title, unlike the other single-host CRC headings. We shortened the `\subsection` title to list the host university (`University of Cologne`) consistently with the other project subsections and moved the participating partner institutions into the `Context and connections:` paragraph.
 
 ** changed in the manuscript **
-FIXME: 
+> `\subsection{Project INF --- Data Management for Reproducible Data-Driven Computational Modeling Cross-Species and Cross-Labs, \href{https://gepris.dfg.de/gepris/projekt/458705875?language=en}{CRC~1451 -- Key Mechanisms of Motor Control in Health and Disease}, University of Cologne}`
 
 ### M9
 ** Original Manuscript **
@@ -224,7 +291,7 @@ and the task of INF was to provide data management related tasks.
 
 ** changed in the manuscript **
 modified to: 
-> including the central service projects Z02(Animal Motor Circuits Core Facility) and Z03(Humanes Motor-Assesment Center).
+> including the central facilities Z02 (Animal Motor Circuits Core Facility) and Z03 (Human Motor Assessment Centre).
 
 ### M10
 ** Original Manuscript **
@@ -292,7 +359,7 @@ Thank you for this clarification. We start the paragraph now with your idea, and
 Thank you for the suggestion, we have reworded this.
 
 ** changed in the manuscript **
-> A key lesson learned is that PI buy-in is not merely beneficial, but a key ingredient for the successful implementation of RDM and RSE practices.
+> A key lesson learnt is that PI buy-in is not merely beneficial, but a key ingredient for the successful implementation of RDM and RSE practices.
 
 ### M15
 ** Reviewer Comment **
@@ -308,10 +375,10 @@ Thank you for the suggestion, we have reworded this.
 > Common background information, recurring acronyms, and baseline requirements such as FAIR compliance could be grouped together rather than repeated across the case studies.
 
 ** Our Response **
-Thank you for this suggestion. We have revised the INF project descriptions in Section 3 towards a common four-part structure (**Context and connections:**, **Main activities:**, **Key challenges and adoption:**, and **Lessons learnt:**), replacing generic statements such as baseline FAIR compliance with concrete RDM and RSE activities, specific adoption experiences (both what worked well and what proved difficult), and practical lessons learnt across the participating CRCs.
+Thank you for this suggestion. First, we added a three-paragraph opening overview at the beginning of Section 3 (`\label{sec:inf-in-germany}`) consolidating the shared RDM, RSE, FAIR, consulting, and mediating responsibilities across INF projects so they do not need to be repeated in each subsection. Second, we revised the INF project descriptions towards a common four-part structure (**Context and connections:**, **Main activities:**, **Key challenges and adoption:**, and **Lessons learnt:**), placing greater emphasis on concrete RDM and RSE activities, specific adoption experiences (both what worked well and what proved difficult), and practical lessons learnt across the participating CRCs.
 
 ** changed in the manuscript **
-> Reworked the project descriptions in Section 3 to use four consistent bold paragraph labels (`Context and connections:`, `Main activities:`, `Key challenges and adoption:`, and `Lessons learnt:`) and expanded their discussion of concrete challenges, adoption experiences, and lessons learnt.
+> Added a shared responsibilities overview at the start of Section 3 and reworked the project descriptions to use four consistent bold paragraph labels (`Context and connections:`, `Main activities:`, `Key challenges and adoption:`, and `Lessons learnt:`).
 
 ### M17
 ** Reviewer Comment **
@@ -334,3 +401,29 @@ Thank you for this suggestion. We have rewritten Section 2 (`\label{sec:history}
 
 ** changed in the manuscript **
 > Rewrote Section 2 (`History of the INF projects`) in a narrative chronological structure contextualising INF developments alongside policy, infrastructure, and community milestones, and added a concluding synthesis of persistent and emerging challenges leading into Section 3.
+
+### M19
+** Reviewer Comment **
+> There is also a pertinent statement about providing LLM support that is left entirely unexplored. No suggestions or related lessons are provided, which again feels like a missed opportunity.
+> In general, the conclusions appear reasonable in relation to the experiences presented. However, there are a few instances where broad or causal claims would benefit from more careful qualification.
+
+** Our Response **
+Thank you for highlighting this. In Section 4.3 (`Reproducibility, Quality and Validation of created Artefacts`), we qualified our discussion of locally hosted and privacy-preserving LLMs so that local hosting and human-in-the-loop checks are presented as practical safeguards that help protect sensitive data during review—while explicitly noting that generated metadata and classifications still require careful domain verification—rather than claiming guaranteed privacy or evaluated effectiveness where comparative evidence is not yet available.
+
+** changed in the manuscript **
+> This approach helps protect sensitive data during review while leveraging AI assistance to handle the increasing volume of research outputs, although generated suggestions still require careful domain verification.
+
+### M20
+** Reviewer Comment **
+> I would also encourage the authors to draw stronger conclusions from the material presented. In particular, the manuscript could say more about the INF model itself, the sustainability of research software and infrastructure beyond finite funding periods, and the implications of the funding scheme for the position of research software and research tools within academia.
+> The survey findings would benefit from more interpretation and contextualisation.
+
+** Our Response **
+Thank you for this important suggestion. We substantially expanded and restructured Section 5 (`Summary`) to address all four aspects directly:
+1. **Evaluation of the INF funding model:** We highlight both its core strength—embedding domain-literate RDM and RSE mediators directly inside interdisciplinary consortia—and its structural tension when long-lived infrastructure and expertise are tied to four-year project funding cycles.
+2. **Post-funding sustainability:** We explicitly distinguish basic archival bit-preservation (increasingly addressed with university libraries, computing centres, and NFDI services) from operational sustainability—maintaining research software, running live platforms, testing backup recovery, and sustaining user support beyond finite funding periods.
+3. **Position of research software and infrastructure in academia:** We state a clear position that reusable research software, curated datasets, metadata schemas, and workflows developed in INF projects constitute durable scientific outputs in their own right—comparable to experimental methods or theoretical formulations—and require commensurate academic recognition (`\cite{Anzt:2020,Goth:2025}`).
+4. **Contextualisation of the staff survey:** We connect the survey findings (high doctoral qualification and domain alignment across a continuous RSE–data stewardship `dRTP` spectrum, contrasted with predominantly part-time contracts and scarce permanent positions) to institutional anchoring in libraries, computing centres, and dedicated digital research hubs (`\autoref{subsec:vdr}`, `\cite{Hausen_Rosenberg_Trautwein-Bruns_Schwarz_2020,Kempf2026}`).
+
+** changed in the manuscript **
+> Rewrote Section 5 (`Summary`) to evaluate the DFG INF funding model, distinguish archival storage from post-funding software and service sustainability, articulate research software and data infrastructure as first-class scientific outputs, and contextualise the staff survey results within institutional career structures.
