@@ -302,10 +302,10 @@ N/A
 
 
 ** Our Response **
-we fixed this by removing the abbreviation altogether.
+Thank you for catching this. We now define `RDMS` explicitly on its first occurrence (`central RDM system (RDMS)` in Section 3.6) and write `RDM system` where the abbreviation is not needed.
 
 ** changed in the manuscript **
-> As its RDM platform
+> It develops and operates a central RDM system (RDMS) based on `\href{https://matinf.pro/}{MatInf}`
 
 ### M11
 ** Original Manuscript **
