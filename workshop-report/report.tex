@@ -936,8 +936,7 @@ species creates substantial requirements for data integration,
 comparability, and reuse.
 \\
 \noindent\textbf{Main activities:}
-The INF provides RDM expertise, software tools, consulting,
-and training. Its central technical approach uses
+Its central technical approach uses
 \href{https://www.datalad.org/}{DataLad} to manage and
 version heterogeneous datasets while preserving the autonomy
 of individual research projects regarding data storage and
@@ -1031,8 +1030,8 @@ to locally operated data management systems.
 To establish a common information space, the CRC
 requires its research data to be managed in the central RDMS.
 Introducing these workflows requires project-specific
-support. While general workshops cover common RDM
-practices, individual meetings with project
+support. General workshops cover common RDM
+practices - individual meetings with project
 representatives are used to develop concise DMPs describing data types, sample
 relationships, and research workflows. These plans
 form the basis for jointly defining implementation
@@ -1081,7 +1080,7 @@ INF provides assistance with RDM, methodological consulting, statistical trainin
 A shared server supports web-based experiments using open-source tools and has been successfully used for data collection by 10 of the 15 CRC research projects.
 We also developed a metadata platform accommodating theoretical, experimental, corpus-based, and fieldwork data and collaborated with the DFG Priority Programme \href{https://vicom.info/}{ViCom} on multimodal data science.
 We have established a CRC-wide data management policy and supported project-specific DMPs using the web-based RDM Organiser, resulting in a documented protocol in 2025~\cite{Bahmanian:et:al:2025}. A key factor in its implementation was assigning one data steward per project, which facilitated communication, coordination, and adoption of shared practices.
-Workshops and consultations provided additional support in data management, statistics, and experimental design.
+%Workshops and consultations provided additional support in data management, statistics, and experimental design.
 \\
 \textbf{Key challenges and adoption:} A central challenge was accommodating the heterogeneous data types and metadata requirements of experimental, corpus-based, and theoretical research. Researchers from different fields had distinct expectations regarding which information should be documented and how it should be organised. To address this, we developed and piloted different versions of the metadata forms with researchers from different methodological groups. Their feedback allowed us to identify relevant metadata categories, ensure that different research needs were represented, and make the forms intuitive and easy to use.
 \\
@@ -1101,9 +1100,8 @@ remodelling across five institutions, generating heterogeneous
 data from imaging, structural biology, lipidomics, proteomics,
 and molecular simulations.
 The INF project supports RDM
-throughout the CRC, building on researchers' existing expertise
-and workflows and offering support at every level of RDM
-experience.
+in the CRC, building on researchers' existing expertise
+and workflows and offering support at every level of experience.
 The project collaborates with Heidelberg University's
 Computing Centre (URZ) and Research Data Unit (RDU), which
 together host and administer the university's \elabftw{}
@@ -1115,7 +1113,7 @@ exchanging practical experiences and contributing to wider RDM communities.
 A network of data stewards embedded within the CRC's research
 groups forms the backbone of the INF's approach.
 Regular seminars and individual consultations provide
-practical guidance on data organisation, persistent
+guidance on data organisation, persistent
 identifiers, and DMPs, enabling stewards to support their respective groups.
 The project's main technical focus is the introduction
 of the ELN \elabftw.
@@ -1126,7 +1124,7 @@ The templates incorporate explanatory prompts, controlled
 vocabularies, and Research Resource Identifiers (RRIDs),
 supporting consistent documentation while accommodating
 different levels of detail.
-The package is openly available through
+The package is available through
 \href{https://github.com/sfb1638/elabftw-templates}{GitHub}
 and \href{https://doi.org/10.5281/zenodo.21103853}{Zenodo},
 alongside a
@@ -1139,9 +1137,9 @@ It enables researchers without programming experience to
 create and update \elabftw{} entries in batches using
 spreadsheets, import existing reagent databases, and
 transfer tabular experimental data into ELN records.
-The software is also
+It is also
 \href{https://doi.org/10.5281/zenodo.23661894}{archived on Zenodo}.
-Both the template package and elAPI Plugins are referenced
+Both, the templates and the elAPI Plugins are referenced
 in the official \elabftw{} documentation.
 The project also presented its work at an
 \href{https://www.deltablot.com/posts/community-meetings/community-meeting-20261001/}
@@ -1203,7 +1201,7 @@ approaches to RDM support and the adoption of shared tools.
 \label{subsec:crc1646}
 \noindent\textbf{Context and connections:}
 CRC 1646 is an interdisciplinary collaboration between linguistics, psychology, philosophy and computational science. It investigates the core properties of linguistic creativity, develops empirical measures, and analyses underlying linguistic, cognitive, and social mechanisms.
-The CRC-projects not only require handling large and diverse datasets (eg., video, audio, picture, text, fMRI) but also involve the collection of personal data, introducing an additional layer of sensitivity to data management. Some projects include experimental studies that gather demographic information, video recordings, or medical history data of their participants, necessitating carefully designed consent procedures. Researchers must ensure the legal \cite{GDPR2016} validity of consent forms and secure management of sensitive data, while enabling FAIR sharing \cite{WilkinsonDumontier2016}.
+The CRC-projects not only require handling large and diverse datasets (eg., video, audio, picture, text, fMRI) but also involve the collection of personal data, introducing an additional layer of sensitivity to data management. Some projects include experimental studies that gather demographic information, video recordings, or medical history data of their participants, necessitating carefully designed consent procedures. Researchers must ensure the legal \cite{GDPR2016} validity of consent forms and secure management of sensitive data.
 \\
 \noindent\textbf{Main activities:}
 The INF project aims to establish a dedicated infrastructure comprising two main components \cite{JorschickSchrader2024} with the help of 2.65 FTE positions.  First, a \textit{wizard} platform that supports researchers during the data collection phase by automatically generating customized, legally compliant consent forms tailored to specific project requirements.
@@ -1211,8 +1209,9 @@ Second, a data management platform that enables the integration and handling of 
 \textbf{I.} The wizard is being developed as a dynamic, modular system, grounded in a careful analysis of domain-specific requirements and designed for future adoption by other disciplines \cite{StrathmannJoppek2026}.
 The infrastructure is based on ontological data models, enabling different layers and components of the platform to automatically adapt to new values while maintaining consistency and integration.
 The considered model enhances the next phase by improving project collaboration efficiency, and aligning with strategies that tailor data management to the specific needs of consented data \cite{Mohammadietal2026}.
-\textbf{II.} Given the large volume and heterogeneity of data within the CRC, we provide a range of RDM-related workshops, including training on GitLab, tidy and FAIR data practices. These activities are particularly aimed at preparing early-career researchers for data management responsibilities. In addition, we offer comprehensive \href{https://purl.org/crc1646/INF/guidelines}{guidelines} and a \href{https://purl.org/crc1646/INF/FAQ}{FAQ section}, enabling members to access relevant information as needed.
-\textbf{III.} Finally, INF provides training through workshops, hands-on sessions and consulting in statistics, programming and annotation tools to support researchers in their technical work, in addition guidance on the legal aspects of consent forms are provided, highlighting key requirements and best practices.
+\textbf{II.} Given the large volume and heterogeneity of data within the CRC, we provide a range of RDM-related workshops.
+These activities are aimed at preparing early-career researchers for data management responsibilities. In addition, we offer comprehensive \href{https://purl.org/crc1646/INF/guidelines}{guidelines} and a \href{https://purl.org/crc1646/INF/FAQ}{FAQ section}, enabling members to access relevant information as needed.
+\textbf{III.} Finally, INF provides training through workshops and consulting in statistics, programming and annotation tools to support researchers in their technical work, in addition guidance on the legal aspects of consent forms are provided, highlighting key requirements and best practices.
 \\
 \noindent\textbf{Key challenges and adoption:}
 A central challenge was translating complex legal requirements into understandable interpretations without compromising their legal validity. Consent forms are drafted by researchers and must ultimately be understood and confirmed by participants, neither of whom may have sufficient familiarity with the relevant legal aspects. The infrastructure must therefore strike a balance between legal compliance and comprehensibility while accommodating the needs of different individuals. Addressing these requirements calls for close collaboration among experts in law, linguistics, and software engineering.
@@ -1244,9 +1243,9 @@ The FAIR principles, which are essential to ensure the long-term reusability of 
 \subsection{\href{https://www.computeralgebra.de/sfb/}{TRR 195 --- Symbolic Tools in Mathematics and their Application}, Kaiserslautern, Aachen, Saarbrücken, Berlin, Darmstadt, Siegen, Stuttgart, Tübingen}
 \label{subsec:trr195}
 \noindent\textbf{Context and connections:}
-Computing examples has always been a key component of mathematical research. Modern computers paired
-with sophisticated mathematical software tools have taken the possibilities of such calculations to
-a new level. In the realm of algebra and its applications, where exact calculations are inevitable,
+Computing examples has always been a key component of mathematical research.
+% Modern computers paired with sophisticated mathematical software tools have taken the possibilities of such calculations to a new level.
+In the realm of algebra and its applications, where exact calculations are inevitable,
 the necessary software tools are provided by computer algebra systems. Established in 2017, TRR~195
 develops a next-generation computer algebra system, named \href{https://www.oscar-system.org}{OSCAR
 (Open Source Computer Algebra Research)}.
@@ -1338,14 +1337,10 @@ services. These capabilities enable measurements
 of material composition and catalytic properties,
 obtained by different groups and at different sites,
 to be integrated into common datasets.
-Beyond software development, the INF operates the
-infrastructure, provides training and individual
-consulting, and supports research data publication.
-Interactive reports document data accumulation and
-individual contributions. Across the first and second
-funding periods, respectively, 36 of 77 and 63 of
-115 users contributed data, with reported data
-volumes of 45 and 158~GB.
+Beyond RSE, the INF operates infrastructure, provides training, and supports data publication.
+Interactive reports document data accumulation and individual contributions.
+Across the first and second funding periods, 36 of 77 and 63 of
+115 users contributed data, with reported data volumes of 45 and 158~GB.
 \\
 \noindent\textbf{Key challenges and adoption:}
 A major challenge arose immediately after the INF's
@@ -1450,7 +1445,7 @@ and the project's data protection requirements.
 \\
 \noindent\textbf{Lessons learnt:}
 The experience of TRR~265 demonstrates the value
-of reusing established research infrastructure
+of reusing research infrastructure
 across CRCs while adapting it to new scientific
 and organisational requirements.
 The centralisation of research information and
@@ -1495,10 +1490,9 @@ The project develops a decentralised RDM infrastructure
 based on \href{https://www.datalad.org/}{DataLad},
 enabling version-controlled data management while
 accommodating local storage and access restrictions.
-A collaboration platform supports reproducible
-workflows across participating institutions.
-The \href{https://jtrack.readthedocs.io/en/latest/}
-{JTrack} platform contributes capabilities for mobile
+% A collaboration platform supports reproducible
+% workflows across participating institutions.
+The collaborative \href{https://jtrack.readthedocs.io/en/latest/} {JTrack} platform contributes capabilities for mobile
 and longitudinal data collection.
 Complementing these services, Q02 develops and operates
 a shared metadata system with a web-based editor,
@@ -1508,9 +1502,9 @@ discovery of research data and other consortium resources.
 In 2025 and 2026, the metadata system was also used to support
 the DFG's annual reporting process, reducing the need
 for separate manual information collection.
-Workshops, documentation, and consultations
-support researchers in data handling, preprocessing,
-and reproducible analysis.
+% Workshops, documentation, and consultations
+% support researchers in data handling, preprocessing,
+% and reproducible analysis.
 
 \medskip
 \noindent\textbf{Key challenges and adoption:}
@@ -1559,10 +1553,9 @@ across participating institutions.
 \pagebreak
 \subsection{Project INF --- Infrastructure,
 \href{https://trr391.tu-dortmund.de/}
-{TRR~391 -- Spatio-temporal Statistics for the
-Transition of Energy and Transport},
+{TRR~391 -- Spatio-temporal Statistics for the Transition of Energy and Transport},
 TU Dortmund University, Ruhr University Bochum}
-\label{subsec:trr391}
+\label{subsec:trr391}\vspace{-1em}
 \noindent\textbf{Context and connections:}
 Established in 2024, TRR~391 develops statistical and
 econometric methods for analysing spatio-temporal data
@@ -1584,9 +1577,9 @@ Further institutional connections include Ruhr University
 Bochum and national RDM initiatives such as the NFDI.
 \\
 \noindent\textbf{Main activities:}
-The INF supports the research data lifecycle through
-requirements analysis, data management planning,
-data curation, publication, and long-term preservation.
+% The INF supports the research data lifecycle through
+% requirements analysis, data management planning,
+% data curation, publication, and long-term preservation.
 A systematic needs assessment across the research projects
 identified requirements for data management, reproducible
 analyses, and cross-project data exchange.
@@ -1620,24 +1613,15 @@ disciplines. Differences in data structures, metadata,
 software environments, and access conditions complicate
 the establishment of common standards and reproducible
 workflows.
-The needs assessment revealed a strong demand for
-structured support, including documented best practices,
-standardised data exchange interfaces, and training
-in R, Python, GitHub, and RDM tools such as RDMO.
-Researchers also identified a need for infrastructure
-support enabling reproducible analyses and data sharing
-across projects.
-In particular, interdisciplinary collaboration requires
-more than technical compatibility: researchers must also
-develop a common understanding of data descriptions,
-processing steps, and requirements for reuse.
-The needs assessment identified a strong demand for
-documented best practices, standardised data exchange
-interfaces, and training in R, Python, GitHub, and RDM
-tools such as RDMO. To address these needs, the INF
-established the Knowledge Hub, provides targeted
-training, and supports reproducible data and software
-publication. Developing common workflows while
+The needs assessment revealed demand for
+documented best practices, standardised data
+exchange interfaces, and training in R, Python,
+GitHub, and RDM tools such as RDMO.
+To address these needs, the INF established
+the Knowledge Hub, provides targeted training,
+and supports reproducible data and software
+publication.
+Developing common workflows while
 accommodating discipline-specific practices remains
 an ongoing challenge.
 A further challenge is balancing open and reproducible
@@ -1666,14 +1650,14 @@ The publication of a
 \href{https://doi.org/10.17877/TRR391-2026-MW1W38NU}
 {replication package}
 provides an initial concrete example of this approach.
-Finally, the combination of requirements analysis,
-training, and institutional collaboration illustrates
-the importance of researcher-oriented support when
-establishing interdisciplinary infrastructure.
-Further experience with the adoption of these services
-will be necessary to assess their effectiveness and
-derive more specific recommendations for future
-INF projects.
+% Finally, the combination of requirements analysis,
+% training, and institutional collaboration illustrates
+% the importance of researcher-oriented support when
+% establishing interdisciplinary infrastructure.
+% Further experience with the adoption of these services
+% will be necessary to assess their effectiveness and
+% derive more specific recommendations for future
+% INF projects.
 
 \pagebreak
 \subsection{Project INF --- Infrastructure,
