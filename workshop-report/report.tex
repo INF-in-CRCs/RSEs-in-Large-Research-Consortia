@@ -135,7 +135,7 @@ Jens~Dierkes\authorOrcid{0000-0002-0121-9261}\authorRef{20}
 In the German research funding landscape, so-called Collaborative Research Centres (CRCs, or SFBs in German) play a crucial role in the competitive funding steered by the German Research Foundation.
 Digital tools have become integral to academic research, shaping an increasing number of activities throughout the research cycle.
 This is not different for CRCs, where it has become commonplace to pool tasks related to digital tools in dedicated units, the so-called INF projects.
-This report tries to catalogue the INF projects in Germany's research landscape.
+This report surveys contributed INF projects and comparable structures across Germany's research landscape, complemented by an informal staff survey.
 Building on that and on a workshop held at the deRSE26 conference, we collect lessons learnt across INF projects and distil the discussion into guides that other INF projects (or similar structures) can follow.
 }
 \keywords{INF, CRCs, DFG, RDM, RSE, SFB}
@@ -164,64 +164,261 @@ Building on that and on a workshop held at the deRSE26 conference, we collect le
 
 \section{Introduction}
 
-Collaborative Research Centres (CRCs), funded by the German Research Foundation (DFG), are a cornerstone of Germany's third-party funding landscape, bringing together researchers from different disciplines around shared scientific questions over periods of up to twelve years.
-As digital tools have become central to the research process – from data collection and analysis to publication and long-term archiving — CRCs have increasingly pooled these responsibilities in dedicated sub-projects known as INF projects (German: “\begin{de}Informationsmanagement und Informationsinfrastruktur\end{de}”), formally also known as Z-Projects (German: “\begin{de}Zentralprojekt\end{de}”).
+Collaborative Research Centres (CRCs, including transregional CRCs or TRRs), funded by the German Research Foundation (DFG), are a cornerstone of Germany's third-party funding landscape, bringing together researchers from different disciplines around shared scientific questions over periods of up to twelve years.
+As digital tools have become central to the research process---from data collection and analysis to publication and long-term archiving---CRCs have increasingly pooled these responsibilities in dedicated sub-projects known as INF projects (German: ``\begin{de}Informationsmanagement und Informationsinfrastruktur\end{de}''), formerly also known as Z-Projects (German: ``\begin{de}Zentralprojekt\end{de}'').
 These units provide research data management (RDM) and research software engineering (RSE) services to all projects within a CRC, while contending with the particular demands of interdisciplinary, long-running collaborations.
 Despite their growing numbers, INF projects are rarely documented as a collective: their structures, practical approaches, and accumulated experience tend to remain within individual CRCs.
-In order to counteract this, we first start with a historic overview of the development of the INF projects to provide an introduction into the existing literature and experiences.
-Then we  catalogue current and past INF projects across Germany's research landscape, before drawing on a workshop held at deRSE26 to collect the lessons learnt and distil them into practical guidance for INF projects and comparable structures.
-We also like to highlight that this overview forms the foundational project of
-a network of INF projects \footnote{
-\url{https://www.listserv.dfn.de/sympa/info/inf-projects-in-crcs}
-} that wants to provide a platform for exchange of experiences.
+In order to counteract this, we first start with a historical overview of the development of INF projects to provide an introduction to the existing literature and policy context.
+We then survey contributed current and recent INF projects (and comparable structures) across Germany's research landscape, complemented by an informal staff survey, before drawing on a workshop held at deRSE26 to collect the lessons learnt and distil them into practical guidance for INF projects and comparable structures.
+We also highlight that this overview forms the foundational activity of
+a network of INF projects\footnote{%
+\url{https://www.listserv.dfn.de/sympa/info/inf-projects-in-crcs}%
+} intended to provide a platform for exchanging experiences.
+
 
 \section{History of the INF projects}
 \label{sec:history}
-The beginnings of specialised, shared positions within CRCs can be traced back to the foundation of the CRC 299, which was established in 1997 to survey the use of land under various characteristics.
-Being interdisciplinary and already aiming for the maximum runtime of 12 years, it was apparent from the beginning \cite{mueckschel2006} that a careful management of data had to happen in order to be useful for all associated disciplines.
-Around the same time, various incidents of scientific misconduct prompted the German Research Foundation (GRF, DFG) to highlight in their
-memorandum on ``Safeguarding Good Scientific Practice'' \cite{DFG1998}
-the importance of treating research data as ``primary data'', putting out the recommendation to take special care of those data at the host institution.
-Combining both requirements, more CRCs started to include personnel to handle data management.
+The development of information infrastructure (INF) projects
+within Collaborative Research Centres (CRCs) reflects a
+broader transformation in how research data, software, and
+the associated expertise are managed in collaborative
+research. Initially driven by the practical requirements
+of long-running, interdisciplinary projects, INF projects
+have gradually developed into specialised support structures
+operating within an increasingly interconnected landscape
+of institutional, national, and international research
+infrastructures.
 
-A first workshop \cite{SFB299-2004, SFB299-2005} on comparing lessons learnt was organised by CRC 299 and CRC 552 in 2004 in Gießen.
-The respective follow-up workshop was organised again by CRC~299 and CRC~552 in 2007 \cite{SFB299-2007}.
-Around the same time, the process of including dedicated projects for the information infrastructure was formalised (based on the precursor work of CRC~299 and CRC~552).
+An early example is CRC~299, established in 1997 to
+investigate land use and its changing characteristics.
+Its interdisciplinary nature and anticipated runtime of
+up to twelve years made systematic data management
+necessary to ensure that research results remained
+accessible and usable across disciplinary boundaries
+\cite{mueckschel2006}.
+In parallel, concerns about scientific misconduct led
+the German Research Foundation (DFG) to publish its
+1998 memorandum on safeguarding good scientific practice
+\cite{DFG1998}, which emphasised the responsibility of
+research institutions to preserve primary research data.
+Thus, the development of shared information infrastructures
+was motivated by two complementary concerns: the practical
+requirements of collaborative research and the increasing
+institutional responsibility for safeguarding research
+results.
 
-Since 2007, INF projects have been eligible for funding in CRCs at the GRF, with the first projects starting around 2009 \cite{Forschungsdateninfrastruktur2013}.
+These early experiences stimulated exchanges between
+research collaborations facing similar challenges.
+CRC~299 and CRC~552 organised workshops in Gießen in
+2004 and 2007 to discuss their approaches and experiences
+\cite{SFB299-2004,SFB299-2005,SFB299-2007}.
+Building on such precursor activities, dedicated INF
+projects became eligible for DFG funding within CRCs
+in 2007, with the first projects starting around 2009
+\cite{Forschungsdateninfrastruktur2013}.
+The growing interest was reflected in a 2009 workshop
+organised by TRR~32 and CRC~806 in Cologne, attracting
+nearly 80 participants from different disciplines
+\cite{curdt787}.
+A subsequent workshop organised by the project
+\begin{de}Radieschen (Rahmenbedingungen einer
+disziplinübergreifenden Forschungsdateninfrastruktur)
+\end{de}
+in Göttingen found that INF projects commonly cooperated
+with central university services, particularly libraries
+and computing centres, while developing infrastructures
+tailored to their respective research communities
+\cite{Forschungsdateninfrastruktur2013}.
+Both workshops identified user acceptance as a major
+challenge. This observation illustrates an issue that
+would persist throughout the following years:
+providing technical infrastructure does not necessarily
+ensure its integration into everyday scientific practice.
 
-In 2009 TRR~32 and CRC~806 organised a workshop of nearly 80 participants of diverse disciplines in Cologne, later documented in a Post-Proceedings volume \cite{curdt787}.
-A subsequent workshop by the project ``\begin{de}Radieschen (Rahmenbedingungen einer disziplinübergreifenden Forschungsdateninfrastruktur)\end{de}'' 
-in Göttingen \cite{Forschungsdateninfrastruktur2013} found that most INF projects cooperated with central institutions such as libraries and computing centres and maintained central RDM infrastructures.
-Both workshops noted, that acceptance of the INF projects is a major issue.\\
+In parallel with these early INF activities,
+research-data services began to emerge beyond
+individual collaborations. The establishment of
+DataCite in 2009 and the launch of the DFG-funded
+repository registry re3data in 2012 facilitated
+persistent identification of research data and the
+discovery of suitable repositories
+\cite{DataCiteHistory,re3data2023}.
+These developments illustrate how the increasing
+importance of research data management was reflected
+not only in dedicated support within research projects,
+but also in the creation of reusable, cross-institutional
+services.
 
-Between 2013 and 2015, the number of funded INF projects increased, and hence the funding line became more established \cite{Engelhardt2013Forschungsdatenmanagement, bastian_2025}.
-Another follow-up workshop was held in Göttingen in 2018 \cite{Roertgen2019},
-organised as part of the project GRAcE  - \href{https://data.goettingen-research-online.de/dataverse/GRAcE}{Göttingen Research Data Exploratory - management parameters derived from the
-Göttingen eResearch Alliance}.
+Between 2013 and 2015, the number of funded INF projects
+increased, indicating the growing establishment of this
+funding opportunity
+\cite{Engelhardt2013Forschungsdatenmanagement,bastian_2025}.
+At the same time, the broader research policy landscape
+was changing. The DFG adopted guidelines on handling
+research data in 2015, followed by the publication of
+the FAIR principles---Findability, Accessibility,
+Interoperability, and Reusability---in 2016
+\cite{DFG2015RDM,WilkinsonDumontier2016}.
+These developments strengthened the emphasis on making
+research results accessible and reusable beyond the
+immediate needs of individual research projects.
 
-Around 2022, the DFG started to hand out guidelines for the INF projects \cite{bastian_2025}.
-Another workshop that should belong in this list was organised by the DINI/nestor AG \begin{de}Forschungsdaten\end{de} in 2020 \cite{Rizzolli_2021},
-which discussed how much the tasks of an INF project align with the tasks of data stewards.
-Another workshop in Cologne, hosted \cite{bastian_2025} and organised by the DINI/nestor AG \begin{de}Forschungsdaten\end{de} and the state initiatives
- \href{https://www.uni-marburg.de/en/hefdi/about-hefdi}{HefDi} and \href{https://saxfdm.de/}{SaxFDM},
- noted first, that no participant had been to any of the previous workshops, and second, that following the rules is still a better motivator for following data
- management guidelines, rather than any intrinsic motivation from the scientists.
-Lastly, in March 2026, our deRSE26 workshop showed an equal presence of Research Software Engineers and Research Data Managers.
-Already early on~\cite{mueckschel2006} it was noted that central challenges of data management solutions would be
-\begin{itemize}
-\itemsep-0.5em
- \item personnel fluctuations over the runtime of a CRC,
- \item safe storage for the lifetime of a CRC,
- \item adaptation to the scientists' questions over the evolution of their research
- \item extensibility and openness of any system,
- \item knowledge management and sharing,
- \item acceptance by the users,
- \item leadership support
-\end{itemize}
-of any measure of the information system provided by the data stewards.
-These topics persist even today,
-and we try to find out which answers the current generation of INF projects obtains.
+The increasing institutionalisation of research data
+management was accompanied by coordination efforts at
+different organisational levels. Regional initiatives
+such as bwFDM, HeFDI, and fdm.nrw began connecting
+university services and facilitating the exchange of
+expertise. At the national level, the German Council
+for Scientific Information Infrastructures (RfII)
+recommended the establishment of a coordinated
+research data infrastructure in 2016, providing a
+conceptual foundation for the subsequent National
+Research Data Infrastructure (NFDI) \cite{RfII2016}.
+
+Similar developments occurred internationally.
+The European Open Science Cloud (EOSC), proposed by
+the European Commission in 2016 and formally launched
+in 2018, aims to federate existing research
+infrastructures and facilitate access to research
+data and services across Europe \cite{EOSC2018}.
+In Germany, the federal and state governments agreed
+on establishing the NFDI in 2018, with its first
+consortia receiving funding from 2020 onwards
+\cite{NFDI2020}.
+The DFG's revised Code of Conduct for good research
+practice in 2019 further reinforced institutional
+responsibilities for sustainable research data
+management \cite{DFG2019Code}.
+
+Whereas INF projects primarily address the specific
+requirements of individual CRCs, NFDI consortia aim
+to establish coordinated disciplinary and
+cross-disciplinary infrastructures, services,
+and standards. Initiatives such as FAIRmat, building
+upon earlier developments such as the NOMAD
+repository, illustrate the increasing availability
+of shared, domain-specific infrastructures.
+The relationship between national and European
+infrastructures is also becoming more explicit,
+as illustrated by the ongoing development of
+EOSC Node Germany, intended to connect national
+research data services to the European federation
+\cite{EOSCNodeGermany}.
+
+For INF projects, this increasingly interconnected
+landscape presents both opportunities and challenges.
+Existing infrastructures and standards can be reused
+rather than developed independently within each CRC.
+At the same time, the integration of external
+services requires coordination across institutional
+and disciplinary boundaries, while preserving the
+flexibility needed to accommodate the particular
+research workflows of individual collaborations.
+
+In parallel with these infrastructure developments,
+the professional communities supporting research data
+and software have become increasingly established.
+Software Carpentry, founded in 1998, and the subsequent
+Data Carpentry initiative developed community-based
+approaches to teaching computational and data-management
+skills. Their consolidation into The Carpentries in
+2018 helped establish a shared framework for
+sustainable training activities.
+Likewise, the founding of de-RSE e.V.\ in 2018 and
+the first German Research Software Engineering conference
+in 2019 reflected growing recognition of research
+software development as a specialised professional
+activity \cite{CarpentriesHistory,deRSE2018,Anzt:2020}.
+These developments complement the increasingly
+established role of research data stewards and
+highlight that sustainable research infrastructures
+depend not only on technical systems, but also on
+training, software development, and the continuity
+of specialised expertise.
+
+The growing recognition of research software as
+a scientific output further broadened the concept
+of sustainable information infrastructures.
+The publication of the FAIR principles for
+research software (FAIR4RS) in 2022 extended
+established concepts of findability,
+accessibility, interoperability, and reusability
+to software \cite{Barker2022FAIR4RS}.
+Current DFG assessment criteria for INF projects
+explicitly address research software alongside
+research data, including its development,
+versioning, documentation, and long-term reuse
+\cite{DFG2025INF}.
+This reflects an increasingly integrated view
+of research data management and research software
+engineering as complementary components of
+sustainable scientific infrastructure.
+
+The evolving responsibilities of INF projects and
+their persistent challenges have also been reflected
+in subsequent community discussions.
+A workshop in Göttingen in 2018, organised within
+the GRAcE project, continued the exchange of
+experiences \cite{Roertgen2019}.
+A 2020 workshop by the DINI/nestor working group
+on research data explicitly discussed the
+relationship between INF responsibilities and
+data stewardship \cite{Rizzolli_2021}.
+More recent discussions, including a 2024 workshop in
+Cologne organised with the involvement of DINI/nestor,
+HeFDI, and SaxFDM, continued to identify researcher
+acceptance as a central difficulty and noted that compliance with requirements often remained a stronger driver than intrinsic motivation alone \cite{bastian_2025}.
+
+The repeated identification of researcher acceptance
+as a central challenge suggests that the availability
+of suitable infrastructure alone is insufficient to
+establish sustainable research data management
+practices. The reported absence of returning
+participants at the Cologne workshop also raises
+questions about continuity and the transfer of
+experience between successive generations of INF
+projects, although workshop participation alone
+cannot establish the extent of personnel turnover.
+The participation of both Research Software Engineers
+and Research Data Managers at our deRSE26 workshop
+in March 2026 further illustrated the overlap
+between professional communities concerned with
+sustainable research infrastructures.
+Together, these observations point towards the
+importance of organisational structures, specialised
+expertise, and sustained engagement with researchers
+alongside the technical development of INF services.
+
+Despite these developments, many of the challenges
+identified in the earliest INF projects remain
+recognisable. Already in 2006, personnel turnover,
+sustainable storage, changing scientific requirements,
+technical extensibility, knowledge transfer, user
+acceptance, and support from project leadership were
+recognised as central concerns \cite{mueckschel2006}.
+
+Whether and how these challenges have changed in the
+intervening two decades is an important question.
+The evolution of INF projects has introduced new
+possibilities through shared infrastructures,
+professional communities, and increasingly
+established standards, but has also created new
+dependencies and coordination requirements.
+In particular, INF projects face the challenge
+of reconciling the limited funding periods of
+individual research collaborations with long-term
+sustainability, the increasing standardisation of
+research infrastructures with disciplinary
+flexibility, and institutional requirements with
+the practical needs of researchers.
+
+Against this background, the following survey
+examines how current INF projects organise their
+activities, interact with institutional and external
+infrastructures and professional communities, and
+address the organisational and technical challenges
+of providing sustainable support to collaborative
+research.
 
 \section{Descriptions of INF Projects}
 \label{sec:inf-in-germany}
@@ -444,8 +641,7 @@ To promote knowledge transfer and the adoption of collaborative software develop
 \href{https://carpentries.org/}{the Carpentries} were organised in
 collaboration with the local biology department.
 The project's wider network also enabled the development of the
-FAIR-oriented (Findable, Accessible, Interoperable, and Reusable)
-\cite{WilkinsonDumontier2016} data management strategy for
+FAIR-oriented \cite{WilkinsonDumontier2016} data management strategy for
 \href{https://www.ctdqmat.de/}{EXC~2147}, successfully reviewed in 2019.
 With CRC~1170 and EXC~2147 supporting the
 \href{https://www.fairmat-nfdi.eu/fairmat/}{FAIRmat} consortium of the
@@ -525,7 +721,8 @@ Our experience suggests that researchers more readily adopt practices that fit a
 Embedding RSE work in the subprojects' research also built trust: joint software development and publications made the INF a research partner rather than only a service provider.
 
 \pagebreak
-\subsection{Project INF --- Collaborative and Sustainable Research Data Management, Analysis and Visualisation, \href{https://gepris.dfg.de/gepris/projekt/372486779}{CRC~1340 -- Matrix in Vision}, Berlin} \label{sec:sfb1340}
+\subsection{Project INF --- Collaborative and Sustainable Research Data Management, Analysis and Visualisation, \href{https://gepris.dfg.de/gepris/projekt/372486779}{CRC~1340 -- Matrix in Vision}, Berlin}
+\label{subsec:crc1340}
 \noindent\textbf{Context and connections:}
 Established in 2018, CRC~1340 investigates the in vivo
 visualisation of pathological changes in the extracellular
@@ -609,7 +806,7 @@ The incorporation of parts of the INF's responsibilities
 into another subproject during the CRC's third funding
 period further raises the question of how shared services
 and specialised expertise can be maintained when the
-original organizational structure changes.
+original organisational structure changes.
 
 
 \pagebreak
@@ -865,7 +1062,7 @@ We also developed a metadata platform accommodating theoretical, experimental, c
 We have established a CRC-wide data management policy and supported project-specific data management plans using the web-based Research Data Management Organiser, resulting in a documented protocol in 2025~\cite{Bahmanian:et:al:2025}. A key factor in its implementation was assigning one data steward per project, which facilitated communication, coordination, and adoption of shared practices.
 Workshops and consultations provided additional support in data management, statistics, and experimental design.
 \\
-\textbf{Key challenges and adoption:} A central challenge was accommodating the heterogeneous data types and metadata requirements of experimental, corpus-based, and theoretical research. Researchers from different fields had distinct expectations regarding which information should be documented and how it should be organized. To address this, we developed and piloted different versions of the metadata forms with researchers from different methodological groups. Their feedback allowed us to identify relevant metadata categories, ensure that different research needs were represented, and make the forms intuitive and easy to use.
+\textbf{Key challenges and adoption:} A central challenge was accommodating the heterogeneous data types and metadata requirements of experimental, corpus-based, and theoretical research. Researchers from different fields had distinct expectations regarding which information should be documented and how it should be organised. To address this, we developed and piloted different versions of the metadata forms with researchers from different methodological groups. Their feedback allowed us to identify relevant metadata categories, ensure that different research needs were represented, and make the forms intuitive and easy to use.
 \\
 \textbf{Lessons learnt:} Our experience highlights the importance of developing shared infrastructure collaboratively with its target users. Sustainable RDM and RSE support required not only technical infrastructure, but also researcher involvement, clear responsibilities, and collaboration between linguistic and computational experts.
 Involving researchers in designing metadata forms and RDM practices helped tailor solutions to their needs and facilitate integration into existing workflows.
@@ -1071,7 +1268,7 @@ and continuous integration across its components.
 Maintaining interoperability while preserving the
 performance of specialised algorithms remains an
 ongoing software engineering task.
-The distributed organization of RSE responsibilities also gives rise to challenges with respect to
+The distributed organisation of RSE responsibilities also gives rise to challenges with respect to
 balancing scientific development against software maintenance, documentation, and user support.
 \\
 \noindent\textbf{Lessons learnt:}
@@ -1698,7 +1895,6 @@ These experiences highlight the importance of
 combining scientific expertise, automated quality
 assurance, and explicit operational responsibilities
 when establishing distributed research infrastructure.
-
 
 \pagebreak
 \subsection{Project INF --- Research Data Management and Collaboration Platform,
@@ -1722,7 +1918,7 @@ the INF project is funded with two full-time
 doctoral researcher positions (100\% each),
 focusing on medical informatics and data integration
 as well as bioinformatics and omics data analysis.
-Analogously to the INF project of \hyperref[sec:sfb1340]{CRC 1340},
+Analogously to the INF project of \hyperref[subsec:crc1340]{CRC 1340},
 this project is embedded in institutional and national infrastructures.
 
 \medskip
