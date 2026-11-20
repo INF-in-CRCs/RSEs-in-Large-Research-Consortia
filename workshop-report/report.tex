@@ -10,6 +10,17 @@
 \usepackage{accsupp}
 \usepackage{todonotes}
 \usepackage{lineno}
+
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+
+% Left-aligned columns with automatic line wrapping
+\newcolumntype{P}[1]{%
+  >{\raggedright\arraybackslash}p{#1}}
+
+
 \linenumbers
 
 \usepackage[ngerman,british]{babel}
@@ -216,77 +227,471 @@ and we try to find out which answers the current generation of INF projects obta
 \label{sec:inf-in-germany}
 In this section, we describe the various INF projects, how they see themselves and which duties they perform.
 In this manuscript, we exclusively refer to these projects as INF projects, but within the respective CRCs, also other acronyms are used.
+\autoref{tab:inf-overview} provides an overview of the participating projects, their scientific contexts, organisational arrangements, and principal activities.
 
+\pagebreak
+
+\begingroup
+\small
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.12}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+
+\begin{longtable}{@{}
+  P{.12\linewidth}
+  P{.19\linewidth}
+  P{.24\linewidth}
+  P{.40\linewidth}
+  @{}}
+
+\caption{Overview of the participating research
+infrastructure projects, their scientific contexts,
+organisational arrangements, and principal activities.}
+\label{tab:inf-overview}\\
+
+\toprule
+\textbf{Project (since)} &
+\textbf{Research topic CRC/TRR} &
+\textbf{Organisation (funded since)} &
+\textbf{Principal activities INF} \\
+\midrule
+\endfirsthead
+
+\multicolumn{4}{@{}l}{%
+  \tablename~\thetable\ (continued)}\\
+\toprule
+\textbf{Project (since)} &
+\textbf{Research topic CRC/TRR} &
+\textbf{Organisation (funded since)} &
+\textbf{Principal activities INF} \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{4}{r@{}}{Continued on next page}\\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+CRC~1170 (2015) &
+Topological electronics &
+Single-person INF (2015) &
+Scientific RSE, HPC support, NOMAD Oasis, GitLab, training
+\\
+
+CRC~1313 (2018) &
+Porous media &
+INF from second funding period (2022) &
+Repositories, ELNs, eLabFTW, reproducible software,
+training
+\\
+
+CRC~1340 (2018) &
+Medical imaging &
+INF from second funding period (2022) &
+Clinical data integration, collaboration
+platform, hybrid RDM
+\\
+
+CRC~1415 (2020) &
+Materials chemistry &
+INF from second funding period (2024) &
+NOMAD Oasis, ELNs, eLabFTW, data pipelines,
+publication, training
+\\
+
+CRC~1451 (2021) &
+Neuroscience &
+Central research data hub (2021) &
+DataLad, metadata catalogue, data management
+training
+\\
+
+CRC~1625 (2024) &
+Materials science &
+Dedicated INF (2024) &
+Materials data integration, APIs,
+knowledge graphs, training
+\\
+
+CRC~1629 (2024) &
+Linguistics &
+Interdisciplinary INF (2024) &
+Experimental infrastructure, metadata,
+RDM support, GitLab, JupyterHub
+\\
+
+CRC~1638 (2024)&
+Cell biology &
+Dedicated INF (2024) &
+eLabFTW, ELN templates, data migration,
+researcher support
+\\
+
+CRC~1646 (2024)&
+Linguistics, psychology &
+Interdisciplinary INF (2024) &
+Consent-form software, RDM,
+methodological consulting
+\\
+
+CRC~1667 (2024) &
+Aerospace engineering &
+Dedicated INF; RDM and RSE (2024) &
+DaRUS, ELNs, data publication, reproducible software, training
+\\
+
+TRR~195 (2017) &
+Mathematics, computer algebra &
+Distributed RSE; no dedicated INF (2017) &
+OSCAR development, testing, interoperability,
+training
+\\
+
+TRR~247 (2018) &
+Catalysis &
+INF from second funding period (2022) &
+MatInf, Coscine, infrastructure recovery,
+data publication, training
+\\
+
+TRR~265 (2019) &
+Addiction research &
+Cross-unit clinical infrastructure (2019) &
+Participant management, pseudonymisation,
+MRI data
+\\
+
+TRR~379 (2024) &
+Clinical neuroscience &
+Distributed Q02 service project (2024)&
+DataLad, JTrack, shared metadata,
+training
+\\
+
+TRR~391 (2024)&
+Spatio-temporal statistics &
+Cross-institutional INF (2024) &
+TUDOdata, Git, repositories,
+reproducible software
+\\
+
+TRR~393 (2024) &
+Affective disorders &
+Clinical research INF (2024)&
+REDCap, Multi-site quality control, participant management, MRI data
+\\
+
+TRR~408 (2025) &
+Transport and mobility &
+Dedicated INF (2025) &
+Virtual research environment,
+workflow integration
+\\
+
+TRR~410 (2025)&
+Peatland ecology &
+Distributed Z3 service project (2025)&
+Sensor acquisition, time-series data,
+metadata, eLabFTW, InfluxDB, CKAN
+\\
+
+TRR~418 (2025)&
+Circadian medicine &
+Interdisciplinary INF (2025)&
+Longitudinal data integration,
+privacy, collaboration platform
+\\
+
+\end{longtable}
+\endgroup
+
+\pagebreak
 \subsection{Project Z03 --- Sustainable code development and optimisation on modern supercomputing architectures, \href{https://gepris.dfg.de/gepris/projekt/258499086?language=en}{CRC~1170 - Topological and Correlated Electronics at Surfaces and Interfaces, ``ToCoTronics''}, University of Würzburg}
-Established in 2015 as a support unit for projects of the CRC specialising in theoretical physics the focus was on numerical methods for Quantum Monte Carlo methods, functional renormalisation group techniques and non-equilibrium Green's function techniques.
-These methods are usually used on Germany's High Performance Computing (HPC) systems. Therefore the tight integration between software development, deep knowledge about the methods used in the CRCs science and knowledge about the targeted platforms became paramount to this INF project staffed by one person.
-To facilitate the spread of knowledge, regular teaching opportunities were organised based on the materials of \href{https://carpentries.org/}{the Carpentries} in collaboration with the local biology department.
-In addition to its primary responsibilities, the project was tasked from the outset with maintaining the physics department's local IT infrastructure, including storage systems, desktop computers, and an HPC system.
-This integration of maintaining the IT infrastructure while at the same time focusing on sustainable development
-facilitated the roll-out of a local gitlab instance for the entire department which has grown by 2026 to $\approx 1000$ users from all
-over the world. Networking opportunities were used by participating in the RSE movement, which included the formation of the \href{https://de-rse.org/de/index.html}{de-RSE} society in 2018.
-This broad network enabled the project to write the data management strategy of the \href{https://www.ctdqmat.de/}{EXC~2147} which was successfully reviewed in 2019. This strategy was aligned with the FAIR (Findable, Accessible, Interoperable, and Reusable data) principles \cite{WilkinsonDumontier2016}.
-The continued usefulness of this project was acknowledged by the DFG by granting a second funding round of the CRC~1170 in 2019.
-2020 was used for the formation of a local chapter \href{https://de-rse.org/chapter/wue/}{``Wü-RSE''} to provide a place
-locally for like-minded people. The project was extended in 2023 for the last funding period. A highlight for this project's visibility included the hosting of de-RSE24, bringing the community of RSEs to Würzburg. Embedded into the community of RSEs, this project contributed
-to numerous position papers\cite{Anzt:2020,Goth:2025,gi2025,Kempf2026} over the years.
-Over the long lifespan of the project, its activities covered a broad range of scientific computing needs, from individual workstations to HPC clusters, and included data generation, analysis, and storage. The project collaborated with both individual researchers and larger research groups, adapting its tools and approaches to their respective requirements. Software development relied on Git for version control and employed languages including C++, Python, Mathematica, Fortran, and Julia.
-The CRC~1170 and EXC~2147 are supporters of the \href{https://www.fairmat-nfdi.eu/fairmat/}{FAIRmat} “\begin{de}Nationale Forschungsdateninfrastruktur\end{de}” (NFDI) consortium, so the \href{https://nomad-lab.eu/nomad-lab/nomad.html}{NOMAD} oasis is being rolled out to
-the users in the department.
+\label{subsec:crc1170}
+\noindent\textbf{Context and connections:}
+Established in 2015 as a support unit for CRC~1170, the INF project
+specialised in numerical methods for theoretical physics, particularly
+Quantum Monte Carlo methods, functional renormalisation group techniques,
+and non-equilibrium Green's function methods.
+Since these methods typically rely on Germany's High Performance Computing
+(HPC) systems, the project required a close integration of scientific
+software development, expertise in the underlying numerical methods, and
+knowledge of the targeted computing platforms.
+The INF project was staffed by a single person throughout the period covered and
+continued through the successful renewals of CRC~1170 in 2019 and 2023.
+Connections to the wider Research Software Engineering (RSE) community
+developed through participation in the founding of
+\href{https://de-rse.org/de/index.html}{de-RSE} in 2018 and the
+establishment of the local
+\href{https://de-rse.org/chapter/wue/}{Wü-RSE} chapter in 2020.
+\\
+\noindent\textbf{Main activities:}
+Over its lifetime, the project addressed a broad range of scientific
+computing needs, from individual workstations to HPC clusters, including
+data generation, analysis, and storage.
+Collaborating with individual researchers and larger research groups,
+it developed and maintained software using Git for version control and languages such as
+C++, Python, Mathematica, Fortran, and Julia.
+In parallel, the project maintained the department's storage systems,
+desktop computers, and local HPC infrastructure.
+This combination of responsibilities facilitated the deployment of a
+departmental GitLab instance, which had grown to approximately 1,000
+users worldwide by 2026.
+To promote knowledge transfer and the adoption of collaborative software development practices, regular training events based on
+\href{https://carpentries.org/}{the Carpentries} were organised in
+collaboration with the local biology department.
+The project's wider network also enabled the development of the
+FAIR-oriented (Findable, Accessible, Interoperable, and Reusable)
+\cite{WilkinsonDumontier2016} data management strategy for
+\href{https://www.ctdqmat.de/}{EXC~2147}, successfully reviewed in 2019.
+With CRC~1170 and EXC~2147 supporting the
+\href{https://www.fairmat-nfdi.eu/fairmat/}{FAIRmat} consortium of the
+\emph{Nationale Forschungsdateninfrastruktur} (NFDI), a local
+\href{https://nomad-lab.eu/nomad-lab/nomad.html}{NOMAD Oasis}
+is being rolled out to researchers in the department.
+Further community contributions included several position papers
+\cite{Anzt:2020,Goth:2025,gi2025,Kempf2026} and the hosting of
+\href{https://events.hifis.net/event/994/overview}{de-RSE24} in Würzburg.
+\\
+\noindent\textbf{Key challenges and adoption:}
+A central challenge was reconciling the diverse computational
+requirements of theoretical physics with sustainable software
+development. With only one staff member responsible
+for scientific software development, HPC support, and local IT
+infrastructure, immediate operational needs had to be balanced
+against longer-term development activities.
+This breadth of responsibilities concentrated critical expertise in this person
+and constrained the project's capacity.
+At the same time, close involvement in researchers' daily
+workflows helped identify recurring requirements that could
+be addressed through shared infrastructure rather than
+individual solutions. Direct collaboration and regular
+training facilitated the adoption of common tools and
+software engineering practices. The growing demand for RDM
+services introduced additional requirements that had to be
+accommodated alongside existing responsibilities.
+\\
+\noindent\textbf{Lessons learnt:}
+The experience of the INF project demonstrates the value of embedding
+research software engineering expertise directly within a scientific
+research environment. Combining knowledge of scientific methods with
+software engineering and HPC expertise enabled support closely aligned
+with the actual requirements of researchers.
+The integration of software development and local IT infrastructure
+management proved particularly useful.
+Although this broadened the project's responsibilities, it also created opportunities to transform research-specific requirements into shared infrastructure serving a wider scientific community.
+Professional networks and sustained community engagement proved important for accessing expertise beyond the local institution, exchanging practical experiences,
+and extending the impact of a small INF project far beyond the CRC.
+However, these benefits also expose a structural challenge: despite the continuity of personnel across multiple CRC funding periods and the sustained value of the position to the academic environment, this did not translate into an established long-term career perspective for the employee.
+This discrepancy between institutional benefits and individual
+career prospects risks the loss of specialised expertise and
+undermines the long-term sustainability of research software
+and infrastructure.
+Taken together, these experiences suggest that sustainable research
+software development depends not only on technical expertise,
+accessible shared infrastructure, and active professional networks,
+but also on institutional recognition and viable long-term career
+perspectives for the personnel providing these services.
+
 
 \subsection{Project INF --- Research Data Management and Research Software Engineering, \href{https://gepris.dfg.de/gepris/projekt/327154368}{CRC~1313 - Interface-Driven Multi-Field Processes in Porous Media – Flow, Transport and Deformation}, University of Stuttgart}
 \label{subsec:crc1313}
-CRC 1313 was established in 2018 to study interface-driven processes in porous media.
-To manage the data and code generated by these studies, a task force named "Software and Data" was formed to develop a long-term strategy.
-This work led to the creation of the INF project, which began in 2022 during the second funding phase.
-The project focuses on RDM and RSE to ensure that data and software outputs follow the FAIR principles.
-By reviewing datasets and providing support for software development, the project helps researchers produce high-quality, reusable, and well-tested code.
-These efforts are supported by training programs and outreach activities.
-The project is well-integrated into both national and local networks, including \href{https://nfdi4ing.de/}{NFDI4Ing}, \href{https://de-rse.org}{de-RSE}, and Data Stewardship goes Germany.
-At the local level, INF has built strong connections with the \href{https://www.simtech.uni-stuttgart.de/communication/events/workshops/sigdius-seminars/}{SIGDIUS} network and the central IT service facility of the University of Stuttgart. While some practices were adopted quickly, such as using quality badges and publishing datasets in the \href{https://darus.uni-stuttgart.de/}{DaRUS repository}, others proved more difficult.
-For example, implementing Electronic Lab Notebooks (ELNs) (\eg~\elabftw) has been challenging because it requires a significant change in daily research habits.
-A major lesson learnt is that technical infrastructure is not just about tools, but also about people. To convince researchers to adopt new practices while facing tight deadlines, the project must demonstrate clear, short-term benefits.
-Ultimately, success depends on effective communication and building collaborations that show how better data and software management improves research efficiency.
+\noindent\textbf{Context and connections:}
+CRC~1313 was established in 2018 to study interface-driven processes in porous media.
+In the first funding phase, data and software management was coordinated by the task force ``Software and Data''~\cite{Schneider2020SFB1313}.
+In 2022, at the start of the second funding phase, this work led to a dedicated INF project funded with one full-time postdoctoral position (1.0~FTE) covering both RDM and RSE.
+The INF is connected nationally to \href{https://nfdi4ing.de/}{NFDI4Ing}, \href{https://de-rse.org}{de-RSE}, and Data Stewardship goes Germany, and locally to the \href{https://www.simtech.uni-stuttgart.de/communication/events/workshops/sigdius-seminars/}{SIGDIUS} network and the central IT service facility of the University of Stuttgart.
 
+\medskip
+\noindent\textbf{Main activities:}
+For RDM, the INF reviewed datasets with all subprojects before publication in \href{https://darus.uni-stuttgart.de/}{DaRUS} and automated metadata extraction (PyDaRUS, later easyDataverse).
+For RSE, it introduced standardised development workflows with NFDI4Ing, containerised simulation environments, and extended automated testing and continuous integration, including GPU runners; DuMux obtained an OpenSSF Best Practices badge.
+The INF also worked directly on the subprojects' research software, for example by coupling a density functional theory model from another subproject to DuMux; such collaborations led to joint publications.
+Training and outreach included DuMux courses and an internal exchange programme involving more than ten CRC projects.
+
+\medskip
+\noindent\textbf{Key challenges and adoption:}
+Dataset publication in DaRUS grew from 77 datasets published in the first funding phase to 112 in the second.
+In our experience, publication fitted an existing research milestone: journals increasingly request underlying data, each published dataset provides a citable output with its own DOI, and dataset review together with automated metadata extraction helped reduce the preparation effort.
+In contrast, adoption of the electronic lab notebook (ELN) \elabftw{} was uneven: while a few users adopted it actively and recorded more than 100 experiments, broader uptake remained limited because using an ELN requires changing daily research routines without an immediate perceived benefit under tight deadlines.
+Planned work therefore aims to connect ELN entries directly to the DaRUS publication workflow.
+
+\medskip
+\noindent\textbf{Lessons learnt:}
+Our experience suggests that researchers more readily adopt practices that fit an existing milestone and offer a visible return, such as a citable dataset, whereas practices that alter daily routines need an explicit link to near-term benefits.
+Embedding RSE work in the subprojects' research also built trust: joint software development and publications made the INF a research partner rather than only a service provider.
+
+\pagebreak
 \subsection{Project INF --- Collaborative and Sustainable Research Data Management, Analysis and Visualisation, \href{https://gepris.dfg.de/gepris/projekt/372486779}{CRC~1340 -- Matrix in Vision}, Berlin} \label{sec:sfb1340}
-The INF project of CRC 1340 “Matrix in Vision” originated in medical informatics and radiology at Charité – \begin{de}Universitätsmedizin Berlin\end{de} and the Berlin Institute of Health (BIH).
-It was conceived as a central service project for a data-intensive CRC aiming to understand how pathological changes in the extracellular matrix can be visualised in vivo, particularly in inflammatory disease settings, by combining biophysical and molecular imaging approaches.
-Within this context, the INF project provided a shared digital backbone for collaboration, data integration, RDM, secure data exchange, and reusable analysis workflows, especially for multimodal imaging, experimental data, and clinical data.
-In practice, the project focused mainly on RDM, complemented by infrastructure and support tasks.
-A central outcome was the self-hosted Matrix-COOP platform at Charité, based on Nextcloud, with about 100 TB managed storage and more than 100 active users.
-It served as a shared space for secure data exchange, templates, reporting, onboarding information, and a CRC-wide knowledge base.
-The project also supported data management plans, data protection and governance coordination, and access to centralised data storage, archiving and HPC resources.
-A particularly visible example was the integration of about 2,600 electronic health records with myocardial MRI data into a dedicated data warehouse with self-service query functionality and integrated data provenance tracking~\cite{johns_prov_tracking_2025}.
-Another important line of work concerned the secure exchange of imaging data and the setup of interfaces and transfer workflows for large multimodal datasets across the CRC. The project was closely connected to local and national research data infrastructures, especially \href{https://www.nfdi4health.de/}{NFDI4Health} \cite{fluck_bausteine_2021} and the Medical Informatics Initiative \cite{prasser_difuture_2018}.
-Locally, it strengthened connections between medical informatics, radiology, the IT department, and CRC subprojects by embedding service development directly into day-to-day research workflows. A key lesson was that a single unified RDM platform for all groups was not realistic because requirements, data types, and established practices differed too much between projects.
-Also, corresponding processes were already established in the first funding phase, in which no INF project was included.
-The project, therefore, shifted from a one-size-fits-all model to a hybrid, federated approach combining shared infrastructure with project-specific support.
-Easier to adopt were pragmatic services with immediate benefit, especially the cooperation platform, shared documentation, and targeted support for concrete integration needs.
-Overall, the project showed that sustainable INF work in a CRC requires both technical infrastructure and continuous hands-on support close to the researchers.
-The continued relevance of the INF project's activities was reflected in the decision to incorporate parts of them into a new subproject during the CRC's third funding period.
+\noindent\textbf{Context and connections:}
+Established in 2018, CRC~1340 investigates the in vivo
+visualisation of pathological changes in the extracellular
+matrix through molecular and biophysical imaging.
+Originating in medical informatics and radiology at
+Charité -- Universitätsmedizin Berlin and the Berlin
+Institute of Health (BIH), the INF project was established
+in 2022 during the second funding period.
+It supported collaboration and RDM across heterogeneous imaging, experimental, and
+clinical data.
+During the second funding period (2022–2026),
+the INF project was funded with two full-time
+doctoral researcher positions (100\% each),
+focusing on data engineering and RDM
+as well as medical image processing.
+The project was connected to local institutional IT
+services and national initiatives, particularly
+\href{https://www.nfdi4health.de/}{NFDI4Health}
+\cite{fluck_bausteine_2021} and the Medical Informatics
+Initiative \cite{prasser_difuture_2018}.
+\\
+\noindent\textbf{Main activities:}
+The project focused on RDM, secure data exchange, and
+infrastructure support. Its central service was Matrix-COOP,
+a self-hosted Nextcloud-based collaboration platform
+providing approximately 100~TB of storage.
+By the end of the second funding period, 108 users had
+been onboarded, of whom 54 were active.
+The platform supported data exchange, shared documentation,
+onboarding, reporting, and a CRC-wide knowledge base.
+The INF also assisted with data management plans, data
+protection, archiving, and access to institutional
+high-performance computing resources.
+A particularly important collaboration integrated
+electronic health records of $\approx 2,600$ patients
+with myocardial MRI data into a dedicated clinical data
+warehouse, enabling self-service queries and providing
+data provenance tracking capabilities \cite{johns_prov_tracking_2025}.
+Additional work addressed secure exchange and transfer
+workflows for large multimodal imaging datasets.
+\\
+\noindent\textbf{Key challenges and adoption:}
+A central challenge was the heterogeneity of data types,
+research workflows, and existing RDM practices across
+the CRC. A single unified RDM platform proved impractical,
+particularly because several projects were already
+using different RDM tools and workflows during the
+first funding period, when no INF project existed.
+The INF therefore adopted a hybrid, federated approach
+combining shared infrastructure with project-specific
+support. A structured 30-question survey of tools, data types, and
+workflows across the CRC helped identify common requirements
+and opportunities for collaboration.
+Its results were incorporated into a knowledge base, making
+overlaps in existing practices visible and facilitating
+knowledge exchange between groups.
+Pragmatic services offering immediate benefits, particularly
+Matrix-COOP, shared documentation, and targeted assistance
+with data integration, were more readily adopted than
+attempts to standardise all research workflows.
+\\
+\noindent\textbf{Lessons learnt:}
+The experience of CRC~1340 demonstrates that heterogeneous
+research environments do not necessarily benefit from a
+single comprehensive RDM solution.
+Instead, shared infrastructure can be combined with
+flexible, project-specific services to accommodate
+established workflows while facilitating collaboration
+and data exchange.
+The structured survey helped identify common requirements
+and opportunities for cooperation without requiring
+research groups to abandon their existing tools.
+The adoption of Matrix-COOP and the integration of clinical
+and imaging data illustrate the benefits of developing
+infrastructure in close collaboration with researchers,
+responding to concrete requirements rather than imposing
+uniform solutions. Sustainable INF support therefore
+requires both technical infrastructure and continuous,
+researcher-oriented assistance.
+The incorporation of parts of the INF's responsibilities
+into another subproject during the CRC's third funding
+period further raises the question of how shared services
+and specialised expertise can be maintained when the
+original organizational structure changes.
 
-\subsection{Project INF --- Sustainable Research Data Management, \href{https://gepris.dfg.de/gepris/projekt/417590517?language=en}{CRC~1415 -  Chemistry of Synthetic Two-Dimensional Materials}, TUD Dresden University of Technology}
+
+\pagebreak
+\subsection{Project INF --- Sustainable Research Data Management,
+\href{https://gepris.dfg.de/gepris/projekt/417590517?language=en}
+{CRC~1415 -- Chemistry of Synthetic Two-Dimensional Materials},
+TUD Dresden University of Technology}
 \label{subsec:crc1415}
-The CRC~1415 "Chemistry of Synthetic Two-Dimensional Materials" established 2020 at TU Dresden operates at the intersection of chemistry, materials science, and physics
- aiming for controlled "bottom-up" synthesis and development of novel synthetic two-dimensional materials with high structural definition at the atomic or molecular level.
-Since the start of the second funding period in 2024, the INF project accompanied the central project to develop and implement sustainable RDM
-infrastructure to support reproducibility and collaboration across 25 scientific projects and multiple partner institutions (Leibniz/Helmholtz) fostering harmonised data management strategies.
-The primary focus has been on RDM—installing and maintaining scalable infrastructure
-(\eg, local \href{https://nomad-lab.eu/nomad-lab/nomad-oasis.html}{NOMAD Oasis} of \href{https://www.fairmat-nfdi.eu/fairmat/}{FAIRmats} \href{https://nomad-lab.eu/nomad-lab/nomad.html}{NOMAD} platform),
-integrating ELNs (\eg, \elabftw),
-and providing regular training workshops for doctoral researchers and project leaders on FAIR data principles and infrastructure use.
-RSE tasks, such as developing data pipelines, writing file parsers for proprietary formats as well as automatic data processing, complement these efforts.
-The CRC\,1415 and the INF project are actively embedded in national and international networks,
- particularly \href{https://www.fairmat-nfdi.eu/}{FAIRmat} and \href{https://nfdi4chem.de/}{NFDI4Chem}, \href{https://dini.de/}{DINI}, \href{https://www.langzeitarchivierung.de}{nestor}, and the \href{https://www.rda-deutschland.de/}{RDA Germany},
-which collectively facilitate knowledge exchange and the adoption of RDM best practices.
-Locally, the INF project has strong institutional connections with TU Dresden’s CIDS ZIH (Center for Information Services and High Performance Computing)
-and Service Center Research Data, DRESDEN-concept, and the Saxon State and University Library Dresden (SLUB)
-combining technical, infrastructural, and domain-specific knowledge.
-A major challenge has been the consistent implementation of FAIR data principles and harmonised metadata standards across the CRC’s heterogeneous experimental and theoretical projects,
-as well as the unified roll-out of the ELN \elabftw ~and local data sharing platform \href{https://nomad-lab.eu/nomad-lab/nomad-oasis.html}{NOMAD Oasis}, due to diverse workflows and technical requirements.
-In contrast, open-access paper publishing has been widely implemented and open-access data publishing via \href{https://zenodo.org/communities/crc1415/about}{Zenodo}, \href{https://opara.zih.tu-dresden.de/home}{OPARA}, and \href{https://rodare.hzdr.de/communities/crc1415}{RODARE} grows in adoption,
-directly supporting the scientific outreach.
-The experience in CRC~1415 underscores that technical infrastructure alone is insufficient; sustained training, community engagement, and the early embedding of RDM and RSE expertise within the CRC’s data life cycle are essential for the successful and sustainable adoption of open science practices and FAIR research activities.
+
+\noindent\textbf{Context and connections:}
+Established in 2020 at TU Dresden, CRC~1415 investigates the controlled
+synthesis, characterisation, and theoretical description of
+synthetic two-dimensional materials with high structural definition at the atomic or molecular level.
+Its experimental and
+computational research generates heterogeneous data across
+chemistry, materials science, and physics.
+The INF project with one full-time equivalent position was established in July 2024, at the beginning
+of the second funding period, to develop sustainable RDM
+infrastructure across 25 scientific projects
+and multiple partner institutions (Leibniz/Helmholtz).
+The INF project has strong institutional connections with TU
+Dresden’s CIDS \href{https://tu-dresden.de/cids/departments/zih/zih}{Center for Information Services and High Performance Computing (ZIH)} and
+\href{https://tu-dresden.de/forschung-transfer/services-fuer-forschende/kontaktstelle-forschungsdaten}{Service Center Research Data},
+\href{https://dresden-concept.de}{DRESDEN-concept},
+and the \href{https://www.slub-dresden.de}{Saxon State and University Library Dresden}
+combining technical, infrastructural, and domain-specific knowledge. National connections
+include \href{https://www.fairmat-nfdi.eu/}{FAIRmat},
+\href{https://nfdi4chem.de/}{NFDI4Chem}, \href{https://dini.de/ag/dininestor-ag-forschungsdaten}{DINI/nestor AG Forschungsdaten},
+and \href{https://www.rda-deutschland.de/}{RDA Germany}.
+
+\medskip
+\noindent\textbf{Main activities:}
+The project focuses on establishing and maintaining scalable
+RDM infrastructure based on
+\href{https://nomad-lab.eu/nomad-lab/nomad-oasis.html}
+{NOMAD Oasis}, integrating ELNs such as \href{https://www.elabftw.net/}{eLabFTW}
+and \href{https://chemotion.net/}{Chemotion},
+and connecting research workflows
+to public data repositories, including
+\href{https://zenodo.org/communities/crc1415/about}{Zenodo},
+\href{https://opara.zih.tu-dresden.de/}{OPARA}, and
+\href{https://rodare.hzdr.de/communities/crc1415}{RODARE}.
+Complementary RSE activities
+include the development of data pipelines, parsers for
+proprietary file formats, and automated data processing.
+Regular workshops and practical training for doctoral
+researchers and project leaders support data organisation,
+metadata documentation, and the use of shared infrastructure.
+
+\medskip
+\noindent\textbf{Key challenges and adoption:}
+A central challenge is harmonising metadata standards and
+data management practices across heterogeneous experimental
+and theoretical projects. The introduction of the INF during
+the second funding period required accommodating workflows
+and technical requirements already established across the
+CRC and its partner institutions.
+In particular, the coordinated introduction of \href{https://www.elabftw.net/}{eLabFTW} and
+\href{https://nomad-lab.eu/nomad-lab/nomad-oasis.html}
+{NOMAD Oasis} has proved challenging because individual projects
+differ in their research methods, data formats, and technical
+needs. In contrast, open-access publication of research data
+through established repositories has seen growing adoption.
+These experiences highlight the difficulty of integrating
+shared infrastructure into existing research workflows.
+
+\medskip
+\noindent\textbf{Lessons learnt:}
+The experience of CRC~1415 highlights that establishing
+technical infrastructure alone is insufficient to ensure
+sustainable RDM practices. Researchers require recurring
+training, direct support, and solutions that accommodate
+their disciplinary workflows and immediate needs.
+The contrasting experiences with ELNs and data
+publication illustrate that the adoption of shared
+RDM services depends on their compatibility with
+existing research practices. The challenges of
+introducing common tools after the CRC's first funding
+period further underline the importance of embedding
+RDM and RSE expertise early in the research lifecycle.
+
+
 
 \pagebreak
 \subsection{Project INF --- Data Management for Reproducible
@@ -361,6 +766,7 @@ researcher-oriented services.
 
 \pagebreak
 \subsection{Project INF --- FAIR collection, curation and management of multidimensional research data, \href{https://gepris.dfg.de/gepris/projekt/506711657?language=en}{CRC 1625 – Atomic-scale understanding and design of multifunctional compositionally complex solid solution surfaces}, Ruhr University Bochum}
+\label{subsec:crc1625}
 \noindent\textbf{Context and connections:}
 Established in 2024, CRC~1625 investigates the
 atomic-scale properties of compositionally complex
@@ -433,7 +839,7 @@ research groups. Project-specific data management
 plans provide a practical means of translating
 scientific requirements into concrete software
 development and integration tasks.
-Finally, sharing infrastructure with \hyperref[subsec:trr247]{TRR~247}.
+Finally, sharing infrastructure with \hyperref[subsec:trr247]{TRR~247}
 illustrates opportunities for reusing established
 RDM systems across research consortia, while
 requiring continued coordination of operations,
@@ -441,6 +847,7 @@ development, and maintenance.
 
 \pagebreak
 \subsection{Project INF --- Scientific services and data management - \href{https://gepris.dfg.de/gepris/projekt/537324246?language=en}{CRC 1629 Negation in Language and Beyond} - Frankfurt am Main, Tübingen, Göttingen}
+\label{subsec:crc1629}
 \textbf{Context and connections:} Established in 2024, CRC~1629 \textit{Negation in Language and Beyond} (NegLaB) investigates negation through theoretical, corpus-based, experimental, and cross-linguistic research. Its diverse methodologies and data types require coordinated RDM and computational support.
 The INF project is funded with two full-time equivalent
 (2.0~FTE) and combines linguistic and computational
@@ -614,7 +1021,7 @@ The FAIR principles, which are essential to ensure the long-term reusability of 
 
 \pagebreak
 \subsection{\href{https://www.computeralgebra.de/sfb/}{TRR 195 --- Symbolic Tools in Mathematics and their Application}, Kaiserslautern, Aachen, Saarbrücken, Berlin, Darmstadt, Siegen, Stuttgart, Tübingen}
-
+\label{subsec:trr195}
 \noindent\textbf{Context and connections:}
 Computing examples has always been a key component of mathematical research. Modern computers paired
 with sophisticated mathematical software tools have taken the possibilities of such calculations to
@@ -758,27 +1165,90 @@ committed to operating MatInf for at least ten years
 after project funding ends, supported by permanent
 staffing, although further feature development is
 not guaranteed.
-Long-term data archiving through
+Planned long-term data archiving through
 \href{https://about.coscine.de/}{Coscine}/
 \href{https://www.datastorage.nrw/}{DataStorage.NRW}
-and dataset publication
-through Zenodo complement this commitment.
+and dataset publication through Zenodo complement this commitment.
 
 \subsection{Project INF --- Infrastructure, \href{https://gepris.dfg.de/gepris/projekt/402170461?language=en}{TRR~265 - Loss and regaining control in addictions}, TUD Dresden University of Technology}
 \label{subsec:trr265}
-The INF project provides a comprehensive IT infrastructure tailored to the needs of the researchers working in the domain of addiction research (primarily alcohol and tobacco) within clinical psychology.
-It builds on and extends the infrastructure created for the prior CRC~940 ``Volition and Cognitive Control'' as well as for the CRC~205 ``The Adrenal: Central Relay in Health And Disease''.
-The goal of INF is to establish a unified system supporting every step of the clinical research.
-This begins with the recruitment of participants, their screening and pseudonymisation, the management of the studies, the conduct of digital behavioural tests, as well as the processing and long-term archival of fMRI data.
-
-The project fostered the synergy between the Center for Information Services \& High Performance Computing (ZIH) of the TU Dresden, Dresden's University Clinic and the Faculty of Psychology, especially its Neuroimaging Center (NIC).
-It also demonstrated the need for a clear documentation and communication of the agreed procedures and the importance of strong quality assurance procedures at every step of the workflows involving human interaction.
+\noindent\textbf{Context and connections:}
+TRR~265 investigates the loss and regaining of control
+over substance use, particularly alcohol and tobacco,
+within clinical psychology and neuroscience.
+The INF project provides shared IT infrastructure
+tailored to the needs of its clinical research projects,
+building on systems developed for CRC~940
+``Volition and Cognitive Control'' and TRR~205
+``The Adrenal: Central Relay in Health and Disease''.
+The project fosters collaboration between TU Dresden's
+Center for Information Services and High Performance
+Computing (ZIH), Dresden University Hospital, and
+the Faculty of Psychology, particularly its
+Neuroimaging Center (NIC).
+The INF is staffed by one full-time postdoctoral
+researcher (1.0~FTE).
+\\
+\noindent\textbf{Main activities:}
+The INF provides an integrated infrastructure
+supporting the clinical research lifecycle,
+including participant recruitment, screening,
+pseudonymisation, study management, digital
+behavioural testing, and the processing and
+long-term archiving of fMRI data.
+A central activity has been the reuse and adaptation
+of existing infrastructure. The REDCap server from
+TRR~205 was reused by extending its federated
+single sign-on system to additional partner
+institutions. Similarly, the Participant Management
+System (PAMS) developed for CRC~940 was deployed
+in a separate instance to isolate sensitive
+personal information.
+The infrastructure enables research partners
+to access shared information through secure
+protocols, while consistent pseudonymised
+participant identifiers link records across
+the different systems. PAMS remains the only
+component containing participants' actual names.
+\\
+\noindent\textbf{Key challenges and adoption:}
+One of the greatest challenges has been obtaining
+sufficiently detailed and well-considered
+requirements from researchers when establishing
+shared workflows. This proved particularly
+difficult when designing general procedures
+intended to accommodate the needs of multiple
+subprojects.
+Another challenge was integrating existing
+infrastructure while maintaining the separation
+of identifying participant information from
+research data. Reusing established systems
+required adapting authentication and deployment
+arrangements to the participating institutions
+and the project's data protection requirements.
+\\
+\noindent\textbf{Lessons learnt:}
+The experience of TRR~265 demonstrates the value
+of reusing established research infrastructure
+across CRCs while adapting it to new scientific
+and organisational requirements.
+The centralisation of research information and
+consistent use of pseudonymised identifiers
+represent substantial improvements over the
+previously fragmented data management practices.
+Separating identifying information from research
+data also facilitates secure collaboration
+across institutional boundaries.
+Finally, developing workflows shared by multiple
+research projects requires clear documentation,
+effective communication, and sufficiently precise
+requirements. Strong quality assurance is
+particularly important at workflow stages
+involving human interaction.
 \pagebreak
-\subsection{Project Q02 --- Data Management and Training Platform
-for AMD Research,
+\subsection{Project Q02 --- Data Management and Training Platform for AMD Research,
 \href{https://gepris.dfg.de/gepris/projekt/512007073?language=en}
-{TRR~379 -- Neuropsychobiology of Aggression:
-A Transdiagnostic Approach in Mental Disorders},
+{TRR~379 -- Neuropsychobiology of Aggression: A Transdiagnostic Approach in Mental Disorders},
 RWTH Aachen University, Goethe University Frankfurt,
 Central Institute of Mental Health, Forschungszentrum Jülich,
 University Hospital Aachen}
@@ -1010,13 +1480,117 @@ INF is responsible for the infrastructure that supports the projects. Once a pro
 Long-term maintenance is secured through the funding of the parent project to which the infrastructure belongs. Together with ZIH's commitment to sustainable long-term data archiving, this ensures that the scientific output of TRR~393 remains accessible, secure, and reusable for years to come. Securing funding nevertheless remains a general challenge for projects involving data management.
 
 
-\subsection{Project INF --- Information infrastructure project, \href{https://gepris.dfg.de/gepris/projekt/531327426?language=en}{TRR~408 - AgiMo: Data-driven agile planning for responsible mobility}, TUD Dresden University of Technology}
-\label{subsec:trr408}
-AgiMo (TRR~408) is a CRC for the advancement of traffic, transportation and mobility planning.
-It aims to develop a set of consistent mobility and transportation planning methods, including behavioural data and models for all modes of mobility from walking to motorised vehicles, and integrating them into a Digital Twin that allows the involvement of different stakeholder preferences to create future scenarios for responsible mobility.
 
-The goal of the INF project of TRR~408 is to provide a virtual research environment (VRE).
-The VRE acts as a centralised system that comprises different software components and services that foster RDM and collaboration, \eg, by providing data storage systems, workflow automation, as well as the integration of the digital twin to allow modelling of transportation and mobility systems, their parametrisation and subsequent simulation of city-wide traffic flow scenarios based on real-world data. To collect requirements for the VRE, the INF team together with the \href{https://tu-dresden.de/forschung-transfer/services-fuer-forschende/kontaktstelle-forschungsdaten}{Service Center Research Data} conducted interviews with all other AgiMo projects.
+\subsection{Project INF --- Information Infrastructure Project,
+\href{https://gepris.dfg.de/gepris/projekt/531327426?language=en}
+{TRR~408 -- AgiMo: Data-driven Agile Planning for Responsible
+Mobility}, TUD Dresden University of Technology}
+\label{subsec:trr408}
+
+\noindent\textbf{Context and connections:}
+Established in October 2025, TRR~408 develops integrated
+methods for responsible mobility and transport planning.
+It combines behavioural research, transport modelling,
+data science, and participatory planning across five
+institutions. A central scientific objective is the
+development of the AgiMo Digital Twin, enabling
+data-driven simulation and evaluation of mobility
+scenarios.
+
+The INF project, which is staffed with one full-time equivalent position, develops the shared virtual research
+environment (VRE) supporting interdisciplinary
+collaboration, research data management (RDM), and
+computational workflows. It works closely with the
+scientific projects, particularly C3, which jointly
+develops the Digital Twin with INF.
+
+\medskip
+\noindent\textbf{Main activities:}
+During its initial phase, the INF project, together
+with TU Dresden's Service Center Research Data,
+conducted interviews with the other AgiMo projects
+to identify their requirements for shared research
+infrastructure.
+
+Based on these requirements, the VRE is intended to
+integrate data storage, metadata and knowledge
+management, workflow automation, and access to
+high-performance computing resources.
+It will also provide the environment for the
+AgiMo Digital Twin, which is being developed
+together with C3 to integrate mobility data
+and simulation models, including those based
+on the MATSim framework.
+
+Further responsibilities include supporting
+common RDM practices, coordinating computational
+resources, and providing technical assistance
+and training to researchers across the consortium.
+
+\medskip
+\noindent\textbf{Key challenges and adoption:}
+A central challenge is accommodating heterogeneous
+research data, computational models, and workflows
+from different disciplines and institutions within
+a shared environment. In particular, integrating
+behavioural data, geospatial information, and
+transport simulations requires interoperable
+interfaces and coordinated data management.
+
+The initial requirements assessment provided a
+basis for identifying common needs while
+preserving the flexibility required by individual
+projects.
+A common requirement is a central place
+to discover data, which does not necessarily store
+all data itself but may also keep references to datasets
+held elsewhere. It is also important to identify
+which projects provide and which consume individual
+datasets, so that dependencies between projects
+and data-sharing requirements (public vs. internal)
+become visible.
+
+A further challenge is coordinating
+the technical development of the VRE with the
+scientific development of the Digital Twin.
+As the infrastructure remains under development,
+broader adoption and its effectiveness in
+supporting research workflows have yet to be
+evaluated.
+
+\medskip
+\noindent\textbf{Lessons learnt:}
+The initial experience of TRR~408 highlights
+the importance of systematically identifying
+researchers' requirements, including data types,
+sizes, workflows, tools, methodology, as well as,
+established data and knowledge management, before establishing
+shared infrastructure. In interdisciplinary
+projects, common technical solutions must
+accommodate different scientific methods and
+computational requirements.
+
+A further key insight was the importance of
+providing information about central services and
+organisational procedures, and of helping
+researchers identify experienced colleagues for
+a given challenge. Consequently, the VRE first
+focused on creating a wiki-style documentation
+system and a competency map.
+
+The close collaboration between INF and the
+scientific projects also illustrates the
+importance of coordinating infrastructure
+development with research software and model
+integration. Clearly defined responsibilities
+and early communication can provide a foundation
+for sustainable shared services.
+
+As the project progresses, experiences with
+the deployment and adoption of the VRE will
+provide further opportunities to assess
+these approaches and derive transferable
+lessons for interdisciplinary INF projects.
 
 \pagebreak
 
@@ -1129,16 +1703,78 @@ assurance, and explicit operational responsibilities
 when establishing distributed research infrastructure.
 
 
-\subsection{Project INF --- Research data management and collaboration platform, \href{https://gepris.dfg.de/gepris/projekt/541063275?language=en}{TRR~418 -- Foundations of Circadian Medicine}, Berlin/Lübeck/Munich}
-The INF project of TRR 418 “Foundations of Circadian Medicine” combines expertise in medical informatics, health data privacy, and bioinformatics at Charité – Universitätsmedizin Berlin and the Berlin Institute of Health (BIH).
-It supports a transregional consortium investigating how circadian clocks shape physiology and disease and how this knowledge can be translated into medical research and practice. Because the TRR combines preclinical and clinical work across several sites, the INF project was conceived as an enabling structure for coordination, data stewardship, and cross-project reuse. Its focus lies on a platform for broadly sharing circadian profiles and reproducible computational workflows, complemented by privacy-related guidance and training \cite{baum_data_circadian_2023}.
-A defining feature of the TRR is its reliance on longitudinal and rhythmic data, ranging from high-resolution sensor and wearable data to clinical, phenotypic, and omics datasets.
-Hence the INF project aims to create an environment in which heterogeneous data can be consistently documented, exchanged, processed, and explored.
-Planned components include a collaboration platform and services for FAIR data management with an emphasis on temporal data and tools for exploring circadian and omics data across projects.
-As in \hyperref[sec:sfb1340]{CRC 1340}, this project is embedded in institutional and national infrastructures.
-An expected challenge is the adoption of common data representations, ontologies and workflows across projects that differ widely in modality, temporal resolution, and regulatory context.
-Easier to adopt will likely be services with immediate practical benefit, such as shared collaboration spaces, and support for reproducible data and code handling.
-Since the project started in October 2025, its contribution is mainly the establishment of shared structures; a central lesson at this stage is that, in a consortium centred on circadian and longitudinal data, INF work integrates RDM, RSE, privacy, and domain-specific analytics from the outset rather than treating them as separate support functions.
+\pagebreak
+\subsection{Project INF --- Research Data Management and Collaboration Platform,
+\href{https://gepris.dfg.de/gepris/projekt/541063275?language=en}
+{TRR~418 -- Foundations of Circadian Medicine}, Berlin, Lübeck, Munich}
+\label{subsec:trr418}
+\noindent\textbf{Context and connections:}
+Established in October 2025, TRR~418 investigates how
+circadian clock influence physiology and disease,
+combining preclinical and clinical research across
+several institutions. Its projects generate heterogeneous
+longitudinal and rhythmic data, ranging from high-resolution sensor
+and wearable data to clinical, phenotypic, and omics datasets.
+The INF project combines expertise in medical informatics,
+bioinformatics, and data protection at \href{https://www.charite.de}{Charité --
+Universitätsmedizin Berlin} and the \href{https://www.bihealth.org}{Berlin Institute of
+Health (BIH)}. It is establishing the RDM and collaboration infrastructure
+needed to integrate these data across projects and sites.
+For its first funding period (2025–2029),
+the INF project is funded with two full-time
+doctoral researcher positions (100\% each),
+focusing on medical informatics and data integration
+as well as bioinformatics and omics data analysis.
+Analogously to the INF project of \hyperref[sec:sfb1340]{CRC 1340},
+this project is embedded in institutional and national infrastructures.
+
+\medskip
+\noindent\textbf{Main activities:}
+The INF develops a shared environment for secure data
+collection, documentation, exchange, and collaborative
+analysis. A Nextcloud-based collaboration platform has already
+been established. Planned services include
+common metadata structures and tools for
+reproducible data processing and exploration of
+circadian and omics data.
+These activities are complemented by guidance on data
+protection, data management practices, and researcher
+training. The infrastructure aims to support the
+integration of preclinical and clinical measurements
+while accommodating project-specific requirements.
+
+\medskip
+\noindent\textbf{Key challenges and adoption:}
+A central challenge is the adoption of common data
+representations, ontologies and workflows across projects
+that differ widely in modality, temporal resolution, and regulatory context.
+Existing data standards do not fully accommodate these
+requirements, particularly across varying temporal resolutions
+and timestamp semantics, while clinical and wearable data
+introduce additional privacy and access restrictions
+\cite{baum_data_circadian_2023}.
+The INF must therefore balance common data representations
+with the flexibility required by individual projects.
+As the infrastructure is still being established,
+its broader adoption remains to be evaluated.
+A particular challenge will be integrating common
+documentation and data-sharing practices into existing
+scientific workflows.
+
+\medskip
+\noindent\textbf{Lessons learnt:}
+The initial development of TRR~418 highlights the
+importance of considering domain-specific data
+requirements from the outset. For circadian research,
+temporal and longitudinal information is essential for scientific
+interpretation and must be represented consistently
+alongside conventional metadata.
+The combination of RDM, RSE,
+data protection, and scientific expertise provides
+a basis for developing infrastructure that supports
+both reproducibility and cross-project collaboration.
+As the project is still in its first funding period, experience with the implementation and adoption of
+these services will be needed to assess the effectiveness of this approach.
 
 \subsection{Advancing Digital Research: RDM and RSE at TU Dresden}
 \label{subsec:vdr}
@@ -1165,29 +1801,45 @@ Through its innovative approach and strong interdisciplinary connections, CIDS, 
 to TU Dresden’s reputation in research excellence and digital transformation by addressing the challenges of the data-driven era of science.
 
 \subsection{Surveying the INF projects}
-To corroborate this overview of INF projects we conducted an informal survey during the workshop and in the weeks after.
-In total, we received around 35 individual answers to the questions that we summarise here.
-When asked how much the original chosen education of the INF project aligned with the domain of the CRC two thirds of participants at least somewhat agreed.
-Also, around two thirds held at least a PhD level education, while a third held a master's or equivalent.
-Only around ten percent are currently doing a PhD, while almost a third has a permanent position.
-When asked about their contract hours, about a third was fully employed for the INF project, another third had half a position, and the remaining third was distributed across the range.
+Some of the authors of this paper were connected via deRSE conferences, while some others found
+their way to the group via DsgG venues. The local anecdotal evidence suggested that INF projects
+were not staffed homogeneously with only Research Software Engineers. To corroborate this with the
+overview of INF projects, we conducted an informal survey during the workshop and in the weeks
+after. The question, then, to answer: who is actually employed in the INF projects?
+
+This survey was targeted at the staff working in INF projects within CRCs. In total, we received
+around 35 individual answers to the questions that we summarise here. When asked how much the
+original chosen education of the INF project staff aligned with the domain of the CRC, two thirds of
+participants at least somewhat agreed, with around 10\% claiming perfect alignment.
+
+A little more than half of the survey participants held at least a PhD level education, while under
+a quarter held a master's or equivalent. The other twenty percent were pursuing a PhD. From the
+people who already hold a PhD, around a quarter also hold a permanent position.
+
+When asked about their contract hours, about a third were fully employed for the INF project,
+another third had half a position, and the remaining third were distributed in between. We also
+asked how INF project staff see themselves between being RSEs and Data Stewards. In
+\autoref{fig:figure_plot} we see that a spectrum is formed between these two extremes.
+
 \begin{figure}
- \includegraphics[width=0.48\linewidth]{rse-rdm.png}
- \includegraphics[width=0.48\linewidth]{fig3.pdf}
- \caption{
- In the left figure, we see that INF projects see themselves on a spectrum between RSEs and data stewards. We have no data on how people who answered ``Other'' see themselves.\\
- In the right figure, we see that while there is a broad spectrum of very specialised tools that come from each domain, there is also a core of common tooling
- that is used by everyone.
- }
- \label{fig:figures}
+ \includegraphics[width=0.98\linewidth]{survey_roles_bar_plot.pdf}
+ \caption{ INF project staff see themselves on a spectrum between RSEs (1 on the x-axis) and data
+ stewards (10 on the x-axis). We have no data on how people who answered ``Other'' (0 on the x-axis)
+ see themselves. }
+ \label{fig:figure_plot}
 \end{figure}
-We also asked how INF projects see themselves between being RSEs and Data Stewards. In \autoref{fig:figures}
-we see that a spectrum is formed between these two extremes.
 We also asked about the tools that people are using in their daily work. We see that there is a plethora of tools that are very domain specific.
-However, as the word cloud in \autoref{fig:figures} shows, there is a common core of tooling that is shared across INF projects.
+However, as the word cloud in \autoref{fig:figure_wordcloud} shows, there is a common core of tooling that is shared across INF projects.\\
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.6\linewidth]{fig3.pdf}
+  \caption{While there is a broad spectrum of very specialised tools that come from each
+ domain, there is also a core of common tooling that is used by everyone.}
+ \label{fig:figure_wordcloud}
+\end{figure}
 We closed the survey with a question about what people would like to see at a follow-up workshop.
 Networking, collaboration and the sharing of best practices are, again, very high on the list of requested topics.
-\vspace{-1em}
+\vspace{-1em}\newpage
 \section{Lessons Learnt}
 \label{sec:lessons}
 As we have seen, INF projects have become established across most domains of research.
@@ -1357,6 +2009,7 @@ MG, MP, LFB, AM, FP acknowledge funding from the DFG, TRR 418 ``Foundations of C
 MJ, TP, FP acknowledge funding from the DFG, CRC 1340 "Matrix in Vision", project INF - project number \geprislink{372486779}.
 MM acknowledges funding from DFG, CRC 1646/1 2024 -- \geprislink{512393437}, project INF.
 MMB acknowledges funding from DFG, CRC 1629 ``Negation in Language and Beyond'', project INF - project number \geprislink{537324246}.
+MMB acknowledges the contributions of the INF members in CRC 1629: Sol Lago, Alexander Mehler, Manfred Sailer, Giuseppe Abrami, Nasimeh Bahmanian, Leon Hammerla, and Andy Lücking.
 ND acknowledges funding from DFG, CRC 1638, project INF - project number \geprislink{511488495}.
 RD thanks the DFG for its support through the CRC 1415 "Chemistry of Synthetic Two-Dimensional Materials", project INF - project number \geprislink{417590517}.
 VD acknowledges funding from the DFG Project-ID \geprislink{388390466}-TRR 247 (subproject INF) and CRC~1625, project number \geprislink{506711657} (subproject INF).
