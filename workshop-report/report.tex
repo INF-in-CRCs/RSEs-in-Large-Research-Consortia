@@ -244,7 +244,7 @@ persistent identification of research data and the
 discovery of suitable repositories
 \cite{DataCiteHistory,re3data2023}.
 These developments illustrate how the increasing
-importance of research data management was reflected
+importance of RDM was reflected
 not only in dedicated support within research projects,
 but also in the creation of reusable, cross-institutional
 services.
@@ -350,7 +350,7 @@ research data, including its development,
 versioning, documentation, and long-term reuse
 \cite{DFG2025INF}.
 This reflects an increasingly integrated view
-of research data management and research software
+of RDM and research software
 engineering as complementary components of
 sustainable scientific infrastructure.
 
@@ -422,6 +422,47 @@ research.
 
 \section{Descriptions of INF Projects}
 \label{sec:inf-in-germany}
+Despite their different scientific domains and
+organisational arrangements, the projects share
+several recurring responsibilities.
+Most coordinate RDM across scientific subprojects, support data
+management planning and metadata documentation,
+and facilitate the storage, exchange, publication,
+and long-term preservation of research data.
+These activities are generally guided by the
+FAIR principles (Findable, Accessible, Interoperable,
+and Reusable) \cite{WilkinsonDumontier2016},
+which provide a common framework for improving
+the management and reuse of research outputs.
+Their implementation must nevertheless accommodate
+disciplinary requirements, institutional policies,
+and restrictions on access to sensitive data.
+
+Many projects also develop, adapt, or operate
+shared technical infrastructure and contribute
+to reproducible computational workflows through
+research software engineering (RSE).
+Researcher-oriented services form another common
+component, including individual consultations,
+training, documentation, and assistance with
+adopting new tools and practices.
+The projects frequently act as intermediaries
+between researchers and institutional IT services,
+computing centres, libraries, and national initiatives
+such as the National Research Data Infrastructure
+(NFDI).
+
+These shared responsibilities are implemented
+through different organisational models, ranging
+from dedicated INF projects to embedded RSE
+activities and distributed service teams.
+Rather than repeating these common objectives,
+the following contributions focus on distinctive
+approaches, practical challenges, adoption
+experiences, and lessons learnt.
+
+
+
 In this section, we describe the various INF projects, how they see themselves and which duties they perform.
 In this manuscript, we exclusively refer to these projects as INF projects, but within the respective CRCs, also other acronyms are used.
 \autoref{tab:inf-overview} provides an overview of the participating projects, their scientific contexts, organisational arrangements, and principal activities.
@@ -966,7 +1007,7 @@ characterisation, electrochemistry, simulation, and
 data-driven research.
 The INF project has been part of the CRC from its
 beginning and is staffed with one full-time equivalent position.
-It develops and operates a central research data management system (RDMS) based on
+It develops and operates a central RDM system (RDMS) based on
 \href{https://matinf.pro/}{MatInf}, sharing software and hardware infrastructure with \hyperref[subsec:trr247]{TRR~247}.
 Its primary objective is to integrate heterogeneous
 research data across projects and enable their
@@ -1056,7 +1097,7 @@ and other CRCs.
 INF provides assistance with RDM, methodological consulting, statistical training, computational modelling, machine learning and computational services, including Docker, Kubernetes, GitLab, Nextcloud, OpenWebUI, and JupyterHub (\url{https://neglab.github.io/NegLab-INF-Docs/}). Its computational developments include DUUI and DUUIgateway, supporting reusable NLP workflows and heterogeneous data processing~\cite{Leonhardt:et:al:2023,Abrami:et:al:2025:a,Hammerla:et:al:2025a,Bundan:Abrami:Mehler:2025,Borkowski:et:al:2026}.
 A shared server supports web-based experiments using open-source tools and has been successfully used for data collection by 10 of the 15 CRC research projects.
 We also developed a metadata platform accommodating theoretical, experimental, corpus-based, and fieldwork data and collaborated with the DFG Priority Programme \href{https://vicom.info/}{ViCom} on multimodal data science.
-We have established a CRC-wide data management policy and supported project-specific data management plans using the web-based Research Data Management Organiser, resulting in a documented protocol in 2025~\cite{Bahmanian:et:al:2025}. A key factor in its implementation was assigning one data steward per project, which facilitated communication, coordination, and adoption of shared practices.
+We have established a CRC-wide data management policy and supported project-specific data management plans using the web-based RDM Organiser, resulting in a documented protocol in 2025~\cite{Bahmanian:et:al:2025}. A key factor in its implementation was assigning one data steward per project, which facilitated communication, coordination, and adoption of shared practices.
 Workshops and consultations provided additional support in data management, statistics, and experimental design.
 \\
 \textbf{Key challenges and adoption:} A central challenge was accommodating the heterogeneous data types and metadata requirements of experimental, corpus-based, and theoretical research. Researchers from different fields had distinct expectations regarding which information should be documented and how it should be organised. To address this, we developed and piloted different versions of the metadata forms with researchers from different methodological groups. Their feedback allowed us to identify relevant metadata categories, ensure that different research needs were represented, and make the forms intuitive and easy to use.
@@ -1076,7 +1117,7 @@ Established in 2024, CRC~1638 investigates cellular membrane
 remodelling across five institutions, generating heterogeneous
 data from imaging, structural biology, lipidomics, proteomics,
 and molecular simulations.
-The INF project supports research data management (RDM)
+The INF project supports RDM
 throughout the CRC, building on researchers' existing expertise
 and workflows and offering support at every level of RDM
 experience.
@@ -1289,7 +1330,7 @@ oxide catalysts for selective liquid-phase oxidation.
 Its heterogeneous experimental and computational data require flexible RDM infrastructure.
 The INF project was established in
 the second funding period in late 2022 and develops
-the open-source research data management system
+the open-source RDM system
 \href{https://matinf.pro/}{MatInf}, whose infrastructure
 is shared with \hyperref[subsec:crc1625]{CRC~1625}.
 The MatInf core is maintained by the MDI Data Science
@@ -1452,8 +1493,7 @@ disorders (AMD). Its multi-institutional research generates
 heterogeneous longitudinal data requiring secure sharing,
 harmonisation, and reproducible analysis across participating
 sites.
-The Q02 service project provides the research data management
-(RDM) and research software engineering (RSE) infrastructure
+The Q02 service project provides the RDM and RSE infrastructure
 supporting these activities. Organised as a distributed team,
 it connects domain researchers, data stewards, and
 infrastructure providers. Its software and methodological
@@ -1756,7 +1796,7 @@ scenarios.
 
 The INF project, which is staffed with one full-time equivalent position, develops the shared virtual research
 environment (VRE) supporting interdisciplinary
-collaboration, research data management (RDM), and
+collaboration, RDM, and
 computational workflows. It works closely with the
 scientific projects, particularly C3, which jointly
 develops the Digital Twin with INF.
