@@ -76,6 +76,14 @@ We split the figure into two separate figures, and increased the font size in bo
 
 Thank you for this suggestion. We have added a comparative overview table (`\autoref{tab:inf-overview}`) at the beginning of Section 3 summarising all participating CRCs/TRRs by their start year, research topic, INF organisational setup and start of funding, and principal INF activities (covering infrastructure, RDM, RSE, training, and researcher support). Additional institutional context and staffing details are reported in the harmonised `Context and connections:` paragraphs of the individual project descriptions where available.
 
+### H4.
+** Reviewer Comment **
+> In section 2 on the history of the INF projects, I think it would be beneficial to contextualise the INF projects in relation to other emerging initiatives and policies. For example, several of the INF projects in section 3 reference NFDI, FAIRmat, and NOMAD. There is certainly also a connection to the shift in emphasis on data management and FAIR principles on the side of research organizations and funding bodies. Another connection could be made to the emergence/growth of independent organizations such as The Carpentries and deRSE. I think it is important to view the history of INF projects in this context and especially the changing policy landscape.
+
+** Our response **
+
+Thank you for this suggestion. We have expanded Section 2 (`\label{sec:history}`) to situate the history of INF projects within the broader research policy, infrastructure, and professional community landscape. In particular, the section now connects INF developments to evolving DFG guidelines and review criteria, the FAIR and FAIR4RS principles, regional state initiatives (such as bwFDM, HeFDI, fdm.nrw, and SaxFDM), DataCite and re3data, the RfII recommendations and the establishment of NFDI consortia (such as FAIRmat/NOMAD), European developments (EOSC and EOSC Node Germany), and the growth of independent communities including Software/Data Carpentry (The Carpentries), de-RSE, and data stewardship.
+
 ## Reviewer M:
 
 ### M1.
@@ -121,12 +129,12 @@ THank You for this comment we rephrased the introduction better to showcase what
 ** changed in the manuscript **
 removed "This report attempts to change that."
 Added/reworded for context:
-In order to counteract this, we first start with a historic overview of the development of the INF projects to provide an introduction into the existing literature and experiences.
-Then we  catalogue current and past INF projects across Germany's research landscape, before drawing on a workshop held at deRSE26 to collect the lessons learnt and distil them into practical guidance for INF projects and comparable structures.
-We also like to highlight that this overview forms the foundational project of
-a network of INF projects \footnote{
-\url{https://www.listserv.dfn.de/sympa/info/inf-projects-in-crcs}
-} that wants to provide a platform for exchange of experiences.
+In order to counteract this, we first start with a historical overview of the development of INF projects to provide an introduction to the existing literature and policy context.
+We then survey contributed current and recent INF projects (and comparable structures) across Germany's research landscape, complemented by an informal staff survey, before drawing on a workshop held at deRSE26 to collect the lessons learnt and distil them into practical guidance for INF projects and comparable structures.
+We also highlight that this overview forms the foundational activity of
+a network of INF projects\footnote{%
+\url{https://www.listserv.dfn.de/sympa/info/inf-projects-in-crcs}%
+} intended to provide a platform for exchanging experiences.
 
 ### M4
 ** Original Manuscript **
@@ -140,7 +148,7 @@ You are right. It's just bad.
 
 ** changed in the manuscript **
 removed: the focus then shifts to Cologne.
-modified: In 2009 TRR~32 and CRC~806 organised a workshop of nearly 80 participants of diverse disciplines in Cologne, ...
+modified: The growing interest was reflected in a 2009 workshop organised by TRR~32 and CRC~806 in Cologne, attracting nearly 80 participants from different disciplines \cite{curdt787}.
 
 ### M5
 ** Original Manuscript **
@@ -153,7 +161,7 @@ modified: In 2009 TRR~32 and CRC~806 organised a workshop of nearly 80 participa
 We integrated the sentence better into the text
 
 ** changed in the manuscript **
-Modified to "Both workshops noted, that acceptance of the INF projects is a major issue."
+Modified to: "Both workshops identified user acceptance as a major challenge. This observation illustrates an issue that would persist throughout the following years: providing technical infrastructure does not necessarily ensure its integration into everyday scientific practice."
 
 ### M6
 ** Original Manuscript **
@@ -314,3 +322,15 @@ Thank you for pointing this out. We have added staffing information (such as fun
 
 ** changed in the manuscript **
 > Added staffing details to the `Context and connections:` paragraphs of the revised project descriptions in Section 3.
+
+### M18
+** Reviewer Comment **
+> The “History of the INF projects” section would also benefit from a more narrative structure. At present, it reads somewhat like a conventional literature review, with many developments listed but relatively little context or flow connecting them.
+>
+> The “History of the INF projects” section could be made more narrative, with greater emphasis on context and on the broader issues that emerge from the development of INF projects over time.
+
+** Our Response **
+Thank you for this suggestion. We have rewritten Section 2 (`\label{sec:history}`) as a continuous chronological narrative connecting the development of INF projects to changing funder policies, regional, national, and European research infrastructures, and the emergence of RDM and RSE professional communities. Rather than ending with an isolated bullet list, the section now synthesises the recurring structural tensions that have persisted or evolved over two decades—reconciling time-limited CRC funding with long-term sustainability, balancing infrastructure standardisation with disciplinary flexibility, and bridging institutional requirements with everyday research workflows—framing the project accounts that follow in Section 3.
+
+** changed in the manuscript **
+> Rewrote Section 2 (`History of the INF projects`) in a narrative chronological structure contextualising INF developments alongside policy, infrastructure, and community milestones, and added a concluding synthesis of persistent and emerging challenges leading into Section 3.

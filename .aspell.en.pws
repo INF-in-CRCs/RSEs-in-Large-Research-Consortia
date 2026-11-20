@@ -1,4 +1,4 @@
-personal_ws-1.1 en 412 utf-8
+personal_ws-1.1 en 418 utf-8
 ABCD
 APIs
 Aachen
@@ -52,6 +52,7 @@ DUUI
 DUUIgateway
 DaRUS
 Darmstadt
+DataCite
 DataLad
 DataStorage
 Dataverse
@@ -71,6 +72,7 @@ Dudarev
 Duisburg
 ELN
 ELNs
+EOSC
 EXC
 Essen
 FAIRmat
@@ -235,6 +237,7 @@ Rahaus
 Rahmenbedingungen
 Reer
 Relatedly
+RfII
 Rostock
 Rouven
 Ruhr
@@ -307,6 +310,7 @@ biogeochemical
 bioinformatics
 biosignatures
 british
+bwFDM
 carpentries
 center
 centric
@@ -336,6 +340,8 @@ emph
 enquote
 et
 fMRI
+fdm
+findability
 findable
 für
 geodata
