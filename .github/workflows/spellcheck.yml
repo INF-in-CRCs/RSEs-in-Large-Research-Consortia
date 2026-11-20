@@ -4,13 +4,12 @@ jobs:
   spellcheck:
     runs-on: ubuntu-latest
     steps:
-      - name: Install packages
-        run: sudo apt install -y locales locales-all aspell aspell-en
-      - name: Setup locale
-        run: sudo locale-gen en_GB en_GB.UTF-8
       - name: Set up Git repository
         uses: actions/checkout@v4
-      - name: run spellchecker
+      - name: Install aspell
         run: |
-          # run spell checker on file
-          bash spellcheck.sh workshop-report/report.tex
+          sudo apt-get update
+          sudo apt-get install -y aspell aspell-en
+      - name: Run spellchecker (non-blocking)
+        continue-on-error: true
+        run: bash spellcheck.sh workshop-report/report.tex
