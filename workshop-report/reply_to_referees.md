@@ -2,6 +2,88 @@
 We thank all our referees for their constructive feedbackand the raised points,
 and hope that our comments below, and the changes we did to the manuscript answer their criticism.
 
+## Reviewer B:
+
+### B1.
+** Reviewer Comment **
+> Presentation of the paper is very good. It is well structured and largely
+> well-written. The exception to this is section 3.21 where some improvements, both to the text, and
+> the figure, would improve the paper.
+
+** Our response **
+
+Thank you for the feedback. we have reworked figure 1. The figure was split into
+two: the word cloud, and the chart. The chart itself was overhauled to comply with other
+suggestions. The section referring to the figure was reworded for clarity.
+
+### B2.
+** Reviewer Comment **
+> It’s not clear who the audience is who are being asked this question.
+
+** Our response **
+
+We reworded the section to clarify the intended audience of the survey.
+
+### B3.
+** Reviewer Comment **
+> The caption on Figure 1 says “…we see that INF projects see themselves on a spectrum between RSEs
+> and data stewards.”. From this, I was unclear whether this refers in some way to the INF projects
+> themselves or the people working in them.
+
+** Our response **
+
+The reviewer rightfully noticed our unclear wording here and we clarified in the text, that we
+always refer to the staff working in the INF projects.
+
+### B4.
+** Reviewer Comment **
+> There are a number of lessons learnt highlighted in the summaries in section 3 but this information is not provided for all CRCs and, where it is provided, it’s not always easy to identify those key elements of the information.
+>
+> For example where key lessons or specific challenges are highlighted, perhaps these parts of the text could start on a new line with a bold “Lessons learnt:” or “Key challenges:”? It probably doesn’t make sense to put these small sections of text in separate subsections but some sort of pointer could help to make key takeaways easier to identify.
+
+** Our response **
+
+Thank you for this suggestion. We have adopted this approach across the revised INF project descriptions in Section 3 by introducing four bold paragraph-level labels—**Context and connections:**, **Main activities:**, **Key challenges and adoption:**, and **Lessons learnt:**—each starting a new paragraph without adding further numbered subsections, so that key challenges and takeaways are easy to locate and compare across CRCs.
+
+
+## Reviewer H:
+
+### H1.
+** Reviewer Comment **
+> The methodology of the survey is not described. It is not clear whether the survey was informed by
+> specific hypotheses and how the survey was designed and administered. I am not sure what insights
+> can be gained from this data.
+
+** Our response **
+
+We reworded the section to clarify the motivation of the survey, and what audience the survey was
+aimed at. We also clarified the insight from the survey, viz., that there is a healthy spread of
+people that identify themselves on the RSE v/s RDM spectrum.
+
+### H2.
+** Reviewer Comment **
+> The left plot in figure 1 is hard to read
+
+** Our response **
+
+We split the figure into two separate figures, and increased the font size in both.
+
+### H3.
+** Reviewer Comment **
+> The overview of the INF projects could be more valuable, if the information can be distilled into a list/table. For example, one could list the subject discipline of the CRC, the "home department" of the INF, lifetime of the INF/CRC, staffing, along with the core functions (infrastructure, RDM, RSE, training, support). Such a table would enable a more differentiated categorization of INF projects than the plain text descriptions.
+
+** Our response **
+
+Thank you for this suggestion. We have added a comparative overview table (`\autoref{tab:inf-overview}`) at the beginning of Section 3 summarising all participating CRCs/TRRs by their start year, research topic, INF organisational setup and start of funding, and principal INF activities (covering infrastructure, RDM, RSE, training, and researcher support). Additional institutional context and staffing details are reported in the harmonised `Context and connections:` paragraphs of the individual project descriptions where available.
+
+### H4.
+** Reviewer Comment **
+> In section 2 on the history of the INF projects, I think it would be beneficial to contextualise the INF projects in relation to other emerging initiatives and policies. For example, several of the INF projects in section 3 reference NFDI, FAIRmat, and NOMAD. There is certainly also a connection to the shift in emphasis on data management and FAIR principles on the side of research organizations and funding bodies. Another connection could be made to the emergence/growth of independent organizations such as The Carpentries and deRSE. I think it is important to view the history of INF projects in this context and especially the changing policy landscape.
+
+** Our response **
+
+Thank you for this suggestion. We have expanded Section 2 (`\label{sec:history}`) to situate the history of INF projects within the broader research policy, infrastructure, and professional community landscape. In particular, the section now connects INF developments to evolving DFG guidelines and review criteria, the FAIR and FAIR4RS principles, regional state initiatives (such as bwFDM, HeFDI, fdm.nrw, and SaxFDM), DataCite and re3data, the RfII recommendations and the establishment of NFDI consortia (such as FAIRmat/NOMAD), European developments (EOSC and EOSC Node Germany), and the growth of independent communities including Software/Data Carpentry (The Carpentries), de-RSE, and data stewardship.
+
 ## Reviewer M:
 
 ### M1.
@@ -47,12 +129,12 @@ THank You for this comment we rephrased the introduction better to showcase what
 ** changed in the manuscript **
 removed "This report attempts to change that."
 Added/reworded for context:
-In order to counteract this, we first start with a historic overview of the development of the INF projects to provide an introduction into the existing literature and experiences.
-Then we  catalogue current and past INF projects across Germany's research landscape, before drawing on a workshop held at deRSE26 to collect the lessons learnt and distil them into practical guidance for INF projects and comparable structures.
-We also like to highlight that this overview forms the foundational project of
-a network of INF projects \footnote{
-\url{https://www.listserv.dfn.de/sympa/info/inf-projects-in-crcs}
-} that wants to provide a platform for exchange of experiences.
+In order to counteract this, we first start with a historical overview of the development of INF projects to provide an introduction to the existing literature and policy context.
+We then survey contributed current and recent INF projects (and comparable structures) across Germany's research landscape, complemented by an informal staff survey, before drawing on a workshop held at deRSE26 to collect the lessons learnt and distil them into practical guidance for INF projects and comparable structures.
+We also highlight that this overview forms the foundational activity of
+a network of INF projects\footnote{%
+\url{https://www.listserv.dfn.de/sympa/info/inf-projects-in-crcs}%
+} intended to provide a platform for exchanging experiences.
 
 ### M4
 ** Original Manuscript **
@@ -66,7 +148,7 @@ You are right. It's just bad.
 
 ** changed in the manuscript **
 removed: the focus then shifts to Cologne.
-modified: In 2009 TRR~32 and CRC~806 organised a workshop of nearly 80 participants of diverse disciplines in Cologne, ...
+modified: The growing interest was reflected in a 2009 workshop organised by TRR~32 and CRC~806 in Cologne, attracting nearly 80 participants from different disciplines \cite{curdt787}.
 
 ### M5
 ** Original Manuscript **
@@ -79,7 +161,7 @@ modified: In 2009 TRR~32 and CRC~806 organised a workshop of nearly 80 participa
 We integrated the sentence better into the text
 
 ** changed in the manuscript **
-Modified to "Both workshops noted, that acceptance of the INF projects is a major issue."
+Modified to: "Both workshops identified user acceptance as a major challenge. This observation illustrates an issue that would persist throughout the following years: providing technical infrastructure does not necessarily ensure its integration into everyday scientific practice."
 
 ### M6
 ** Original Manuscript **
@@ -185,7 +267,7 @@ Thank you for this opportunity to extend the argument. We incorporated your idea
 ** changed in the manuscript **
 > While the publication of scientific articles is well established, making accompanying research datasets available in a reusable form remains challenging. Without appropriate data management practices established early in the research process, preparing datasets for publication can require substantial additional effort, placing further demands on researchers' often limited time resources.
 
-### M10
+### M13
 ** Original Manuscript **
 > breadth of the INF projects across the scientific domains is very diverse.
 
@@ -199,7 +281,7 @@ Thank you for this clarification. We start the paragraph now with your idea, and
 ** changed in the manuscript **
 > As we have seen, INF projects have become established across most domains of research.
 
-### M11
+### M14
 ** Original Manuscript **
 >  “…not only helpful, but often inevitable.”
 
@@ -211,3 +293,44 @@ Thank you for the suggestion, we have reworded this.
 
 ** changed in the manuscript **
 > A key lesson learned is that PI buy-in is not merely beneficial, but a key ingredient for the successful implementation of RDM and RSE practices.
+
+### M15
+** Reviewer Comment **
+> Figure 1 should be improved for readability
+
+** Our Response **
+> Split the figure into two separate figures with larger font sizes, and improved readability.
+
+### M16
+** Reviewer Comment **
+> The individual INF summaries vary considerably in structure, level of detail, and emphasis.
+> I would suggest revising the individual INF summaries towards a more consistent structure and placing greater emphasis on the specific challenges encountered, what worked, what did not, and what was learned.
+> Common background information, recurring acronyms, and baseline requirements such as FAIR compliance could be grouped together rather than repeated across the case studies.
+
+** Our Response **
+Thank you for this suggestion. We have revised the INF project descriptions in Section 3 towards a common four-part structure (**Context and connections:**, **Main activities:**, **Key challenges and adoption:**, and **Lessons learnt:**), replacing generic statements such as baseline FAIR compliance with concrete RDM and RSE activities, specific adoption experiences (both what worked well and what proved difficult), and practical lessons learnt across the participating CRCs.
+
+** changed in the manuscript **
+> Reworked the project descriptions in Section 3 to use four consistent bold paragraph labels (`Context and connections:`, `Main activities:`, `Key challenges and adoption:`, and `Lessons learnt:`) and expanded their discussion of concrete challenges, adoption experiences, and lessons learnt.
+
+### M17
+** Reviewer Comment **
+> Staffing, for example, is addressed in only one summary, I believe. This is a missed opportunity, as such information would give considerably more weight to the outlined challenges related to staffing and employment.
+
+** Our Response **
+Thank you for pointing this out. We have added staffing information (such as funded positions, FTEs, and role distribution) across the revised INF project descriptions in Section 3 where available.
+
+** changed in the manuscript **
+> Added staffing details to the `Context and connections:` paragraphs of the revised project descriptions in Section 3.
+
+### M18
+** Reviewer Comment **
+> The “History of the INF projects” section would also benefit from a more narrative structure. At present, it reads somewhat like a conventional literature review, with many developments listed but relatively little context or flow connecting them.
+>
+> The “History of the INF projects” section could be made more narrative, with greater emphasis on context and on the broader issues that emerge from the development of INF projects over time.
+
+** Our Response **
+Thank you for this suggestion. We have rewritten Section 2 (`\label{sec:history}`) as a continuous chronological narrative connecting the development of INF projects to changing funder policies, regional, national, and European research infrastructures, and the emergence of RDM and RSE professional communities. Rather than ending with an isolated bullet list, the section now synthesises the recurring structural tensions that have persisted or evolved over two decades—reconciling time-limited CRC funding with long-term sustainability, balancing infrastructure standardisation with disciplinary flexibility, and bridging institutional requirements with everyday research workflows—framing the project accounts that follow in Section 3.
+
+** changed in the manuscript **
+> Rewrote Section 2 (`History of the INF projects`) in a narrative chronological structure contextualising INF developments alongside policy, infrastructure, and community milestones, and added a concluding synthesis of persistent and emerging challenges leading into Section 3.
