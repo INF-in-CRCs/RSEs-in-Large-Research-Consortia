@@ -265,7 +265,7 @@ Thank you for the suggestion. We have revised the sentence to describe the proje
 Thank you for this opportunity to extend the argument. We incorporated your ideas
 
 ** changed in the manuscript **
-> While the publication of scientific articles is well established, making accompanying research datasets available in a reusable form remains challenging. Without appropriate data management practices established early in the research process, preparing datasets for publication can require substantial additional effort, placing further demands on researchers' often limited time resources.
+> While publishing research articles is routine, preparing the underlying datasets for reuse often requires substantial additional effort, particularly when documentation and metadata management have not been considered from the beginning.
 
 ### M13
 ** Original Manuscript **
