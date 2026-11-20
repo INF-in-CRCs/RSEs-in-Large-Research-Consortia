@@ -2248,42 +2248,28 @@ Limited awareness of the benefits of automation often prevents researchers from 
 Possible remedies discussed at the workshop include clear, example-driven documentation and Retrieval-Augmented Generation (RAG)-supported chat assistants to help researchers navigate documentation and workflow setup.
 \vspace{-1em}
 \section{Summary}
-Comparing the initial problems of the INF projects in \autoref{sec:history}
-with the actual tasks that INF projects perform in \autoref{sec:inf-in-germany}
-and what we identified as ongoing challenges in the workshop in \autoref{sec:lessons}
-we observe that technical challenges have evolved, while the human factor still is tricky ---  noting that no one reported on
-the failure of an INF project \cite{Dierkes2020}.
-We observe that the provision of long-term storage does not pose such a large issue anymore.
-This has often either been solved within the CRC or through collaborations with institutions within the universities or within the framework of the NFDI.
-This points to a greater shift in the landscape surrounding the INF projects.
-Libraries and compute centres themselves offer to become part of the CRC proposals as evidenced by examples from \autoref{subsec:vdr}, the literature \cite{Hausen_Rosenberg_Trautwein-Bruns_Schwarz_2020},
-and generalised into a template form in \cite{Kempf2026}.\\
-Getting support as an INF project is an ongoing challenge that is helped by numerous networks.
-The formation of the NFDI in 2020 brought a new push to the available networks for the INF projects, since
-the consortia now form a domain specific network of sorts.
-Also, numerous RDM specific networks emerged, like \href{https://saxfdm.de/}{SaxFDM}, that offer local, RDM specific networks.
-INF projects leaning into software development have found networks in the \href{https://de-rse.org/}{RSE} movement.\\
-Also in this manuscript, we have categorised INF projects where they lie on the RSE-RDM spectrum, but more broadly speaking,
-these are all instances of \href{https://drtp-skills.ac.uk/}{dRTPs}, digital Research Technical Professionals.
-INF projects will probably be even more diverse, if data scientists, AI specialists and other dRTPs can provide skills useful for the CRCs.
-At the same time, INF projects increasingly fulfil an important mediating role between domain scientists, 
-institutional infrastructure providers, and national initiatives such as the NFDI. Beyond providing technical solutions, 
-they translate evolving requirements between communities with different practices, expectations, and technical backgrounds. 
-This bridging function is becoming ever more critical as collaborative and data intensive research continues to grow in complexity.
-So with respect to the communities and the professionalisation the INF projects have matured, but what has stayed the same?
-INF projects in CRCs are subject to the project based funding of the DFG, therefore the CRC itself cannot provide a stable position.
-This also brings up again the unresolved problem of how to provide continuity across personnel rotations in INF projects.
-It is encouraging to see that libraries and compute centres are stepping up here, since these are institutions that
-can provide long-term career perspectives for experts employed in INF projects and can provide a fallback in the case of rotations.
-Hopefully, in the future more improvements can be made \eg, by combining the political voice of the data stewards and the RSE movement.\\
-Comparing with \cite{mueckschel2006} a couple of other challenges still persist, such as INF projects struggling
-to adapt their platforms to the scientists’ evolving requirements, or how to design platforms that are open and extensible
-while still being easy enough to be accepted by users.
-We have detailed some of these struggles and some of this generation’s solutions in our lessons learnt in \autoref{sec:lessons}.
-Adapting to rapidly changing scientific questions will always be a challenge to the people filling out the role of the INF project in a CRC.
-But together with the strong networks they are embedded in\footnote{
-We founded a network for INF projects: \url{https://www.listserv.dfn.de/sympa/info/inf-projects-in-crcs}.
-}, this is a challenge that INF projects everywhere happily take on.
+Comparing the early challenges of INF projects (\autoref{sec:history}) with the current project landscape (\autoref{sec:inf-in-germany}) and the workshop discussions (\autoref{sec:lessons}) shows that while the technical ecosystem has matured considerably, socio-technical and organisational challenges remain central---even though explicit accounts of failed INF projects remain rare in the literature \cite{Dierkes2020}.
+Basic archival storage and repository hosting, which once had to be improvised within individual consortia, are now increasingly addressed in partnership with university libraries, computing centres, and national NFDI services.
+However, archival bit-preservation must be distinguished from operational sustainability: maintaining research software, operating live collaboration and data platforms, verifying backup recovery, and sustaining user support beyond finite funding periods remain unresolved challenges unless host institutions assume long-term ownership.
+
+Taken together, the case studies and workshop findings point to a dual assessment of the DFG's INF model itself.
+Its primary strength lies in embedding domain-literate RDM and RSE specialists directly within an interdisciplinary consortium, enabling them to co-design workflows with researchers and act as mediators between domain subprojects, local IT and library services, and national initiatives such as the NFDI.
+At the same time, scoping infrastructure development within four-year project funding cycles creates a structural tension: research software, curated datasets, metadata schemas, and automated workflows are expected to have lasting value across and beyond a twelve-year CRC, yet the funding instrument alone cannot guarantee post-project maintenance or permanent staffing.
+Addressing this tension requires recognising reusable research software and data infrastructure not merely as auxiliary support services, but as durable scientific outputs in their own right---comparable in scholarly standing to new experimental methods or theoretical formulations---and rewarding them accordingly in academic assessment \cite{Anzt:2020,Goth:2025}.
+
+Our informal staff survey contextualises these structural observations from an employment perspective.
+Respondents typically combine high academic qualifications (over half holding a PhD and a further fifth pursuing one) and strong disciplinary alignment with hybrid responsibilities spanning the full spectrum between RSE and data stewardship (\autoref{fig:figure_plot}), alongside a shared core of software and data tooling (\autoref{fig:figure_wordcloud}).
+More broadly, these staff represent instances of \href{https://drtp-skills.ac.uk/}{dRTPs} (digital Research Technical Professionals), a profile likely to diversify further as data science and AI-related competencies gain prominence in CRCs.
+Yet around two thirds of surveyed staff work on part-time INF contracts and only roughly a quarter of PhD-holding respondents occupy permanent positions, underscoring the persistent vulnerability of INF projects to personnel turnover.
+Encouragingly, university libraries, computing centres, and dedicated digital research units increasingly participate directly in CRC proposals, as illustrated in \autoref{subsec:vdr}, documented in the literature \cite{Hausen_Rosenberg_Trautwein-Bruns_Schwarz_2020}, and generalised into organisational blueprints \cite{Kempf2026}.
+Such institutional anchoring can offer viable long-term career opportunities for INF specialists while providing continuity across funding phases and staff rotations.
+
+Professional networks complement these institutional structures.
+The launch of the NFDI in 2020 established domain-specific communities, regional initiatives such as \href{https://saxfdm.de/}{SaxFDM} provide local RDM exchange, and communities such as \href{https://de-rse.org/}{de-RSE} and DSgG connect software- and data-oriented practitioners, strengthening their collective voice.
+Several core challenges identified two decades ago \cite{mueckschel2006} nevertheless endure---most notably adapting shared platforms to evolving scientific questions and balancing openness and extensibility with low barriers to researcher adoption (\autoref{sec:lessons}).
+Supporting rapidly evolving collaborative research will remain demanding, but embedded in stronger institutional partnerships and cross-consortium networks\footnote{%
+We founded a network for INF projects: \url{https://www.listserv.dfn.de/sympa/info/inf-projects-in-crcs}.%
+}, current and future INF teams are far better equipped to meet these challenges collectively.
 
 
 \begin{acknowledge}
