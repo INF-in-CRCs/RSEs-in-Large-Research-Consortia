@@ -1,4 +1,4 @@
-personal_ws-1.1 en 418 utf-8
+personal_ws-1.1 en 430 utf-8
 ABCD
 APIs
 Aachen
@@ -39,6 +39,7 @@ CRC
 CRC's
 CRCs
 CWL
+Catalog
 Charité
 Chemotion
 Coara
@@ -46,8 +47,11 @@ Coscine
 DFG
 DFG's
 DINI
+DMP
+DMPs
 DOI
 DRA
+DSgG
 DUUI
 DUUIgateway
 DaRUS
@@ -165,9 +169,11 @@ MH
 MJ
 MMB
 MaRDI
+MaRDIFlow
 Maija
 Manfred
 Mannseicher
+Marburg
 Mardiflow
 Maryam
 MatInf
@@ -175,6 +181,7 @@ MatWerk
 Mathematica
 Mathematik
 Mehler
+MetaLad
 Michels
 Mihaela
 Misios
@@ -197,6 +204,7 @@ Neurodegenerative
 Neuroimaging
 Neuropsychobiology
 Nextcloud
+Nextflow
 Nixdorf
 Nvidia
 OPARA
@@ -256,6 +264,7 @@ SaxFDM
 Sciformation
 Seibold
 Siegen
+Snakemake
 Sol
 Spatio
 Stadtbibliothek
@@ -294,6 +303,7 @@ VRE
 ViCom
 WETSCAPES
 Wissenschaftszeitvertragsgesetz
+WorkflowHub
 Wü
 Würzburg
 Yadav
@@ -302,6 +312,7 @@ ZIH
 ZIH's
 Zenodo
 Zentralprojekt
+affective
 aiuse
 al
 anonymise
@@ -387,6 +398,7 @@ preprocessing
 proteomics
 pseudonymisation
 pseudonymised
+pseudonymising
 psycholinguistics
 redox
 renormalisation
