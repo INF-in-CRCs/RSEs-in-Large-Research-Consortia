@@ -1,6 +1,5 @@
 # Reply to the referees
-We thank all our referees for their constructive feedback and the raised points,
-and hope that our comments below, and the changes we did to the manuscript answer their criticism.
+We thank all our referees for their constructive feedback and the raised points!
 As you might have noticed, the paper increased drastically in length.
 The reason is, that all reviewers agreed, that the INF Project descriptions need 
 
@@ -13,6 +12,10 @@ then added an introduction highlighting some commonalities of INF projects with 
 next most INF projects' descriptions have been lengthened and put into  a common structure, 
 and then we also added a synthesis of these descriptions.
 And yes, now it's 42 pages of length.
+Given that we did a drastic restructuring, we don't provide a diff on the individual word level.
+
+We hope that our comments below, and the changes we did to the manuscript answer the criticisms of the referees.
+
 
 ## Reviewer B:
 
