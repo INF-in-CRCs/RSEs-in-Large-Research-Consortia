@@ -1,6 +1,18 @@
 # Reply to the referees
 We thank all our referees for their constructive feedback and the raised points,
 and hope that our comments below, and the changes we did to the manuscript answer their criticism.
+As you might have noticed, the paper increased drastically in length.
+The reason is, that all reviewers agreed, that the INF Project descriptions need 
+
+- Better structure,
+- Less generic, more specific material,
+- More overview to introduce them, and that drawing some conclusions from the Lessons learnt in the INF projects would be worthwhile.
+
+To that end we gathered more material from all INF projects,
+then added an introduction highlighting some commonalities of INF projects with an overview table,
+next most INF projects' descriptions have been lengthened and put into  a common structure, 
+and then we also added a synthesis of these descriptions.
+And yes, now it's 42 pages of length.
 
 ## Reviewer B:
 
